@@ -1,4 +1,4 @@
-# nctu_{blank}
+# nctu_{scrt}
 WordPress theme for the XXX in NCTU
 update date: 2017/xx/xx
 
