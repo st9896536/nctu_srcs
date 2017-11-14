@@ -1,6 +1,6 @@
 # nctu_{scrt}
 WordPress theme for the XXX in NCTU
-update date: 2017/xx/xx
+update date: 2017/11/14
 
 
 ## Used Plugins
