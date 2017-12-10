@@ -1,6 +1,6 @@
 # nctu_{srcs}
-WordPress theme for the SRCS in NCTU
-update date: 2017/11/14
+WordPress theme for the 社文所 in NCTU
+update date: 2017/12/10
 
 
 ## Used Plugins
@@ -17,6 +17,17 @@ update date: 2017/11/14
 	- category.php
 - 文章內文
 	- single.php
+
+### 關於本所
+	- 關於本所
+		- page-tepmlates/template-aboutus.php
+	- 專任師資
+		- page-tepmlates/template-full-time-teacher.php
+	- 兼任師資
+		- page-tepmlates/template-adjunct-teacher.php
+	- 客座教授
+		- page-tepmlates/template-guest-professor.php
+
 
 ### 頁面
 - 預設頁面模板
