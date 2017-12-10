@@ -1,5 +1,5 @@
-# nctu_{scrt}
-WordPress theme for the XXX in NCTU
+# nctu_{srcs}
+WordPress theme for the SRCS in NCTU
 update date: 2017/11/14
 
 

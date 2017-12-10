@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: homepage
+ * Template Name: content_test
  */
 ?>
 
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexslider.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel.js"></script>
+
 
   <!-- Place in the <head>, after the three links -->
   <script type="text/javascript" charset="utf-8">
@@ -163,102 +163,6 @@
       </ul>
     </div>
 
-
-    <div class="post-content">
-      <div class="new_post" style="background-color: rgba(230,230,230,1); !important">  <!-- 最新消息 左邊的block-->
-        <div class="newtext">  <!-- 水平線以上的block-->
-          <p id="p_style">最新消息</p>
-          <span>
-            <a href="<?php bloginfo('template_url')?>/news_scrs" class="button_style2">更多消息</a>
-          </span>
-        </div>
-        <HR size="1px" style="width:44.828125vw; margin-left:2vw;"/>
-          <div class="news_block">
-            <?php
-            $is_multiple=False;
-            $args = array(
-            'category_name' => 'news_srcs',
-            'posts_per_page' => 8
-            );
-            $the_query = new WP_Query($args);
-            if($the_query->have_posts()):
-                while($the_query->have_posts()):
-                    $the_query->the_post();
-                    if($is_multiple):
-            ?>
-            <?php endif; ?>
-            <div class="news_block_content">  <!--每篇文章自己的block-->
-              <span class="date">
-                  <font style="font-size: 0.7em;line-height: 1.5vh;"><?php the_time('Y'); ?></font>
-                  <font style="font-size: 1em;line-height: 2.5vh;"><?php the_time('m/d'); ?></font>
-              </span>
-                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" height="40vh">
-                    <tr>
-                      <td height="40vh" width="0.625vw">　</td>
-                      <td width="1" bgcolor="#000000" height="40vh"></td>
-                      <td height="40vh" width="0.1vw">　</td>
-                    </tr>
-                </table>
-
-                <a href="<?php the_permalink(); ?>"><p id="content_text"><?php the_title(); ?></p></a>
-              </div>
-              <?php
-              $is_multiple=True;
-                endwhile;
-              else:?>
-                  <div class="hp-news_item_title">還沒發佈新文章喔！</div>
-              <?php
-              endif;
-              wp_reset_postdata();
-              ?>
-            </div>
-        </div>
-
-
-          <!--右邊的block 有講者+圖書-->
-          <div class="new_post" style="float:right; margin-right:0.78125vw; !important"> <!--右邊活動消息欄位  -->
-            <div class="right_top_block">
-              <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_01.jpg" />
-                <!--<p>人間思想第10期:</br>重返馬來亞</br>2015.09.20</p>-->
-                <p>人間思想第10期:重返馬來亞</p>
-                <p style="margin-top:0 !important">2015.09.20</p>
-              </div>
-              <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_02.jpg" />
-                <p>情緒密碼</p>
-                <p style="margin-top:0 !important">2017.10.04</p>
-              </div>
-              <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_03.jpg" />
-                <p>你問的問題決定你是誰</p>
-                <p style="margin-top:0 !important">2016.06.30</p>
-              </div>
-              <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_04.jpg" />
-                <p>咖啡聖經</p>
-                <p style="margin-top:0 !important">2012.12.12</p>
-              </div>
-            </div>
-            <div class="right_block_image">
-              <img id="person" src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="left_block_text">
-              <p style="font-size: 1.2em; line-height: 2.5vh;">年度傑出學者講座</p>
-              <p style="font-size: 1.6em; line-height: 5.625vh;">小熊英二</p>
-            </div>
-            <div class="left_block">
-            </div>
-
-          </div>
-
-
-    </div>
-
-
-
   </div><!-- /.row -->
 </div><!-- /.container -->
 </body>
-
-<?php get_template_part('includes/footer'); ?>

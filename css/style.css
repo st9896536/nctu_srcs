@@ -100,6 +100,7 @@ a{
   color: rgba(50, 50, 50, 1);
 }
 */
+/*
 p{
   font-weight: 400;
   font-size: 1em;
@@ -108,6 +109,7 @@ p{
   color: rgba(255, 255, 255, 1);
   margin-bottom:1vh;
 }
+*/
 
 .html{
   font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
@@ -245,11 +247,45 @@ p{
   border-width: 1px;
 }
 
-.nav a:focus {
+#link-as{
   border-bottom-style: solid;
   border-width: 1px;
 }
 
+/*測試php get div功能*/
+#poster-title{
+  margin-left:2vw;
+  margin-bottom:2.5vh;
+  width: 36vw;
+  font-size: 1.5em;
+  line-height: 3vh;
+}
+
+#banner_title{
+  margin-left:2vw;
+  width:36vw;
+  margin-bottom:2.5vh;
+  font-size: 1.5em;
+  line-height: 3vh;
+}
+
+/*
+.nav a:active {
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+*/
+
+.nav_active{
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+/*
+.nav a:focus {
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+*/
 .nav .icon {
   display: none;
 }
@@ -308,7 +344,7 @@ p{
 
 /* side bar*/
 .sidebarmenu{
-  width: 25vw;
+  width: 24vw;
   height: 67.75vh;
   margin-top: 32.25vh;
 }
@@ -320,7 +356,7 @@ p{
 }
 */
 .sidebarmenu a{
-  width: 22.65vw;
+  /*width: 22.65vw;*/
   height: 2.5vh;
   padding-left: 1.5625vw;
   margin-bottom: 2.75vh;
@@ -330,15 +366,31 @@ p{
 }
 
 .sidebarmenu a:hover{
-  height: 2.5vh;
+  /*height: 2.5vh;*/
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
 }
 
-.sidebarmenu a:focus{
+#link1{
+  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
+}
+
+.active{
+  width: 22.65vw;
+  height: 2.5vh;
+  padding-left: 1.5625vw;
+  margin-bottom: 2.75vh;
+  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
+  display: block;
+  text-decoration-line: none;
+}
+
+/*
+.sidebarmenu a:active{
   height: 2.5vh;
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
   display: inline-block;
 }
+*/
 
 .sidebartext{
   font-weight: 600;

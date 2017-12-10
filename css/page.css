@@ -41,6 +41,9 @@ li li, li p, li span, li p span, p span{
   margin:0;
   padding:0;
   -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  font-size: 1em;
+  color: #000;
 }
 
 body{
@@ -60,6 +63,7 @@ img {
   border:none;
 }
 
+/*
 p{
   font-size: 0.9em;
   line-height: 2vh;
@@ -69,6 +73,7 @@ p{
   height: 34.375vh;
   margin: 2vh 0;
 }
+*/
 
 .html{
   font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
@@ -139,7 +144,7 @@ p{
 
 .main_long{
   width: 69.875vw;
-  margin-top: 2vh;
+  /*margin-top: 2vh;*/
   /*height: 3.75vh;*/
   padding: 5px 0.87125vw;
   background-color: rgba(60, 0, 110, 0.8);
@@ -174,6 +179,100 @@ p{
   width: 32.8125vw;
   margin: 2vh 0;
 }
+
+.teacher_block{
+  /*width: calc(27.5vh + 100px);*/
+  width: 35.5vw;
+  height: 16.5vh;
+  margin-top: 4vh;
+  /*margin-right: calc(71.875vh - 55vh - 200px);*/
+}
+/*
+.photo_right{
+  width: calc(27.5vh + 100px);
+  height: 16.5vh;
+  float: right;
+  margin-top: 4vh;
+}
+*/
+
+.photo{
+  width:100px;
+  height:100px;
+  float: left;
+  margin-right: 1vw;
+}
+
+#t1{
+  /*width: 6.5vw;*/
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.75em;
+  letter-spacing: 0.025em;
+  color: rgba(50, 50, 50, 1);
+}
+
+#t2{
+  /*width: 6.5vw;*/
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 2.25em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.teacher{
+  width: 6.5vw;
+  display: inline-block;
+  /*margin-left: 1%;*/
+}
+
+#graduate{
+  margin-bottom: 1.5vh;
+  font-weight: 500;
+  font-size: 0.6em;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.profession{
+  float: right;
+  display: inline-block;
+  left: 100%;
+  top:0;
+  vertical-align: top;
+  width: 20vw;
+  height: 16.8vh;
+}
+
+.profession li{
+  /*
+  height: 2vh;
+  margin-bottom: 1.5vh;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  */
+  font-weight: 400;
+  font-size: 0.6em;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1.25vh;
+}
+
+.name_block span{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}

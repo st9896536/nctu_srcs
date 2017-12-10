@@ -8,10 +8,18 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
 
+  <script>
+    $('.sidebarmenu a').click(function(){
+      $('.sidebarmenu a').removeClass('.active');
+      $(this).addClass('.active');
+    });
+  </script>
 </head>
 
 <?php get_template_part('includes/header'); ?>
 <?php get_template_part('includes/sidebar'); ?>
+
+
 
 <div class="container">
   <div class="row">

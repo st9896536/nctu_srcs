@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: homepage
+ * Template Name: wordpresstest
  */
 ?>
 
@@ -15,71 +15,28 @@
 
   <!-- Place in the <head>, after the three links -->
   <script type="text/javascript" charset="utf-8">
-
   $(window).load(function() {
     $('.flexslider').flexslider({
-      animation: "slide",
-      controlNav: true,
-      directionNav: true,
-      after: function(slides){
-        var newtext = '';
-        switch(slides.currentSlide){
-            case 0:
-                <?php
-                $url = site_url('/en/poster_change/');
-                $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title1">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
-
-                ?>
-                newtext = "<?php echo $second_step[0];?>";
-                break;
-            case 1:
-                <?php
-                $url = site_url('/en/poster_change_2/');
-                $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title2">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
-
-                ?>
-                newtext = "<?php echo $second_step[0];?>";
-                break;
-            case 2:
-                <?php
-                $url = site_url('/en/poster_change_3/');
-                $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title3">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
-
-                ?>
-                newtext = "<?php echo $second_step[0];?>";
-                break;
-            case 3:
-                <?php
-                $url = site_url('/en/poster_change/');
-                $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title1">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
-
-                ?>
-                newtext = "<?php echo $second_step[0];?>";
-                break;
-            case 4:
-                <?php
-                $url = site_url('/en/poster_change_3/');
-                $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title3">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
-
-                ?>
-                newtext = "<?php echo $second_step[0];?>";
-                break;
-        }
-        $('#poster-title').html(newtext);
-    }
+      animation: "slide"
+    });
   });
-});
+/*
+  var windowHeight = window.innerHeight,
+    gridTop = windowHeight * 0.2,
+    gridBottom = windowHeight * 0.8;
+    $(window).on('scroll', function() {
+      $('left_block').each(function() {
+      var thisTop = jQuery(this).offset().top - $(window).scrollTop();
+      if (thisTop >= gridTop && (thisTop + $(this).height()) <= gridBottom) {
+        $(".left_block").addClass(".left_block_animation");
+      } else {
+        $(".left_block").removeClass(".left_block_animation");
+      }
+    });
+  });
 
+  $(window).trigger('scroll');
+*/
 
   $(window).ready(function(){
       $(window).scroll(function(){
@@ -99,7 +56,6 @@
 
 <div class="container">
   <div class="row">
-
     <div class="content">
       <span class="content_left"></span>
       <span class="content_right">
@@ -107,23 +63,17 @@
           <p>交通大學人才曜昇計畫</p>
           <p>2017 春季駐校課程</p>
         </div>
+        <p id="banner_title">
+          <!--動態更換div(banner_title)-->
+          <?php
+          $url = site_url('/en/poster_change_2/');
+          $content = file_get_contents($url);
+          $first_step = explode( '<p id="test_title2">' , $content );
+          $second_step = explode("</p>" , $first_step[1] );
 
-
-
-        <!--動態更換poster的標題-->
-
-        <p id="poster-title">
-            <?php
-            $url = site_url('/en/poster_change/');
-            $content = file_get_contents($url);
-            $first_step = explode( '<p id="test_title1">' , $content );
-            $second_step = explode("</p>" , $first_step[1] );
-
-            echo $second_step[0];
-            ?>
+          echo $second_step[0];
+          ?>
         </p>
-
-
         <HR size="1px" color="#ffe6a0">
         <div class="textbox2">
           <p id="p_text">每周二下午1:30-4:30</p>
@@ -139,26 +89,22 @@
           <img src="<?php bloginfo('template_url'); ?>/images/bg.jpg" />
         </li>
         <li>
-          <a href="<?php echo site_url(); ?>/poster_change_2">
+          <a href="<?php echo site_url(); ?>/poster_change">
             <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_1.png" />
-
           </a>
         </li>
         <li>
-          <a href="<?php echo site_url(); ?>/poster_change_3">
+          <a href="<?php echo site_url(); ?>/poster_change_2">
             <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_2.png" />
-
           </a>
         </li>
         <li>
           <a href="<?php echo site_url(); ?>/poster_change_3">
             <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_3.png" />
-
           </a>
         </li>
         <li>
           <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_4.png" />
-
         </li>
       </ul>
     </div>
@@ -178,7 +124,7 @@
             $is_multiple=False;
             $args = array(
             'category_name' => 'news_srcs',
-            'posts_per_page' => 8
+            'posts_per_page' => 4
             );
             $the_query = new WP_Query($args);
             if($the_query->have_posts()):
@@ -251,8 +197,6 @@
             </div>
 
           </div>
-
-
     </div>
 
 

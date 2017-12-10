@@ -10,6 +10,19 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
+
+    <script>
+    /*
+      $('.nav a').click(function(){
+        $('.nav a').removeClass('.nav_active');
+        $(this).addClass('.nav_active');
+      });
+    */
+    $('.nav a').mouseenter(function() {
+      $(this).siblings().removeClass('nav_active');
+      $(this).addClass('nav_active');
+});
+    </script>
 </head>
 
 
@@ -33,11 +46,11 @@
       <div><?php get_template_part('includes/navbar-search'); ?>
       <div class="nav" id="top-menu">
         <a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
-        <a href="<?php echo site_url(); ?>/aboutus">研究發展</a>
-        <a href="<?php echo site_url(); ?>/aboutus">課程規劃</a>
-        <a href="<?php echo site_url(); ?>/aboutus" style="width:3.125vw !important;">招生</a>
-        <a href="<?php echo site_url(); ?>/aboutus">國際交流</a>
-        <a href="<?php echo site_url(); ?>/aboutus">學生專區</a>
+        <a href="#">研究發展</a>
+        <a href="#">課程規劃</a>
+        <a href="#" style="width:3.125vw !important;">招生</a>
+        <a href="#">國際交流</a>
+        <a href="#">學生專區</a>
       </div>
         <!--<a id="nav-more"style="font-size:15px;" class="icon">&#9776;</a>-->
       </div>
