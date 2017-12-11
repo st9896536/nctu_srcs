@@ -4,6 +4,7 @@
  */
 ?>
 
+<?php $thisPage="guest-professor"; ?>
 
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />

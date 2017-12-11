@@ -57,6 +57,7 @@ body{
 font{
   font-weight: 600;
   color: #fff;
+  letter-spacing: 0.1em;
 }
 
 img {
@@ -128,11 +129,12 @@ p{
 }
 
 .main{
-  float: right;
+  /*float: right;*/
   width: 75vw;
   /*height: 67.75vh;*/
   /*margin-top: 32.25vh;*/
   /*margin-right: -19px;*/
+  margin-left: 24vw;
   margin-top: -67.5vh;
 }
 
@@ -143,7 +145,7 @@ p{
 }
 
 .main_long{
-  width: 69.875vw;
+  width: 71.875vw;
   /*margin-top: 2vh;*/
   /*height: 3.75vh;*/
   padding: 5px 0.87125vw;
@@ -152,6 +154,7 @@ p{
 
 .main_short{
   /*width: 28.8125vw;*/
+  width: 100%;
   padding: 5px 0.87125vw;
   /*height: 3.7vh;*/
   background-color: rgba(60, 0, 110, 0.8);
@@ -185,6 +188,7 @@ p{
   width: 35.5vw;
   height: 16.5vh;
   margin-top: 4vh;
+  margin-right: -2%;
   /*margin-right: calc(71.875vh - 55vh - 200px);*/
 }
 /*
@@ -207,7 +211,7 @@ p{
   /*width: 6.5vw;*/
   font-weight: 500;
   font-size: 1em;
-  line-height: 1.75em;
+  line-height: 1.25em;
   letter-spacing: 0.025em;
   color: rgba(50, 50, 50, 1);
 }
@@ -230,8 +234,8 @@ p{
 #graduate{
   margin-bottom: 1.5vh;
   font-weight: 500;
-  font-size: 0.6em;
-  line-height: 1.25em;
+  font-size: 0.75em;
+  line-height: 0.75em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
@@ -257,7 +261,7 @@ p{
   color: rgba(50, 50, 50, 1);
   */
   font-weight: 400;
-  font-size: 0.6em;
+  font-size: 1em;
   line-height: 1.25em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -273,6 +277,47 @@ p{
 }
 
 
+/*行政人員內頁css*/
+
+
+
+.professor_big_image{
+  width:98%;
+  height: 43.75vh;
+  margin-top: 3vh;
+  z-index: -1;
+}
+
+.professor_block_text1 p{
+  font-weight: 400;
+  font-size: 1.6em;
+  /*line-height: 3.25em;*/
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,1);
+}
+
+.professor_block_text2 p{
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 4.75vh;
+  letter-spacing: 0.3em;
+  color: rgba(255,255,255,1);
+}
+
+.professor_block_text3 p{
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,1);
+  border-top: rgba(255, 255, 255, 1) solid;
+}
+
+#hr-line hr{
+  display: block;
+  /*color: rgba(255,255,255,0.8);*/
+  position: relative;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}

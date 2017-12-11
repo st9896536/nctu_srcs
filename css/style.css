@@ -355,6 +355,17 @@ p{
   margin-bottom: 2.75vh;
 }
 */
+/*
+.sidebarmenu ul{
+  padding-left: 1.5625vw;
+}
+
+.sidebarmenu li{
+  height: 2.5vh;
+  padding-left: 1.5625vw;
+  margin-bottom: 2.75vh;
+}
+*/
 .sidebarmenu a{
   /*width: 22.65vw;*/
   height: 2.5vh;
@@ -363,6 +374,10 @@ p{
   border-left: 0.78125vw rgba(255, 255, 255, 0) solid;
   display: block;
   text-decoration-line: none;
+}
+
+#currentpage{
+  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
 }
 
 .sidebarmenu a:hover{
@@ -375,13 +390,7 @@ p{
 }
 
 .active{
-  width: 22.65vw;
-  height: 2.5vh;
-  padding-left: 1.5625vw;
-  margin-bottom: 2.75vh;
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
-  display: block;
-  text-decoration-line: none;
 }
 
 /*

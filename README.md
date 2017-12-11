@@ -19,14 +19,14 @@ update date: 2017/12/10
 	- single.php
 
 ### 關於本所
-	- 關於本所
-		- page-tepmlates/template-aboutus.php
-	- 專任師資
-		- page-tepmlates/template-full-time-teacher.php
-	- 兼任師資
-		- page-tepmlates/template-adjunct-teacher.php
-	- 客座教授
-		- page-tepmlates/template-guest-professor.php
+- 關於本所
+	- page-tepmlates/template-aboutus.php
+- 專任師資
+	- page-tepmlates/template-full-time-teacher.php
+- 兼任師資
+	- page-tepmlates/template-adjunct-teacher.php
+- 客座教授
+	- page-tepmlates/template-guest-professor.php
 
 
 ### 頁面
