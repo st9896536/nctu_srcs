@@ -169,7 +169,7 @@ p{
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
-  width: 32.8125vw;
+  width: 34.8125vw;
   /*height: 34.375vh;*/
   margin: 2vh 0;
 }
@@ -283,9 +283,10 @@ p{
 
 .professor_big_image{
   width:98%;
-  height: 43.75vh;
+  height: 54.75vh;
   margin-top: 3vh;
   z-index: -1;
+  margin-bottom: 4vh;
 }
 
 .professor_block_text1 p{
@@ -317,6 +318,176 @@ p{
   display: block;
   /*color: rgba(255,255,255,0.8);*/
   position: relative;
+}
+
+/*行政人員內文樣式*/
+
+#n1{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1vh;
+}
+
+#n2{
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1vh;
+}
+
+.staff_data li, .job_content li{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 2.25vh;
+  letter-spacing: 0em;
+}
+
+/*在校生樣式*/
+
+.button_style_black{  /*依領域*/
+  border-radius: 5px;
+  text-decoration-line: none;
+  text-align: justify;
+  padding: 2px 10px;
+  background-color: #000;
+  border: 1px solid rgba(50, 50, 50, 1);
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.25vh;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 0.9375vw;
+}
+
+.button_style_white{  /*依領域*/
+  border-radius: 5px;
+  text-decoration-line: none;
+  text-align: justify;
+  padding: 2px 10px;
+  background-color: rgba(220, 220, 220, 1);
+  border: 1px solid rgba(225, 225, 225, 1);
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.25vh;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 0.9375vw;
+}
+
+.category{
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 0.75vh;
+}
+
+.names{
+  height: 13.5vh;
+  width: 36.6vw;
+}
+
+.names ol{
+  margin-bottom: 2vh;
+}
+
+.names li{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  display: -webkit-inline-box;
+  margin-right: 1.5625vw;
+}
+
+/*畢業生樣式*/
+
+.photo-graduate{
+  display: inline-block;
+  width:31.25vh;
+  height:31.25vh;
+  margin-right:3.5vw;
+  position: relative;
+  overflow: hidden;
+  /*transform:translate(-50%,-50%);*/
+  -moz-box-shadow: -4px -4px 3px rgba(20%,20%,40%,0.5);
+  -webkit-box-shadow: -4px -4px 3px rgba(20%,20%,40%,0.5);
+  box-shadow: -2px 2px 34px 0px rgba(20%,20%,40%,0.5);
+}
+
+.photo-graduate img{
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+#g1{ /*畢業生姓名*/
+  font-weight: 600;
+  font-size: 2.2em;
+  line-height: 4vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  width: fit-content;
+}
+
+#g2{ /*畢業生職業*/
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  width: fit-content;
+}
+
+.education p{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+#graduate_email{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.75vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.experience p{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1vh;
+}
+
+.back-to-list{
+  border-radius: 60px;
+  text-align: justify;
+  padding: 24px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 1);
+  margin-right: 0.9375vw;
+  text-decoration-line: unset;
 }
 
 @media screen and (max-width: 600px) {

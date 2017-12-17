@@ -26,8 +26,14 @@
 					</ol>
 				</div>
 				<div class="footer_text2">
+					<ol class="v">
+						<li id="school" style="font-size: 1.3em; font-weight: 400;">國立交通大學</li>
+						<li id="graduate-school" style="font-weight: 400; font-size: 1.3em;">社會與文化研究所</li>
+					</ol>
+					<!--
 					<p>國立交通大學</p>
 					<p style="font-size: 1.3em; line-height: 3vh; !important">社會與文化研究所</p>
+				-->
 				</div>
 				<div class="footer_text3">
 					<ol class="v">

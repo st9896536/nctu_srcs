@@ -29,7 +29,7 @@
   <a <?php if ($URL=="<?php echo site_url(); ?>/adjunct-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/adjunct-teacher" class="sidebartext">兼任師資</a>
   <a <?php if ($URL=="<?php echo site_url(); ?>/guest-professor") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/guest-professor" class="sidebartext">客座教授</a>
   <a <?php if ($URL=="<?php echo site_url(); ?>/administration-staff") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/administration-staff" class="sidebartext">行政人員</a>
-  <a href="#" class="sidebartext">在校生</a>
+  <a <?php if ($thisPage=="current_student") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/current-student" class="sidebartext">在校生</a>
   <a href="#" class="sidebartext">畢業生</a>
 </div>
 
