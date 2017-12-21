@@ -201,8 +201,8 @@ p{
 */
 
 .photo{
-  width:100px;
-  height:100px;
+  width: auto;
+  height: auto;
   float: left;
   margin-right: 1vw;
 }
@@ -235,7 +235,7 @@ p{
   margin-bottom: 1.5vh;
   font-weight: 500;
   font-size: 0.75em;
-  line-height: 0.75em;
+  line-height: 1.25em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
@@ -391,7 +391,8 @@ p{
 }
 
 .names{
-  height: 13.5vh;
+  margin-top: 0.5vh;
+  height: 10vh;
   width: 36.6vw;
 }
 
@@ -405,8 +406,9 @@ p{
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
-  display: -webkit-inline-box;
   margin-right: 1.5625vw;
+  list-style: none;
+  display: inline;
 }
 
 /*畢業生樣式*/
@@ -488,6 +490,97 @@ p{
   color: rgba(0, 0, 0, 1);
   margin-right: 0.9375vw;
   text-decoration-line: unset;
+}
+
+/*研究方向樣式*/
+.direction p{
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 3vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+#content{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  text-align: justify;
+}
+
+/*首頁--消息清單頁*/
+.newslist-title{
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.btn_left{
+  float: left;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/btn/btn_left_rv.png);
+  background-size: cover;
+}
+
+.btn_right{
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/btn/btn_right_rv.png);
+  background-size: cover;
+  margin-right: 0.75vw;
+}
+
+#jump_to{
+  position: absolute;
+  float: left;
+  height: 20px;
+  width: 6.5vw;
+  vertical-align: top;
+  display: inline-block;
+  border: solid 1px #323232;
+  border-radius: 0.5vmin;
+  margin: 0.5;
+}
+.btn-go{
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/btn/btn_ok_rv.png);
+  background-size: cover;
+}
+
+.page-style{
+  margin: 0 0.5vw;
+}
+
+.page-now{
+  padding: 0 0.8vw 0 0.5vw;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #000;
+  height: 2.5vh;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.page-all{
+  padding: 0vw 0.5vw;
+  height: 2.5vh;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  color: rgba(50, 50, 50, 1);
 }
 
 @media screen and (max-width: 600px) {

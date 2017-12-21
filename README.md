@@ -27,6 +27,22 @@ update date: 2017/12/10
 	- page-tepmlates/template-adjunct-teacher.php
 - 客座教授
 	- page-tepmlates/template-guest-professor.php
+- 行政人員
+	- page-tepmlates/template-administration-staff.php
+- 在校生
+	- page-tepmlates/template-current-student.php
+- 在校生(依學年)
+	- page-tepmlates/template-current-student-year.php
+- 畢業生
+	- page-tepmlates/template-graduate.php
+
+### 研究發展
+- 研究方向
+	- page-tepmlates/template-research-direction.php
+- 教師著作
+	- page-tepmlates/template-teachers-works.php
+- 研究計畫
+	- page-tepmlates/template-research-proposal.php
 
 
 ### 頁面

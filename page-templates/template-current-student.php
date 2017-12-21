@@ -33,7 +33,7 @@
   <a <?php if ($thisPage=="guest-professor") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/guest-professor" class="sidebartext">客座教授</a>
   <a <?php if ($thisPage=="administration-staff") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/administration-staff" class="sidebartext">行政人員</a>
   <a <?php if ($thisPage=="current-student") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/current-student" class="sidebartext">在校生</a>
-  <a href="#" class="sidebartext">畢業生</a>
+  <a <?php if ($thisPage=="graduate") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/graduate" class="sidebartext">畢業生</a>
 </div>
 
 
@@ -52,7 +52,7 @@
 
         <div class="block_content" style="width:72.875vw;">
           <!--左邊區塊-->
-          <div class="main_block" style=" width: 34.6vw; margin-right:4.3125vw;">
+          <div class="main_block" style=" width: 34.6vw; float:left; display:inline-block; /*margin-right:4.3125vw;*/">
             <div class="category" >社會學類</div>
             <HR size="1px" color="#4F4F4F">
             <div class="names">
@@ -105,7 +105,7 @@
             </div>
           </div>
           <!--右邊區塊-->
-          <div class="main_block" style=" width: 34.6vw; float:right; margin-top: -49vh;">
+          <div class="main_block" style=" width: 34.6vw; float:right; vertical-align:top;">
             <div class="category" >社會學類</div>
             <HR size="1px" color="#4F4F4F">
             <div class="names">

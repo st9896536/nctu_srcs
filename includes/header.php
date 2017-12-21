@@ -46,7 +46,7 @@
       <div><?php get_template_part('includes/navbar-search'); ?>
       <div class="nav" id="top-menu">
         <a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
-        <a href="#">研究發展</a>
+        <a href="<?php echo site_url(); ?>/research-direction">研究發展</a>
         <a href="#">課程規劃</a>
         <a href="#" style="width:3.125vw !important;">招生</a>
         <a href="#">國際交流</a>

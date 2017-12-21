@@ -288,24 +288,6 @@ font{   /*最新消息內文樣式*/
 }
 
 /*更多消息*/
-/*
-.button_style2{
-  float: right;
-  width: 6.25vw;
-  margin-top: -3.5vh;
-  margin-right: -6.5vw;
-  border-radius: 3px;
-  border: 1px solid rgba(100, 100, 100, 1);
-  font-size: 0.7em;
-  text-decoration-line: none;
-  text-align: center;
-  cursor: pointer;
-  padding: 1px 0px;
-  line-height: 2.5vh;
-  letter-spacing: 0.35em;
-  color: rgba(100, 100, 100, 1);
-}
-*/
 
 .button_style2{
   float: right;
@@ -324,8 +306,9 @@ font{   /*最新消息內文樣式*/
 }
 
 .button_style2:hover{
-  background-color: rgba(255, 255, 255, 1);
-  color:rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
+  color:rgba(255, 255, 255, 255);
+  border-color: rgba(0, 0, 0, 1);
 }
 
 .news_block{   /*最新消息的內文框框*/
@@ -344,18 +327,23 @@ font{   /*最新消息內文樣式*/
 
 .news_block_content p{ /*最新消息文章內文樣式*/
   width: 39vw;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 2.4vh;
   color: rgba(50, 50, 50, 1);
   margin-left: 6.125vw;
   margin-top: -4.5vh;
   display: inline-block;
   vertical-align: top;
+  padding-left: 0.625vw;
 }
 
 .date{
   float: left;
-  width: 3.5vw;
+  width: 4.5vw;
+  padding-right: 0.625vw;
+  border-right-style: solid;
+  border-right-color: #000;
+  border-right-width: 1px;
 }
 
 .vertical_line{

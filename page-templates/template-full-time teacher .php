@@ -5,7 +5,7 @@
 ?>
 
 
-<?php $thisPage="full-time teacher"; ?>
+<?php $thisPage="full-time-teacher"; ?>
 
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
@@ -21,12 +21,12 @@
   echo $URL;
   ?>
   <a <?php if ($thisPage=="aboutus") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/aboutus" class="sidebartext">關於本所</a>
-  <a <?php if ($thisPage=="full-time teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/full-time-teacher" class="sidebartext">專任師資</a>
+  <a <?php if ($thisPage=="full-time-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/full-time-teacher" class="sidebartext">專任師資</a>
   <a <?php if ($thisPage=="adjunct-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/adjunct-teacher" class="sidebartext">兼任師資</a>
   <a <?php if ($thisPage=="guest-professor") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/guest-professor" class="sidebartext">客座教授</a>
   <a <?php if ($thisPage=="administration-staff") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/administration-staff" class="sidebartext">行政人員</a>
-  <a href="#" class="sidebartext">在校生</a>
-  <a href="#" class="sidebartext">畢業生</a>
+  <a <?php if ($thisPage=="current-student") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/current-student" class="sidebartext">在校生</a>
+  <a <?php if ($thisPage=="graduate") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/graduate" class="sidebartext">畢業生</a>
 </div>
 
 
@@ -301,7 +301,7 @@
         <!--左邊老師欄位-->
         <div class="teacher_block">
           <div class="photo">
-          <img src="<?php bloginfo('template_url'); ?>/images/professor/prof蔡晏霖_photo1-01.jpg" />
+          <img src="<?php bloginfo('template_url'); ?>/images/professor/prof蔡晏霖_photo1.jpg" />
           </div>
           <span class="teacher">
             <div id="t1">合聘副教授</div>

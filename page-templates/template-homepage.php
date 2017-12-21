@@ -169,7 +169,7 @@
         <div class="newtext">  <!-- 水平線以上的block-->
           <p id="p_style">最新消息</p>
           <span>
-            <a href="<?php bloginfo('template_url')?>/news_scrs" class="button_style2">更多消息</a>
+            <a href="<?php bloginfo('template_url')?>/newslist" class="button_style2">更多消息</a>
           </span>
         </div>
         <HR size="1px" style="width:44.828125vw; margin-left:2vw;"/>
@@ -192,6 +192,7 @@
                   <font style="font-size: 0.7em;line-height: 1.5vh;"><?php the_time('Y'); ?></font>
                   <font style="font-size: 1em;line-height: 2.5vh;"><?php the_time('m/d'); ?></font>
               </span>
+              <!--
                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" height="40vh">
                     <tr>
                       <td height="40vh" width="0.625vw">　</td>
@@ -199,6 +200,7 @@
                       <td height="40vh" width="0.1vw">　</td>
                     </tr>
                 </table>
+              -->
 
                 <a href="<?php the_permalink(); ?>"><p id="content_text"><?php the_title(); ?></p></a>
               </div>
