@@ -44,6 +44,7 @@ li li, li p, li span, li p span, p span{
   font-weight: 500;
   font-size: 1em;
   color: #000;
+  text-decoration-line: none;
 }
 
 body{
@@ -524,7 +525,7 @@ p{
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/btn/btn_left_rv.png);
+  background-image: url(../images/btn/btn_list_left.svg);
   background-size: cover;
 }
 
@@ -533,7 +534,7 @@ p{
   vertical-align: top;
   width: 20px;
   height: 20px;
-  background-image: url(../images/btn/btn_right_rv.png);
+  background-image: url(../images/btn/btn_list_right.svg);
   background-size: cover;
   margin-right: 0.75vw;
 }
@@ -554,7 +555,7 @@ p{
   float: right;
   width: 20px;
   height: 20px;
-  background-image: url(../images/btn/btn_ok_rv.png);
+  background-image: url(../images/btn/btn_list_go.svg);
   background-size: cover;
 }
 
@@ -581,6 +582,212 @@ p{
   font-size: 1.2em;
   line-height: 2.5vh;
   color: rgba(50, 50, 50, 1);
+}
+
+/*教師著作*/
+
+.book_block{
+  width: 66.5vw;
+  height: 25vh;
+  background-color: rgba(230, 230, 230, 1);
+  margin-bottom: 2vh;
+}
+
+.book_block img{
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  box-shadow: 0px 0px 17px -1px rgba(20%,20%,40%,0.5);
+}
+
+#click_Y_book{
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 2vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.other_Y_block{
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: rgba(230, 230, 230, 1);
+  margin-top:2vh;
+  height:1.5vh;
+}
+
+.book_content_block{
+  padding: 0 2.8vw;
+  width: 45vw;
+  display: inline-block;
+  margin-top: 3vh;
+  border-left: #d6d6d6 solid 2px;
+}
+
+.book_content_title{
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.subtitle1{
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 2.5vh;
+  color: rgba(50, 50, 50, 1);
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+}
+
+.subtitle2{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+/*研究計畫樣式*/
+
+.title_r{
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 3vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  float: left;
+  width: 24vw;
+}
+
+.plan_block{
+  width: 73vw;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  padding: 1vh 0.8vw;
+  border-bottom: #000 solid 1px;
+}
+
+.plan_detail{
+  width: 73vw;
+  padding: 1vh 0.8vw;
+  border-bottom: #000 solid 1px;
+}
+
+.botton_style_plan1{
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 2vh;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 6px 15px;
+  background-color: rgba(60, 0, 110, 0.8);
+  letter-spacing: 0.1em;
+  margin-right: 0.25vw;
+}
+
+#planname_style{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  display: inline-block;
+
+}
+
+/*最新消息內頁樣式*/
+
+.title_year{
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.title_date{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  /*text-decoration-line: none;*/
+  padding: 1px 6px;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.host,
+.speaker{
+  width:4vw;
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+  text-align: -webkit-center;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  /*text-decoration-line: none;*/
+  padding: 3px 1px;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.title_chi{
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.time{
+  float: left;
+  display: inline-block;
+  width: 6.25vw;
+  margin-right: 1vw;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50 ,50, 1);
+}
+
+.place{
+  width: 43vw;
+  margin-left: 1vw;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 2vh;
+  color: rgba(50, 50 ,50, 1);
+  letter-spacing: 0.1em;
+}
+
+.button_register,
+.button_website
+{
+  border-radius: 5px;
+  text-decoration-line: none;
+  text-align: justify;
+  padding: 2px 5px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.25vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.detail_info p{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2.5vh;
+  color: rgba(50, 50, 50, 1);
+  margin: 1vh 0;
 }
 
 @media screen and (max-width: 600px) {

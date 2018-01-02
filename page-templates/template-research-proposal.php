@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: graduate
+ * Template Name: research-proposal
  */
 ?>
 
@@ -20,20 +20,8 @@
 </head>
 
 <?php get_template_part('includes/header'); ?>
-</?php get_template_part('includes/sidebar'); ?>
-<div class="sidebarmenu">
+<?php get_template_part('includes/sidebar-research'); ?>
 
-  </?php $URL=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-  echo $URL;
-  ?>
-  <a <?php if ($thisPage=="aboutus") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/aboutus" class="sidebartext">關於本所</a>
-  <a <?php if ($thisPage=="full-time-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/full-time-teacher" class="sidebartext">專任師資</a>
-  <a <?php if ($thisPage=="adjunct-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/adjunct-teacher" class="sidebartext">兼任師資</a>
-  <a <?php if ($thisPage=="guest-professor") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/guest-professor" class="sidebartext">客座教授</a>
-  <a <?php if ($thisPage=="administration-staff") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/administration-staff" class="sidebartext">行政人員</a>
-  <a <?php if ($thisPage=="current-student") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/current-student" class="sidebartext">在校生</a>
-  <a <?php if ($thisPage=="graduate") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/graduate" class="sidebartext">畢業生</a>
-</div>
 
 <body>
 
@@ -42,59 +30,52 @@
   <div class="row">
 
     <div class="main">
-      <div class="photo-graduate">
-        <img src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+      <div class="title_block">
+        <div class="title_r">研究計畫</div>
+        <div class="button" style="display:inline-block;">
+          <a href="#" class="botton_style_plan1">行政院國科會輔助專題研究計畫</a>
+        </div>
+        <div class="button" style="display:inline-block;">
+          <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">其他學術單位委託研究計畫</a>
+        </div>
+        <div class="button" style="display:inline-block;">
+          <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">整合型研究或計畫</a>
+        </div>
       </div>
-      <div class="graduate-data" style="width:50vw; height:31.25vh; display:inline-block; vertical-align: top;">
-        <!--回列表-->
-
-        <div class="list_div" style="float: right; margin-top:5vh; margin-bottom: 3vh; display: inline-block;">
-          <a href="#" class="back-to-list">回列表</a>
-        </div>
-
-        <div class="border" style="width: 52.5vw;  padding-right: 1vw;  border-right-color: rgba(60, 0, 110, 0.8);  border-right-style: solid;  border-right-width: 0.5vw;">
-          <!--畢業生姓名-->
-          <div class="graduate-name" style="width:34vw; height:4vh; margin-top:2vh;">
-
-            <span style="padding-right: 1.7vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
-              <p id="g1">闞 清子</p>
-            </span>
-
-            <span style="padding-left: 1.7vw;vertical-align: top;display: inline-block; ">
-              <p id="g1">Kan, Qing-Zi</p>
-            </span>
-          </div>
-          <!--畢業生職業-->
-          <div class="graduate-name" style="width:34vw; height:2.5vh; margin-top:1vh; margin-bottom:2.5vh;">
-            <span style="padding-right: 1.2vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
-              <p id="g2">自由演員</p>
-            </span>
-
-            <span style="padding-left: 1.2vw;vertical-align: top;display: inline-block; ">
-              <p id="g2">Freelence</p>
-            </span>
-          </div>
-
-          <div class="description" style="font-weight: 500;font-size: 1.5em;line-height: 3vh;  letter-spacing: 0.1em;  color: rgba(50, 50, 50, 1); margin-bottom:5vh;"><p>萬般過眼成空。</p></div>
+      <!--研究計畫內文-->
+      <div class="plan_block">
+        <div id="planname_style" style="width:48vw;">專題研究計畫名稱</div>
+        <div id="planname_style" style="width:14.5vw;">計畫期間</div>
+        <div id="planname_style" style="width:9.7vw;">主持人/共同主持人</div>
       </div>
-        <div class="education" style="height:5vh; margin-bottom:2.25vh;">
-          <p style="margin-bottom:0.75vh;">電影學院表演系 畢</p>
-          <p>舞台表演、電影表演</p>
+
+      <div class="plan_detail">
+        <div class="plan_content"> <!--單一個計劃的block-->
+          <div id="planname_style" style="width:48vw; margin-bottom: 2vh;">一分為二：中國現代政治思想的拓撲學研究</div>
+          <div id="planname_style" style="width:14.5vw; margin-bottom: 2vh;">106/08/01-108/07/31</div>
+          <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;">劉紀蕙</div>
+        </div>
+        <div class="plan_content"> <!--單一個計劃的block-->
+          <div id="planname_style" style="width:48vw; margin-bottom: 2vh;">江戶與明治日本的臺灣歷史書寫</div>
+          <div id="planname_style" style="width:14.5vw; margin-bottom: 2vh;">106/08/01-108/07/31</div>
+          <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;">藍弘岳</div>
+        </div>
+        <div class="plan_content"> <!--單一個計劃的block-->
+          <div id="planname_style" style="width:48vw; margin-bottom: 2vh;">戰後台灣文化菁英的社會學描述I：文學場域(1/2)</div>
+          <div id="planname_style" style="width:14.5vw; margin-bottom: 2vh;">106/08/01-108/07/31</div>
+          <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;">邱德亮</div>
+        </div>
+        <div class="plan_content"> <!--單一個計劃的block-->
+          <div id="planname_style" style="width:48vw; margin-bottom: 2vh;">穿行於革命、戰爭與城鄉之間：師陀與現代中國的歷史轉折(1/2)</div>
+          <div id="planname_style" style="width:14.5vw; margin-bottom: 2vh;">106/08/01-108/07/31</div>
+          <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;">彭明偉</div>
+        </div>
+        <div class="plan_content"> <!--單一個計劃的block-->
+          <div id="planname_style" style="width:48vw; margin-bottom: 2vh;">自由或合作？1950年代台灣的《自由中國》與《新社會》</div>
+          <div id="planname_style" style="width:14.5vw; margin-bottom: 2vh;">106/08/01-108/07/31</div>
+          <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;">林淑芬</div>
         </div>
 
-        <div class="education" style="height:4vh; margin-bottom:3vh;">
-          <p id="graduate_email" style="margin-bottom:0.75vh;">justtest1234@gmail.com</p>
-          <p>www.justtest1234.com.tw</p>
-        </div>
-
-        <div class="experience" style="width:47.75vw; height:auto;">
-
-            <p>2009年，在電視劇《娘妻》飾演楊靜怡正式出道。</p>
-            <p>2011年，參演古裝言情劇《新還珠格格》，飾演欣榮格格，該劇在優酷大劇盛典上榮獲年度十大電視劇優秀獎。</p>
-            <p>2013年，參演青春偶像劇《璀璨人生》，飾演葉琳，被觀眾所熟知；同年參演民國年代劇《新京華煙雲》，飾演姚莫愁。</p>
-            <p>2014年在家族鬥爭劇《繼承人》中首次擔綱女主角，飾演何星然。</p>
-
-        </div>
       </div>
 
 

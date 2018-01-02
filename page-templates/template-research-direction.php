@@ -32,7 +32,7 @@
       <!--社會文化批判理論-->
       <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3.125vw;  display: inline-block;">
         <div class="circle" style="width: 25vh; height: 25vh; ">
-          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_01.jpg" />
         </div>
         <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>社會文化批判理論</p></div>
         <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -51,7 +51,7 @@
       <!--台灣社會與文化-->
       <div class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3.125vw; vertical-align: top;display: inline-block;">
         <div class="circle" style="width: 25vh; height: 25vh; ">
-          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_02.jpg" />
         </div>
         <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>台灣社會與文化</p></div>
         <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -66,7 +66,7 @@
       <!--東亞歷史與文化-->
       <div class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3.125vw; vertical-align: top;display: inline-block;">
         <div class="circle" style="width: 25vh; height: 25vh; ">
-          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_03.jpg" />
         </div>
         <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>東亞歷史與文化</p></div>
         <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -85,7 +85,7 @@
 
       <div class="direction" style="width: 25vh;margin-bottom: 5vh;vertical-align: top;display: inline-block;">
         <div class="circle" style="width: 25vh; height: 25vh; ">
-          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+          <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_04.jpg" />
         </div>
         <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>藝術社會行動</p></div>
         <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
