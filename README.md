@@ -1,6 +1,6 @@
 # nctu_{srcs}
 WordPress theme for the 社文所 in NCTU
-update date: 2017/12/10
+update date: 2017/12/21
 
 
 ## Used Plugins
