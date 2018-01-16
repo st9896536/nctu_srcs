@@ -399,6 +399,7 @@ p{
 
 .names ol{
   margin-bottom: 2vh;
+  width: 36vw;
 }
 
 .names li{
@@ -409,7 +410,7 @@ p{
   color: rgba(50, 50, 50, 1);
   margin-right: 1.5625vw;
   list-style: none;
-  display: inline;
+  display: inline-block;
 }
 
 /*畢業生樣式*/
@@ -683,7 +684,7 @@ p{
   color: rgba(255, 255, 255, 1);
   border-radius: 5px;
   text-decoration-line: none;
-  padding: 6px 15px;
+  padding: 6px 9px;
   background-color: rgba(60, 0, 110, 0.8);
   letter-spacing: 0.1em;
   margin-right: 0.25vw;
@@ -734,8 +735,6 @@ p{
   padding: 1px 6px;
   background-color: rgba(50, 50, 50, 1);
   */
-
-
 
   width:4vw;
   font-weight: 300;
@@ -812,6 +811,102 @@ p{
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
+}
+
+/*海報直式樣式*/
+#title_chi{
+  font-weight: 400;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1vh;
+}
+
+#title_eng{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1.25vh;
+}
+
+.poster_year{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  /*text-decoration-line: none;*/
+  padding: 2px 6px;
+  background-color: rgba(50, 50, 50, 1);
+  display: inline-block;
+  float: left;
+}
+
+.poster_date{
+  margin-left: 0.75vw;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50 ,50, 1);
+  display: inline-block;
+}
+
+#place_chi{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50 ,50, 1);
+}
+
+#place_eng{
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 2vh;
+  color: rgba(50, 50 ,50, 1);
+}
+
+.lecturer p{
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: rgba(50, 50 ,50, 1);
+  width:37.5vw;
+}
+
+.go_register,
+.go_website{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50 ,50, 1);
+}
+
+.content_guideline p{
+  width: 37.5vw;
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: rgba(50, 50 ,50, 1);
+  margin-bottom: 5vh;
+}
+
+.num_button{
+  border-radius: 100px;
+  text-align: justify;
+  padding: 2px 8px;
+  background-color: #000;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 1);
+  text-decoration-line: unset;
 }
 
 @media screen and (max-width: 600px) {

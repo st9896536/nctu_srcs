@@ -30,17 +30,20 @@
   <div class="row">
 
     <div class="main">
-      <div class="title_block">
+      <div class="title_block" style="width:73vw; height:5vh;">
         <div class="title_r">研究計畫</div>
-        <div class="button" style="display:inline-block;">
-          <a href="#" class="botton_style_plan1">行政院國科會輔助專題研究計畫</a>
+        <div class="buttons" style="width:48vw; float:right;">
+          <span class="button" style="display:inline-block;">
+            <a href="#" class="botton_style_plan1">行政院國科會輔助專題研究計畫</a>
+          </span>
+          <span class="button" style="display:inline-block;">
+            <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">其他學術單位委託研究計畫</a>
+          </span>
+          <span class="button" style="display:inline-block;">
+            <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">整合型研究或計畫</a>
+          </span>
         </div>
-        <div class="button" style="display:inline-block;">
-          <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">其他學術單位委託研究計畫</a>
-        </div>
-        <div class="button" style="display:inline-block;">
-          <a href="#" class="botton_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">整合型研究或計畫</a>
-        </div>
+
       </div>
       <!--研究計畫內文-->
       <div class="plan_block">
