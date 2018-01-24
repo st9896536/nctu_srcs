@@ -1,3 +1,11 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+</style>
+Specify in CSS
+
+Use the following CSS rules to specify these families:
+font-family: 'Noto Serif', serif;
+
 /*Noto Serif CJK TC */
 
 @font-face{
@@ -170,7 +178,7 @@ p{
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
-  width: 34.8125vw;
+  width: 34.5vw;
   /*height: 34.375vh;*/
   margin: 2vh 0;
 }
@@ -585,7 +593,54 @@ p{
   color: rgba(50, 50, 50, 1);
 }
 
-/*教師著作*/
+/*教師著作樣式*/
+
+.book_block_animation{
+  -webkit-animation-name: book;
+  -webkit-animation-duration: 4s;
+  animation-name: book;
+  animation-duration: 4s;
+  position: relative;
+  /*
+  transition: height 0.7s ease-in-out 0s;
+  -webkit-transition: height 0.7s ease-in-out 0s;
+  */
+}
+
+.book_content_block_animation{
+  -webkit-animation-name: text-animate;
+  -webkit-animation-duration: 4s;
+  animation-name: text-animate;
+  animation-duration: 4s;
+  /*
+  transition: opacity 0.7s ease-in-out 0s;
+  -webkit-transition: opacity 0.7s ease-in-out 0s;
+  */
+}
+
+@-webkit-keyframes book {
+    0%   {background-color: rgba(230, 230, 230, 1); right:0; left: 66.5vw;}
+    100% {background-color: rgba(230, 230, 230, 1); left: 0;}
+}
+
+/* Standard syntax */
+
+@keyframes book {
+  0%   {background-color: rgba(230, 230, 230, 1); right:0; left: 66.5vw;}
+  100% {background-color: rgba(230, 230, 230, 1); left: 0;}
+}
+
+@-webkit-keyframes text-animate {
+    0%   {opacity:0}
+    100% {opacity:1}
+}
+
+/* Standard syntax */
+
+@keyframes text-animate {
+    0%   {opacity:0}
+    100% {opacity:1}
+}
 
 .book_block{
   width: 66.5vw;
@@ -595,11 +650,16 @@ p{
 }
 
 .book_block img{
+  height: 20vh;
+  max-width: 100%;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   display: block;
+  /*
   min-width: 100%;
   min-height: 100%;
+  */
   box-shadow: 0px 0px 17px -1px rgba(20%,20%,40%,0.5);
 }
 
@@ -625,6 +685,7 @@ p{
   display: inline-block;
   margin-top: 3vh;
   border-left: #d6d6d6 solid 2px;
+  position: absolute;
 }
 
 .book_content_title{
@@ -658,12 +719,10 @@ p{
   line-height: 3vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
-  float: left;
-  width: 24vw;
 }
 
 .plan_block{
-  width: 73vw;
+  width: 71vw;
   margin-top: 4vh;
   margin-bottom: 1vh;
   padding: 1vh 0.8vw;
@@ -671,12 +730,12 @@ p{
 }
 
 .plan_detail{
-  width: 73vw;
+  width: 71vw;
   padding: 1vh 0.8vw;
   border-bottom: #000 solid 1px;
 }
 
-.botton_style_plan1{
+.button_style_plan1{
   font-weight: 100;
   font-size: 0.9em;
   line-height: 2vh;
@@ -684,10 +743,11 @@ p{
   color: rgba(255, 255, 255, 1);
   border-radius: 5px;
   text-decoration-line: none;
-  padding: 6px 9px;
+  padding: 9px 11px;
   background-color: rgba(60, 0, 110, 0.8);
   letter-spacing: 0.1em;
-  margin-right: 0.25vw;
+  margin-right: 0.75vw;
+  float: right;
 }
 
 #planname_style{

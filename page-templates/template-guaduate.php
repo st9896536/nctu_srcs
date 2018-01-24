@@ -9,6 +9,7 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>
   /*
     $('.sidebarmenu a').click(function(){
@@ -54,7 +55,7 @@
 
         <div class="border" style="width: 52.5vw;  padding-right: 1vw;  border-right-color: rgba(60, 0, 110, 0.8);  border-right-style: solid;  border-right-width: 0.5vw;">
           <!--畢業生姓名-->
-          <div class="graduate-name" style="width:34vw; height:4vh; margin-top:2vh;">
+          <div class="graduate-name" style="height:4vh; margin-top:2vh;">
 
             <span style="padding-right: 1.7vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
               <p id="g1">闞 清子</p>
@@ -65,7 +66,7 @@
             </span>
           </div>
           <!--畢業生職業-->
-          <div class="graduate-name" style="width:34vw; height:2.5vh; margin-top:1vh; margin-bottom:2.5vh;">
+          <div class="graduate-name" style="height:2.5vh; margin-top:1vh; margin-bottom:2.5vh;">
             <span style="padding-right: 1.2vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
               <p id="g2">自由演員</p>
             </span>

@@ -9,13 +9,25 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
-  <script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
   /*
     $('.sidebarmenu a').click(function(){
       $('.sidebarmenu a').removeClass('.active');
       $(this).addClass('.active');
     });
     */
+    // $("click_Y_book").click(function(){
+    //         $(".book_block").addClass("book_block_animation");
+    //         $(".book_content_block").addClass(".book_content_block_animation");
+    // });
+
+    $(document).ready(function(){
+      $(".book_block").addClass("book_block_animation");
+      $(".book_content_block").addClass("book_content_block_animation");
+    });
   </script>
 </head>
 
@@ -33,22 +45,22 @@
       <!--日期block-->
       <div style="width:8.5vw; height:auto; float:left; display:inline-block;">
         <HR size="2px" color="#e6e6e6" style="width: 6vw;">
-        <div id="click_Y_book" style=" margin-top:2vh; height:2vh;">2015-2017</div>
-        <div class="other_Y_block">2012-2014</div>
-        <div class="other_Y_block">2009-2011</div>
-        <div class="other_Y_block">2006-2008</div>
-        <div class="other_Y_block">2003-2005</div>
-        <div class="other_Y_block">2000-2002</div>
-        <div class="other_Y_block">1997-1999</div>
-        <div class="other_Y_block">1994-1996</div>
-        <div class="other_Y_block">1991-1993</div>
+        <div id="click_Y_book" style=" margin-top:2vh; height:2vh;">2017-2015</div>
+        <div class="other_Y_block">2014-2012</div>
+        <div class="other_Y_block">2011-2009</div>
+        <div class="other_Y_block">2008-2006</div>
+        <div class="other_Y_block">2005-2003</div>
+        <div class="other_Y_block">2002-2000</div>
+        <div class="other_Y_block">1999-1997</div>
+        <div class="other_Y_block">1996-1994</div>
+        <div class="other_Y_block">1993-1991</div>
 
       </div>
       <!--書籍block-->
       <div style="float:right; display:inline-block; ">
         <!--灰色block-->
         <div class="book_block" >
-          <div class="book" style="float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
+          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/east-asian.jpg" />
           </div>
 
@@ -63,7 +75,7 @@
         </div>
         <!--灰色block-->
         <div class="book_block" >
-          <div class="book" style="float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
+          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/Renjian_Thought_Review_6.jpg" />
           </div>
 

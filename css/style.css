@@ -1,3 +1,11 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+</style>
+Specify in CSS
+
+Use the following CSS rules to specify these families:
+font-family: 'Noto Serif', serif;
+
 /*Noto Serif CJK TC */
 
 @font-face{
@@ -269,23 +277,12 @@ p{
   line-height: 3vh;
 }
 
-/*
-.nav a:active {
-  border-bottom-style: solid;
-  border-width: 1px;
-}
-*/
 
 .nav_active{
   border-bottom-style: solid;
   border-width: 1px;
 }
-/*
-.nav a:focus {
-  border-bottom-style: solid;
-  border-width: 1px;
-}
-*/
+
 .nav .icon {
   display: none;
 }
@@ -374,10 +371,22 @@ p{
   border-left: 0.78125vw rgba(255, 255, 255, 0) solid;
   display: block;
   text-decoration-line: none;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50,50, 50, 1);
 }
 
-#currentpage{
+.currentpage{
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50,50, 50, 1);
+  height: 2.5vh;
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
+  display: inline-block;
 }
 
 .sidebarmenu a:hover{
@@ -385,21 +394,6 @@ p{
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
 }
 
-#link1{
-  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
-}
-
-.active{
-  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
-}
-
-/*
-.sidebarmenu a:active{
-  height: 2.5vh;
-  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
-  display: inline-block;
-}
-*/
 
 .sidebartext{
   font-weight: 600;

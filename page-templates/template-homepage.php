@@ -26,10 +26,10 @@
         switch(slides.currentSlide){
             case 0:
                 <?php
-                $url = site_url('/en/poster_change/');
+                $url = site_url('/en/poster_horizontal/');
                 $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title1">' , $content );
-                $second_step = explode("</p>" , $first_step[1] );
+                $first_step = explode( '<div id="title_chi">' , $content );
+                $second_step = explode("</div>" , $first_step[1] );
 
                 ?>
                 newtext = "<?php echo $second_step[0];?>";
@@ -114,10 +114,10 @@
 
         <p id="poster-title">
             <?php
-            $url = site_url('/en/poster_change/');
+            $url = site_url('/en/poster_horizontal/');
             $content = file_get_contents($url);
-            $first_step = explode( '<p id="test_title1">' , $content );
-            $second_step = explode("</p>" , $first_step[1] );
+            $first_step = explode( '<div id="title_chi">' , $content );
+            $second_step = explode("</div>" , $first_step[1] );
 
             echo $second_step[0];
             ?>
@@ -126,8 +126,26 @@
 
         <HR size="1px" color="#ffe6a0">
         <div class="textbox2">
-          <p id="p_text">每周二下午1:30-4:30</p>
-          <p id="p_text">交通大學光復校區人社二館106A研討室</p>
+          <p id="p_text">
+            <?php
+            $url = site_url('/en/poster_horizontal/');
+            $content = file_get_contents($url);
+            $first_step = explode( '<div class="poster_year">' , $content );
+            $second_step = explode("</div>" , $first_step[1] );
+
+            echo $second_step[0];
+            ?>
+          </p>
+          <p id="p_text">
+            <?php
+            $url = site_url('/en/poster_horizontal/');
+            $content = file_get_contents($url);
+            $first_step = explode( '<div id="place_chi">' , $content );
+            $second_step = explode("</div>" , $first_step[1] );
+
+            echo $second_step[0];
+            ?>
+          </p>
         </div>
         <a href="#" class="button_style1">繼續閱讀</a>
       </span>

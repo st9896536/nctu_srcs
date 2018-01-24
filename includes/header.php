@@ -18,10 +18,12 @@
         $(this).addClass('.nav_active');
       });
     */
+    /*
     $('.nav a').mouseenter(function() {
       $(this).siblings().removeClass('nav_active');
       $(this).addClass('nav_active');
 });
+*/
     </script>
 </head>
 
