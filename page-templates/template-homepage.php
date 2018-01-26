@@ -7,11 +7,13 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <!--圖片輪播的css+jquery-->
-  <!-- Place somewhere in the <head> of your document -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexslider.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel.js"></script>
+  <script src="https://use.typekit.net/hgf1mzq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <!-- Place in the <head>, after the three links -->
   <script type="text/javascript" charset="utf-8">
@@ -26,7 +28,7 @@
         switch(slides.currentSlide){
             case 0:
                 <?php
-                $url = site_url('/en/poster_horizontal/');
+                $url = site_url('poster_horizontal/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<div id="title_chi">' , $content );
                 $second_step = explode("</div>" , $first_step[1] );
@@ -36,7 +38,7 @@
                 break;
             case 1:
                 <?php
-                $url = site_url('/en/poster_change_2/');
+                $url = site_url('poster_change_2/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<p id="test_title2">' , $content );
                 $second_step = explode("</p>" , $first_step[1] );
@@ -46,7 +48,7 @@
                 break;
             case 2:
                 <?php
-                $url = site_url('/en/poster_change_3/');
+                $url = site_url('poster_change_3/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<p id="test_title3">' , $content );
                 $second_step = explode("</p>" , $first_step[1] );
@@ -56,7 +58,7 @@
                 break;
             case 3:
                 <?php
-                $url = site_url('/en/poster_change/');
+                $url = site_url('poster_change/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<p id="test_title1">' , $content );
                 $second_step = explode("</p>" , $first_step[1] );
@@ -66,7 +68,7 @@
                 break;
             case 4:
                 <?php
-                $url = site_url('/en/poster_change_3/');
+                $url = site_url('poster_change_3/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<p id="test_title3">' , $content );
                 $second_step = explode("</p>" , $first_step[1] );
@@ -97,8 +99,6 @@
 <body>
 
 
-<div class="container">
-  <div class="row">
 
     <div class="content">
       <span class="content_left"></span>
@@ -114,7 +114,7 @@
 
         <p id="poster-title">
             <?php
-            $url = site_url('/en/poster_horizontal/');
+            $url = site_url('poster_horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div id="title_chi">' , $content );
             $second_step = explode("</div>" , $first_step[1] );
@@ -128,7 +128,7 @@
         <div class="textbox2">
           <p id="p_text">
             <?php
-            $url = site_url('/en/poster_horizontal/');
+            $url = site_url('poster_horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div class="poster_year">' , $content );
             $second_step = explode("</div>" , $first_step[1] );
@@ -138,7 +138,7 @@
           </p>
           <p id="p_text">
             <?php
-            $url = site_url('/en/poster_horizontal/');
+            $url = site_url('poster_horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div id="place_chi">' , $content );
             $second_step = explode("</div>" , $first_step[1] );
@@ -275,10 +275,6 @@
 
     </div>
 
-
-
-  </div><!-- /.row -->
-</div><!-- /.container -->
 </body>
 
 <?php get_template_part('includes/footer'); ?>

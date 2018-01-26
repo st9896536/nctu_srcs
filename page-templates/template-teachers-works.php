@@ -11,18 +11,18 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://use.typekit.net/hgf1mzq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <script type="text/javascript" charset="utf-8">
-  /*
-    $('.sidebarmenu a').click(function(){
-      $('.sidebarmenu a').removeClass('.active');
-      $(this).addClass('.active');
-    });
-    */
-    // $("click_Y_book").click(function(){
-    //         $(".book_block").addClass("book_block_animation");
-    //         $(".book_content_block").addClass(".book_content_block_animation");
-    // });
+    $( document ).ready(function() {
+      $ ("#top-menu a:eq(1)").addClass('nav_active');
+      $ (".sidebarmenu a:eq(0)").removeClass('sidebarmenu a')
+      $ (".sidebarmenu a:eq(0)").addClass('currentpage')
+      // $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu a');
+      // $ (".sidebarmenu a:eq(0)").addClass('currentpage');
+      //$(this).addClass('nav_active');
+  });
 
     $(document).ready(function(){
       $(".book_block").addClass("book_block_animation");

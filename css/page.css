@@ -1,51 +1,6 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
-</style>
-Specify in CSS
-
-Use the following CSS rules to specify these families:
-font-family: 'Noto Serif', serif;
-
-/*Noto Serif CJK TC */
-
-@font-face{
-　font-family: 'Noto Serif CJK TC';
-　src: local('Noto Serif CJK TC')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Noto Serif CJK*/
-
-@font-face{
-　font-family: 'Noto Serif CJK';
-　src: local('Noto Serif CJK')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Source Han Serif TC*/
-
-@font-face{
-　font-family: 'Source Han Serif TC';
-　src: local('Source Han Serif TC')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Source Han Serif*/
-
-@font-face{
-　font-family: 'Source Han Serif';
-　src: local('Source Han Serif')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-
-/*
-li li, li p, li span, li p span, p span{
-
-}
-*/
 
 *{
+  font-family: "source-han-serif-tc",serif;
   margin:0;
   padding:0;
   -webkit-font-smoothing: antialiased;
@@ -56,7 +11,7 @@ li li, li p, li span, li p span, p span{
 }
 
 body{
-  /*overflow: hidden;*/
+  font-family: "source-han-serif-tc",serif;
   color: rgba(255, 255, 255, 1);
   margin:0;
   padding:0;
@@ -73,20 +28,9 @@ img {
   border:none;
 }
 
-/*
-p{
-  font-size: 0.9em;
-  line-height: 2vh;
-  letter-spacing: 0.1em;
-  color: rgba(50, 50, 50, 1);
-  width: 32.8125vw;
-  height: 34.375vh;
-  margin: 2vh 0;
-}
-*/
 
 .html{
-  font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
+  font-family: "source-han-serif-tc",serif;
   font-weight: 400;
   letter-spacing: 0.1em;
 }
@@ -597,9 +541,9 @@ p{
 
 .book_block_animation{
   -webkit-animation-name: book;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 2s;
   animation-name: book;
-  animation-duration: 4s;
+  animation-duration: 2s;
   position: relative;
   /*
   transition: height 0.7s ease-in-out 0s;
@@ -609,9 +553,9 @@ p{
 
 .book_content_block_animation{
   -webkit-animation-name: text-animate;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 2s;
   animation-name: text-animate;
-  animation-duration: 4s;
+  animation-duration: 2s;
   /*
   transition: opacity 0.7s ease-in-out 0s;
   -webkit-transition: opacity 0.7s ease-in-out 0s;
@@ -656,6 +600,7 @@ p{
   top: 50%;
   left: 50%;
   display: block;
+
   /*
   min-width: 100%;
   min-height: 100%;
@@ -967,6 +912,102 @@ p{
   font-size: 0.8em;
   color: rgba(255, 255, 255, 1);
   text-decoration-line: unset;
+}
+
+/*課程規劃 - 本學年課程樣式*/
+
+.day_text{
+  float: left;
+  width:2.35vw;
+  height:25.5vh;
+  display: table;
+  font-weight: 400;
+  font-size: 1em;
+  /* line-height: 5.625vh; */
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  background-color: rgba(230,230,230,1);
+  text-align: -webkit-center;
+}
+
+.day_text p{
+  margin-top: 8vh;
+  width: 1.35vw;
+  height: 5.625vh;
+  text-align: justify;
+}
+
+#num-up,
+#num-down{
+ border: rgba(230,230,230,1) solid 1px;
+}
+
+#num-up p,
+#num-down p{
+ margin-top: 5vh;
+}
+
+.course-title-chi{
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 2.25vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.course-title-eng{
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.professor-name-chi{
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.5vh;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.55vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.professor-name-eng{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.button_style_blue{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.3em;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 9px 11px;
+  background-color: rgba(105, 200, 255, 1);
+  letter-spacing: 0.1em;
+  margin-left: 1vw;
+  float: left;
+}
+
+.button_style_gray{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.3em;
+  color: rgba(50, 50, 50, 1);
+  text-align: justify;
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 9px 11px;
+  background-color: rgba(230, 230, 230, 1);
+  letter-spacing: 0.1em;
+  margin-left: 1vw;
+  float: left;
 }
 
 @media screen and (max-width: 600px) {

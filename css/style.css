@@ -1,52 +1,6 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
-</style>
-Specify in CSS
-
-Use the following CSS rules to specify these families:
-font-family: 'Noto Serif', serif;
-
-/*Noto Serif CJK TC */
-
-@font-face{
-　font-family: 'Noto Serif CJK TC';
-　src: local('Noto Serif CJK TC')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Noto Serif CJK*/
-
-@font-face{
-　font-family: 'Noto Serif CJK';
-　src: local('Noto Serif CJK')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Source Han Serif TC*/
-
-@font-face{
-　font-family: 'Source Han Serif TC';
-　src: local('Source Han Serif TC')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-/*Source Han Serif*/
-
-@font-face{
-　font-family: 'Source Han Serif';
-　src: local('Source Han Serif')
-　/*font-weight: bold; //設定為粗體字，這行是選用*/
-}
-
-
-/*
-li li, li p, li span, li p span, p span{
-
-}
-*/
 
 .html{
-  font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
+  font-family: "source-han-serif-tc",serif;
   height: 100%;
   font-weight: 400;
 }
@@ -73,7 +27,6 @@ ol.v{
 }
 
 *{
-  font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
   font-weight: 400;
   margin:0;
   padding:0;
@@ -99,29 +52,7 @@ img {
   min-height: 100%;
   width: 100%;
 }
-/*
-a{
-  font-weight: 400;
-  font-size: 1.2em;
-  line-height: 3vh;
-  letter-spacing: 0.1em;
-  color: rgba(50, 50, 50, 1);
-}
-*/
-/*
-p{
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 2vh;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 1);
-  margin-bottom:1vh;
-}
-*/
 
-.html{
-  font-family:'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
-}
 
 .clear_both{
     clear: both;
