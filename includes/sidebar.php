@@ -25,6 +25,6 @@
   <a href="<?php echo site_url(); ?>/adjunct-teacher" >兼任師資</a>
   <a href="<?php echo site_url(); ?>/guest-professor" >客座教授</a>
   <a href="<?php echo site_url(); ?>/administration-staff">行政人員</a>
-  <a href="#" >在校生</a>
-  <a href="#" >畢業生</a>
+  <a href="<?php echo site_url(); ?>/current-student" >在校生</a>
+  <a href="<?php echo site_url(); ?>/graduate" >畢業生</a>
 </div>

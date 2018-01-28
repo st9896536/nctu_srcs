@@ -1,0 +1,142 @@
+<?php
+/*
+ * Template Name: research-present-course
+ */
+?>
+
+<?php $thisPage="graduate"; ?>
+
+<head>
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://use.typekit.net/hgf1mzq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>
+    $( document ).ready(function() {
+      $ ("#top-menu a:eq(2)").addClass('nav_active');
+      $ (".sidebarmenu a:eq(0)").removeClass('sidebarmenu a')
+      $ (".sidebarmenu a:eq(0)").addClass('currentpage')
+      // $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu a');
+      // $ (".sidebarmenu a:eq(0)").addClass('currentpage');
+      //$(this).addClass('nav_active');
+});
+  </script>
+</head>
+
+<?php get_template_part('includes/header'); ?>
+<?php get_template_part('includes/sidebar-course'); ?>
+
+
+<body>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="main" style="margin-bottom:5vh;">
+      <div class="title_block" style="width:73vw; height:5vh;">
+        <div class="title_r" style="width:25vw; float:left;">社文所本學年課程</div>
+        <div class="buttons" style="width:48vw; float:right;">
+            <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">全校課程搜尋</a>
+            <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">106下</a>
+            <a href="#" class="button_style_plan1">106上</a>
+        </div>
+      </div>
+      <!--禮拜一課程-->
+      <div class="monday" style="border:rgba(230,230,230,1) solid 1px; margin-top: 3.75vh; width: 72vw;">
+        <div class="day_text"><p>星期一</p></div>
+        <div class="course_num" style="width:2.35vw; height:25vh; display: table; float:left">
+          <div id="num-up" style="width:3vw; height:12.5vh; text-align: -webkit-center;"><p>IJK</p></div>
+          <div id="num-down" style="width:3vw; height:12.5vh; text-align: -webkit-center;"><p>EFG</p></div>
+        </div>
+        <div class="course_name" style="border:rgba(230,230,230,1) solid 1px; width:35.125vw; height:25vh; float: left;">
+          <div id="course-up" style="width:33.125vw; padding-top: 1.25vh; padding-left: 1vw;">
+            <div class="course-title-chi">亞際文化研究導論</div>
+            <div class="course-title_eng">Introduction to Inter-Asia Cultural Studies</div>
+            <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh;">
+            <div class="professor-name-chi">劉紀慧 教授</div>
+            <div class="professor-name-eng">Joyce C.H. Liu</div>
+          </div>
+          <div id="course-down" style="float: left; width:33.125vw; margin-top: 0.5vh; padding-top: 1.25vh; padding-left: 1vw;">
+            <div class="course-title-chi">文化研究理論(博)</div>
+            <div class="course-title_eng">Introduction to Cultural Studies</div>
+            <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh;">
+            <div class="professor-name-chi">朱元鴻／劉紀蕙／陳奕麟教授 合授</div>
+            <div class="professor-name-eng">Yuan-Horng Chu, Joyce C.H. Liu and Allen Chun</div>
+          </div>
+
+        </div>
+        <div class="course-btn" style="  height:25vh;  border-bottom: rgba(230,230,230,1) solid 1px;">
+          <div id="btn-up" style=" height:11.5vh; padding-top: 1.25vh; border:rgba(230,230,230,1) solid 1px;">
+            <a href="#" class="button_style_blue">選修課程</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">英文授課</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">輔開課程</a>
+          </div>
+          <div id="btn-down" style=" height: 10vh; padding-top: 1.25vh;">
+            <a href="#" class="button_style_gray" style="color: rgba(255, 255, 255, 1); background-color: rgba(180, 5, 0, 1);">核心課程</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--禮拜二課程-->
+      <div class="tuesday" style="border:rgba(230,230,230,1) solid 1px; margin-top: 5.75vh; width: 72vw;">
+        <div class="day_text" style="height: 31vh; padding-top: 7vh;"><p>星期二</p></div>
+        <div class="course_num" style="width:2.35vw; height:25vh; display: table; float:left">
+          <div id="num-up" style="width:3vw; height:12.5vh; text-align: -webkit-center;"><p>CDX</p></div>
+          <div id="num-down" style="width:3vw; height:12.5vh; text-align: -webkit-center;"><p>EFG</p></div>
+          <div id="num-down" style="width:3vw; height:12.5vh; text-align: -webkit-center;"><p>IJK</p></div>
+        </div>
+        <div class="course_name" style="border:rgba(230,230,230,1) solid 1px; width:35.125vw; height:38vh; float: left;">
+          <div id="course-up" style="width:33.125vw; padding-top: 1.25vh; padding-left: 1vw;">
+            <div class="course-title-chi">近現代日本思想史專題</div>
+            <div class="course-title_eng">Seminar on Modern Japanese Intellectual History</div>
+            <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh;">
+            <div class="professor-name-chi">藍弘岳 教授</div>
+            <div class="professor-name-eng">Hung-Yueh Lan</div>
+          </div>
+          <div id="course-down" style="float: left; width:33.125vw; margin-top: 0.5vh; padding-top: 1.25vh; padding-left: 1vw;">
+            <div class="course-title-chi">國家與社會</div>
+            <div class="course-title_eng">State and Society</div>
+            <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh;">
+            <div class="professor-name-chi">林淑芬 教授</div>
+            <div class="professor-name-eng">Shu-fen Lin</div>
+          </div>
+          <div id="course-down" style="float: left; width:33.125vw; margin-top: 0.5vh; padding-top: 2.25vh; padding-left: 1vw;">
+            <div class="course-title-chi">當代議題：老化的現代性</div>
+            <div class="course-title_eng">Contemporary Issue: Aging Modernity</div>
+            <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh;">
+            <div class="professor-name-chi">朱元鴻 教授</div>
+            <div class="professor-name-eng">Yuan-Horng Chu</div>
+          </div>
+
+        </div>
+        <div class="course-btn" style="  height:38vh;  border-bottom: rgba(230,230,230,1) solid 1px; ">
+          <div id="btn-up" style=" height:11.5vh; padding-top: 1.25vh; border:rgba(230,230,230,1) solid 1px;">
+            <a href="#" class="button_style_blue">選修課程</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">東亞現代研究</a>
+          </div>
+          <div id="btn-down" style=" height: 11vh; padding-top: 1.25vh; border:rgba(230,230,230,1) solid 1px;">
+            <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">選修課程</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
+          </div>
+          <div id="btn-down" style=" height: 10vh; padding-top: 1.25vh;">
+            <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">選修課程</a>
+            <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+</body>
