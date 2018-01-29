@@ -87,6 +87,43 @@ img {
   width:33.825vw;
 } */
 
+.semester{
+  margin-right: 1vw;
+  float: right;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2.75vh;
+  width: 12vw;
+  height: 2.25vw;
+  border-radius: 6px;
+  padding: 1px 3px;
+  letter-spacing: 0.1em;
+  /* background-color: rgba(230,230,230,1);
+  border: none; */
+  color: rgba(100,100,100,1);
+}
+
+.options select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  overflow: hidden;
+  padding-left: 10px;
+  /* background: url('<?php bloginfo('template_url'); ?>/images/btn/arrowhead-pointing-down.png')  no-repeat; */
+
+}
+
+/* .options:after {
+
+  content: ' ▼ ';
+  font: 20px "Consolas", monospace;
+  line-height: 1.75vh;
+  color: rgba(150,150,150,1);
+  padding-left: 15px;
+  border-left: rgba(150,150,150,1) solid 2px;
+  position: relative;
+  pointer-events: none;
+} */
 
 /** adjust font size **/
 

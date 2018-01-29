@@ -4,8 +4,6 @@
  */
 ?>
 
-<?php $thisPage="current-student"; ?>
-
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
@@ -13,50 +11,20 @@
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
-  // /
-  //   $('.sidebarmenu a').click(function(){
-  //     $('.sidebarmenu a').removeClass('.active');
-  //     $(this).addClass('.active');
-  //   });
-
 
     $( document ).ready(function() {
       $ ("#top-menu a:eq(0)").addClass('nav_active');
-      $ (".sidebarmenu a:eq(0)").removeClass('sidebarmenu a')
-      $ (".sidebarmenu a:eq(0)").addClass('currentpage')
-      // $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu a');
-      // $ (".sidebarmenu a:eq(0)").addClass('currentpage');
-      //$(this).addClass('nav_active');
+      $ (".sidebarmenu a:eq(5)").removeClass('a_show')
+      $ (".sidebarmenu a:eq(5)").addClass('sidebarmenu_active')
 });
 
-  </script>
-  <script>
-  /*
-    $('.sidebarmenu a').click(function(){
-      $('.sidebarmenu a').removeClass('.active');
-      $(this).addClass('.active');
-    });
-    */
   </script>
 </head>
 
 <?php get_template_part('includes/header'); ?>
-</?php get_template_part('includes/sidebar'); ?>
+<?php get_template_part('includes/sidebar'); ?>
 
-<div class="sidebarmenu">
-
-  </?php $URL=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-  echo $URL;
-  ?>
-  <a <?php if ($thisPage=="aboutus") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/aboutus" class="sidebartext">關於本所</a>
-  <a <?php if ($thisPage=="full-time-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/full-time-teacher" class="sidebartext">專任師資</a>
-  <a <?php if ($thisPage=="adjunct-teacher") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/adjunct-teacher" class="sidebartext">兼任師資</a>
-  <a <?php if ($thisPage=="guest-professor") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/guest-professor" class="sidebartext">客座教授</a>
-  <a <?php if ($thisPage=="administration-staff") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/administration-staff" class="sidebartext">行政人員</a>
-  <a <?php if ($thisPage=="current-student") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/current-student" class="sidebartext">在校生</a>
-  <a <?php if ($thisPage=="graduate") echo " id=\"currentpage\""; ?> href="<?php echo site_url(); ?>/graduate" class="sidebartext">畢業生</a>
-</div>
-
+</head>
 
 
 <div class="container">

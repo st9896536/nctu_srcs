@@ -276,25 +276,8 @@ img {
   height: 67.75vh;
   margin-top: 32.25vh;
 }
-/*
-.sidebar-block{
-  width: 25vw;
-  height: 2.5vh;
-  margin-bottom: 2.75vh;
-}
-*/
-/*
-.sidebarmenu ul{
-  padding-left: 1.5625vw;
-}
 
-.sidebarmenu li{
-  height: 2.5vh;
-  padding-left: 1.5625vw;
-  margin-bottom: 2.75vh;
-}
-*/
-.sidebarmenu a{
+.a_show{
   /*width: 22.65vw;*/
   height: 2.5vh;
   padding-left: 1.5625vw;
@@ -309,29 +292,39 @@ img {
   color: rgba(50,50, 50, 1);
 }
 
-.currentpage{
+/* .sidebarmenu a{
+  height: 2.5vh;
+  padding-left: 1.5625vw;
+  margin-bottom: 2.75vh;
+  border-left: 0.78125vw rgba(255, 255, 255, 0) solid;
+  display: block;
+  text-decoration-line: none;
   font-weight: 600;
   font-size: 1em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50,50, 50, 1);
-  height: 2.5vh;
-  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
-  display: inline-block;
-}
+} */
+
 
 .sidebarmenu a:hover{
   /*height: 2.5vh;*/
   border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
 }
 
-
-.sidebartext{
+.sidebarmenu_active{
+  height: 2.5vh;
+  padding-left: 1.5625vw;
+  margin-bottom: 2.75vh;
+  /* border-left: 0.78125vw rgba(255, 255, 255, 0) solid; */
+  display: block;
+  text-decoration-line: none;
   font-weight: 600;
   font-size: 1em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50,50, 50, 1);
+  border-left: 0.78125vw rgba(60, 0, 110, 0.8) solid;
 }
 
 
