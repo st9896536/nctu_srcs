@@ -4,8 +4,6 @@
  */
 ?>
 
-<?php $thisPage="graduate"; ?>
-
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table.css" type="text/css" />
@@ -14,14 +12,13 @@
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
+
     $( document ).ready(function() {
       $ ("#top-menu a:eq(2)").addClass('nav_active');
-      $ (".sidebarmenu a:eq(0)").removeClass('sidebarmenu a')
-      $ (".sidebarmenu a:eq(0)").addClass('currentpage')
-      // $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu a');
-      // $ (".sidebarmenu a:eq(0)").addClass('currentpage');
-      //$(this).addClass('nav_active');
+      $ (".sidebarmenu a:eq(1)").removeClass('a_show');
+      $ (".sidebarmenu a:eq(1)").addClass('sidebarmenu_active');
 });
+
   </script>
 </head>
 
@@ -52,10 +49,10 @@
 
             <div class='row'>
 
-              <div class='cell merged' style="width:2.35vw;">星期一</div>
+
                 <div class='intable'>
                   <div class='row'>
-                    <div class='cell'>IJK</div>
+
                     <div class='course'>
 
                         <div class="course-title-chi">亞際文化研究導論</div>
@@ -65,14 +62,14 @@
                         <div class="professor-name-eng">Joyce C.H. Liu</div>
 
                     </div>
-                    <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top;">
+                    <div class='cell' style="width:36.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
                       <a href="#" class="button_style_blue">選修課程</a>
                       <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">英文授課</a>
                       <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">輔開課程</a>
                     </div>
                   </div>
                   <div class='row'>
-                    <div class='cell'>EFG</div>
+
                     <div class='course'>
 
                         <div class="course-title-chi">文化研究理論(博)</div>
@@ -82,7 +79,7 @@
                         <div class="professor-name-eng">Yuan-Horng Chu, Joyce C.H. Liu and Allen Chun</div>
 
                     </div>
-                    <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top;">
+                    <div class='cell' style="width:36.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw; padding-left: 1vw;">
                       <a href="#" class="button_style_gray" style="color: rgba(255, 255, 255, 1); background-color: rgba(180, 5, 0, 1);">核心課程</a>
                     </div>
                   </div>
@@ -96,10 +93,10 @@
 
           <div class='row'>
 
-            <div class='cell merged' style="width:2.35vw;">星期二</div>
+
               <div class='intable'>
                 <div class='row'>
-                  <div class='cell'>CDX</div>
+
                   <div class='course'>
 
                       <div class="course-title-chi">近現代日本思想史專題</div>
@@ -109,14 +106,14 @@
                       <div class="professor-name-eng">Hung-Yueh Lan</div>
 
                   </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top;">
+                  <div class='cell' style="width:36.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
                     <a href="#" class="button_style_blue">選修課程</a>
                     <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
                     <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">東亞現代研究</a>
                   </div>
                 </div>
                 <div class='row'>
-                  <div class='cell'>EFG</div>
+
                   <div class='course'>
 
                       <div class="course-title-chi">國家與社會</div>
@@ -126,13 +123,13 @@
                       <div class="professor-name-eng">Shu-fen Lin</div>
 
                   </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top;">
+                  <div class='cell' style="width:36.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
                     <a href="#" class="button_style_blue">選修課程</a>
                     <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
                   </div>
                 </div>
                 <div class='row'>
-                  <div class='cell'>EFG</div>
+
                   <div class='course'>
 
                     <div class="course-title-chi">當代議題：老化的現代性</div>
@@ -142,7 +139,7 @@
                     <div class="professor-name-eng">Yuan-Horng Chu</div>
 
                   </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top;">
+                  <div class='cell' style="width:36.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
                     <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">選修課程</a>
                     <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
                   </div>

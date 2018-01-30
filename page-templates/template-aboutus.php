@@ -16,8 +16,8 @@
 
     $( document ).ready(function() {
       $ ("#top-menu a:eq(0)").addClass('nav_active');
-      $ (".sidebarmenu a:eq(0)").removeClass('a_show')
-      $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active')
+      $ (".sidebarmenu a:eq(0)").removeClass('a_show');
+      $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
 });
 
   </script>

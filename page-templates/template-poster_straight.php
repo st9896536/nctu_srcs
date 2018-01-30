@@ -21,7 +21,7 @@
   <div class="row">
     <div class="main">
       <div class="poster_img" style="width:31.25vw; height:auto; display: inline-block;">
-        <img style="box-shadow: 2px 3px 11px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/post 800x1169.jpg" />
+        <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/post 800x1169.jpg" />
       </div>
       <div class="right_side" style="float: right;display: inline-block; vertical-align: top;margin-right: 2vw;">
         <div class="poster_title" style="width:37.5vw">

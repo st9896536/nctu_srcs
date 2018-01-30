@@ -990,7 +990,7 @@ img {
   padding: 9px 11px;
   background-color: rgba(105, 200, 255, 1);
   letter-spacing: 0.1em;
-  margin-left: 1vw;
+  margin-right: 1vw;
   float: left;
 }
 
@@ -1006,11 +1006,124 @@ img {
   padding: 9px 11px;
   background-color: rgba(230, 230, 230, 1);
   letter-spacing: 0.1em;
-  margin-left: 1vw;
+  margin-right: 1vw;
   float: left;
 }
 
+/* 課程內文樣式 */
 
+.course-title{
+  font-weight: 600;
+  font-size: 2.4em;
+  line-height: 4.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.teacher-name{
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 4vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.course-words{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.75vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.detail-course-block p{
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 2vh;
+  margin-bottom: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.course-download,
+.curriculum{
+  border-radius: 60px;
+  text-align: justify;
+  padding: 24px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 1);
+  margin-right: 0.9375vw;
+  text-decoration-line: unset;
+}
+
+/* 講座課程樣式 */
+
+.photo-lecture{
+  float: left;
+  display: inline-block;
+  width:28.125vw;
+  height:18.75vh;
+  margin-right:1.875vw;
+  position: relative;
+  overflow: hidden;
+  /*transform:translate(-50%,-50%);*/
+  -moz-box-shadow: 0px 1px 15px rgba(20%,20%,40%,0.5);
+  -webkit-box-shadow: 0px 1px 15px rgba(20%,20%,40%,0.5);
+  box-shadow: 0px 1px 15px rgba(20%,20%,40%,0.5);
+}
+
+.photo-lecture img{
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.lecture-date{
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 2.25vh;
+  color: rgba(50, 50, 50, 1);
+  margin-top: 1.25vh;
+  margin-bottom: 1.25vh;
+}
+
+.lecture-topic{
+  font-weight: 600;
+  font-size: 1.6em;
+  line-height: 3.25vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 0.75vh;
+}
+
+.lecture-topic-eng{
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 2.75vh;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 2vh;
+}
+
+.lecturers{
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 2vh;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 1vh;
+}
+
+.lecture-classroom{
+  font-weight: 600;
+  font-size: 0.8em;
+  line-height: 2vh;
+  color: rgba(50, 50, 50, 1);
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
