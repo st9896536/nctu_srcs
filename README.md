@@ -1,6 +1,6 @@
 # nctu_{srcs}
 WordPress theme for the 社文所 in NCTU
-update date: 2017/12/21
+update date: 2018/01/31
 
 
 ## Used Plugins
@@ -16,7 +16,7 @@ update date: 2017/12/21
 - 文章列表
 	- category.php
 - 文章內文
-	- single.php
+	- singletest.php
 
 ### 關於本所
 - 關於本所
@@ -44,6 +44,19 @@ update date: 2017/12/21
 - 研究計畫
 	- page-tepmlates/template-research-proposal.php
 
+### 課程規劃
+- 本學年課程
+	- page-tepmlates/template-present-course.php
+- 歷年課程
+	- page-tepmlates/template-past-course.php
+- 研究計畫
+	- page-tepmlates/template-lecture-course.php
+
+### 活動內頁
+- 活動內頁直式
+	- page-tepmlates/template-poster-straight.php
+- 活動內頁橫式
+	- page-tepmlates/template-poster-horizontal.php
 
 ### 頁面
 - 預設頁面模板

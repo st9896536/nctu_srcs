@@ -26,7 +26,7 @@
         switch(slides.currentSlide){
             case 0:
                 <?php
-                $url = site_url('poster_horizontal/');
+                $url = site_url('poster-horizontal/');
                 $content = file_get_contents($url);
                 $first_step = explode( '<div id="title_chi">' , $content );
                 $second_step = explode("</div>" , $first_step[1] );
@@ -112,7 +112,7 @@
 
         <p id="poster-title">
             <?php
-            $url = site_url('poster_horizontal/');
+            $url = site_url('poster-horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div id="title_chi">' , $content );
             $second_step = explode("</div>" , $first_step[1] );
@@ -126,7 +126,7 @@
         <div class="textbox2">
           <p id="p_text">
             <?php
-            $url = site_url('poster_horizontal/');
+            $url = site_url('poster-horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div class="poster_year">' , $content );
             $second_step = explode("</div>" , $first_step[1] );
@@ -136,7 +136,7 @@
           </p>
           <p id="p_text">
             <?php
-            $url = site_url('poster_horizontal/');
+            $url = site_url('poster-horizontal/');
             $content = file_get_contents($url);
             $first_step = explode( '<div id="place_chi">' , $content );
             $second_step = explode("</div>" , $first_step[1] );

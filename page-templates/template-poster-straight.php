@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: poster_straight
+* Template Name: poster-straight
 */
 
 ?>

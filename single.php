@@ -1,5 +1,5 @@
 <?php get_template_part('includes/header'); ?>
-<?php get_template_part('includes/sidebar'); ?>
+<?php get_template_part('includes/sidebar-news-relative'); ?>
 
 
 </?php get_template_part('includes/footer'); ?>

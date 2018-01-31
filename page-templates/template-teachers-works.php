@@ -26,6 +26,7 @@
     $(document).ready(function(){
       $(".book_block").addClass("book_block_animation");
       $(".book_content_block").addClass("book_content_block_animation");
+      $(".book").addClass("book_animation");
     });
   </script>
 </head>
@@ -35,10 +36,6 @@
 
 
 <body>
-
-
-<div class="container">
-  <div class="row">
 
     <div class="main">
       <!--日期block-->
@@ -57,8 +54,7 @@
       </div>
       <!--書籍block-->
       <div style="float:right; display:inline-block; ">
-        <!--灰色block-->
-        <div class="book_block" >
+        <div class="gray-block" style="width:66.5vw;">
           <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/east-asian.jpg" />
           </div>
@@ -71,9 +67,12 @@
             <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
           </div>
 
+          <div class="book_block" style="z-index:-1;"></div>
         </div>
-        <!--灰色block-->
-        <div class="book_block" >
+
+
+
+        <div class="gray-block" style="width:66.5vw;">
           <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/Renjian_Thought_Review_6.jpg" />
           </div>
@@ -86,14 +85,10 @@
             <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
           </div>
 
+          <div class="book_block" style="z-index:-1;"></div>
         </div>
       </div>
 
-
-
     </div>
 
-
-  </div><!-- /.row -->
-</div><!-- /.container -->
 </body>
