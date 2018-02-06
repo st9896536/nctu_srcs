@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
 
-    
+
 </head>
 
 
@@ -37,7 +37,7 @@
         <a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
         <a href="<?php echo site_url(); ?>/research-direction">研究發展</a>
         <a href="<?php echo site_url(); ?>/present-course">課程規劃</a>
-        <a href="#" style="width:3.125vw !important;">招生</a>
+        <a href="<?php echo site_url(); ?>/feature" style="width:3.125vw !important;">招生</a>
         <a href="#">國際交流</a>
         <a href="#">學生專區</a>
       </div>

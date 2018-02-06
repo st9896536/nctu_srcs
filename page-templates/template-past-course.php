@@ -30,7 +30,7 @@
 
     <div class="main" style="margin-bottom:5vh;">
       <div class="title_block" style="width:73vw; height:5vh; margin-bottom: 3.75vh;">
-        <div class="title_r" style="width:25vw; float:left;">社文所本學年課程</div>
+        <div class="title_r" style="width:25vw; float:left;">歷年課程</div>
         <div class="options" style="width:48vw; float:right; ">
             <!-- <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">全校課程搜尋</a>
             <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">106下</a>
@@ -40,6 +40,10 @@
             　<option value="106_first_sem">106上</option>
             　<option value="105_second_sem">105下</option>
             　<option value="105_first_sem">105上</option>
+              <option value="105_first_sem">104下</option>
+              <option value="105_first_sem">104上</option>
+              <option value="105_first_sem">103下</option>
+              <option value="105_first_sem">103上</option>
             </select>
             </form>
         </div>

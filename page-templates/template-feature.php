@@ -27,17 +27,26 @@
 
 
     <div class="main" style="width:71.5vw;">
-      <div class="f_block" style="width:43.75vw;">
-        <div class="feature-title">社文所特色</div>
+      <div class="f_block">
+        <div class="feature-title">特色</div>
         <HR size="1px" style="margin-bottom:1.25vh;">
-        <div class="features">跨領域、跨文化與在地思考的知識探討</div>
+          <ul class="features" style="margin-top: 2vh;">
+            <li>跨領域、跨文化與在地思考的知識探討</li>
+            <li>兼有國際觸角與當代議題的學術眼界</li>
+            <li>深化理論思考與開拓研究視野的課程</li>
+            <li>結合知性、創造、批判與運動的實踐</li>
+            <li>著重台灣─東亞─亞洲─世界的環節</li>
+            <li>期待研究生發展具獨特問題意識而有跨領域研究格局的論文計畫</li>
+          </ul>
+
+        <!-- <div class="features">跨領域、跨文化與在地思考的知識探討</div>
         <div class="features">兼有國際觸角與當代議題的學術眼界</div>
         <div class="features">深化理論思考與開拓研究視野的課程</div>
         <div class="features">結合知性、創造、批判與運動的實踐</div>
         <div class="features">著重台灣─東亞─亞洲─世界的環節</div>
-        <div class="features">期待研究生發展具獨特問題意識而有跨領域研究格局的論文計畫</div>
+        <div class="features">期待研究生發展具獨特問題意識而有跨領域研究格局的論文計畫</div> -->
 
-        <div class="feature-content">
+        <div class="feature-content" style="margin-top:5vh;">
           <p>交通大學社會與文化研究所的師資專長在於「批判理論」以及「亞洲現代性」，是台灣唯一以文化研
   究為名的學術單位，已具有相當規模，展現相當優秀之教學與研究成績。本所以「社會、文化與政治
   思想」作為理論思考深化的主軸，另外發展「台灣文化研究」、 「東亞現代性」以及「文化史比較研究」

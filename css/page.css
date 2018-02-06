@@ -357,6 +357,7 @@ img {
 .names li{
   font-weight: 400;
   font-size: 0.8em;
+  height: 1.2vh;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -556,9 +557,9 @@ img {
 
 .book_animation{
   -webkit-animation-name: book-animate;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 7s;
   animation-name: book-animate;
-  animation-duration: 5s;
+  animation-duration: 7s;
 }
 
 @-webkit-keyframes gray-animate {
@@ -599,7 +600,7 @@ img {
 
 .book_block{
   width: 66.5vw;
-  height: 25vh;
+  height: 27vh;
   background-color: rgba(230, 230, 230, 1);
   margin-bottom: 2vh;
 }
@@ -707,14 +708,14 @@ img {
   float: right;
 }
 
-#planname_style{
+#planname_style,
+#planname_style p{
   font-weight: 300;
   font-size: 0.8em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
   display: inline-block;
-
 }
 
 /*最新消息內頁樣式*/

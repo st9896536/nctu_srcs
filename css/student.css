@@ -30,17 +30,19 @@ img {
   margin-bottom: 1.5vh;
 }
 
-.features{
+.features li{
   font-weight: 300;
   font-size: 1.15em;
   line-height: 2.25vh;
   letter-spacing: 0.1em;
   margin-bottom: 2vh;
+  color:rgba(50,50,50,1);
+  margin-left: 2vw;
 }
 
 .feature-content p{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
@@ -73,7 +75,7 @@ img {
 
 .master-extra{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   letter-spacing: 0.1em;
 }
@@ -81,7 +83,7 @@ img {
 .interview-num,
 .test-num{
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   padding-top: 5.5vh;
@@ -93,10 +95,142 @@ img {
 .test-date,
 .test-register-date{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   margin-bottom: 1vh;
+}
+
+/* 博士班招生樣式 */
+.d-content{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  width: 34vw;
+  margin-bottom: 2vh;
+}
+
+.btn {
+  word-break: keep-all;
+  float: right;
+  display:block;
+  height: 5.5vw;
+  width: 5.5vw;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,1);
+}
+
+.btn-content{
+  text-align: center;
+  width: 5.5vw;
+  height: 5.5vw;
+  border-radius: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none
+}
+
+/* 僑生港澳生 */
+.overseas-text{
+  padding-left: 2.5vw;
+  padding-top: 2.5vh;
+  z-index: 9999;
+  background-color: rgba(40,0,55,0.8);
+  height: 29.375vh;
+  margin-top: -32vh;
+  position: relative;
+}
+
+.overseas-title{
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 3vh;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.overseas-subtitle{
+  margin-top: 1.25vh;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.75vh;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.overseas-content{
+  width: 63.5vw;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* 陸生招生樣式 */
+.chinese-title{
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 2.75vh;
+  margin-bottom: 1vh;
+  letter-spacing: 0.1em;
+}
+
+.chinese-class{
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 2.25vh;
+  margin-bottom: 1vh;
+  letter-spacing: 0.1em;
+}
+
+.chinese-extra{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.1em;
+}
+
+.chinese-reg{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.1em;
+}
+
+.chi-features li,
+.chi-content p{
+  margin-bottom: 1.25vh;
+  height: 1.5vh;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50,50,50,1);
+}
+
+/* 外籍生招生樣式 */
+.foreign_block{
+  width: 63.5vw;
+  padding-left: 2.5vw;
+  padding-top: 2.5vh;
+  margin-top: 4vh;
+  padding: 1vh 2.5vw;
+  /* border-bottom: #000 solid 1px; */
+}
+
+#foreign_style{
+  vertical-align: -webkit-baseline-middle;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  color: rgba(50, 50, 50, 1);
+  display: inline-block;
 }
 
 

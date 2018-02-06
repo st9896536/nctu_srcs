@@ -55,7 +55,7 @@
       <!--書籍block-->
       <div style="float:right; display:inline-block; ">
         <div class="gray-block" style="width:66.5vw;">
-          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
+          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/east-asian.jpg" />
           </div>
 
@@ -73,7 +73,7 @@
 
 
         <div class="gray-block" style="width:66.5vw;">
-          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 1.5vh 2.5vw; display: inline-block;">
+          <div class="book" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
             <img src="<?php bloginfo('template_url'); ?>/images/Renjian_Thought_Review_6.jpg" />
           </div>
 
