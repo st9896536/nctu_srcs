@@ -1,6 +1,6 @@
 # nctu_{srcs}
 WordPress theme for the 社文所 in NCTU
-update date: 2018/01/31
+update date: 2018/02/08
 
 
 ## Used Plugins
@@ -57,6 +57,25 @@ update date: 2018/01/31
 	- page-tepmlates/template-poster-straight.php
 - 活動內頁橫式
 	- page-tepmlates/template-poster-horizontal.php
+
+### 招生
+- 社文所特色
+	- page-tepmlates/template-feature.php
+- 碩士班
+	- page-tepmlates/template-master.php
+- 博士班
+	- page-tepmlates/template-doctor.php
+- 僑生港澳生
+	- page-tepmlates/template-overseas.php
+- 陸生
+	- page-tepmlates/template-chinese.php
+- 外籍生
+	- page-tepmlates/template-foreign.php
+
+### 國際交流
+- 學術合作
+	- page-tepmlates/template-academic-cooperation.php
+
 
 ### 頁面
 - 預設頁面模板

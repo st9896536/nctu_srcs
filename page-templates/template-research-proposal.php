@@ -4,8 +4,6 @@
  */
 ?>
 
-<?php $thisPage="graduate"; ?>
-
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
@@ -35,8 +33,8 @@
 
     <div class="main">
       <div class="title_block" style="width:73vw; height:5vh;">
-        <div class="title_r" style="width:25vw; float:left;">研究計畫</div>
-        <div class="buttons" style="width:48vw; float:right;">
+        <div class="title_r" style="width:10vw; float:left;">研究計畫</div>
+        <div class="buttons" style="width:60vw; float:right;">
 
             <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">整合型研究或計畫</a>
             <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">其他學術單位委託研究計畫</a>

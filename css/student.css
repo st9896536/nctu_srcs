@@ -233,6 +233,37 @@ img {
   display: inline-block;
 }
 
+/* 國際交流學術合作樣式 */
+
+#co-title{
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 2.25vh;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: inline-block;
+}
+
+.co-detail{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  padding-left: 1vw;
+  padding-bottom: 1.5vh;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.co-detail li,
+.co-detail p{
+  color: rgba(50,50,50,1);
+  list-style-type: simp-chinese-informal;
+  margin-left: 2vw;
+  letter-spacing: 0em;
+  margin-bottom: 0.5vh;
+  padding-bottom: 1.5vh;
+}
+
 
 /** adjust font size **/
 

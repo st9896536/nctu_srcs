@@ -4,8 +4,6 @@
  */
 ?>
 
-<?php $thisPage="graduate"; ?>
-
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
