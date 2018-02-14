@@ -113,6 +113,7 @@ img {
 
 .btn {
   word-break: keep-all;
+  white-space: pre-line;
   float: right;
   display:block;
   height: 5.5vw;
@@ -132,7 +133,7 @@ img {
   align-items: center;
   font-size: 1em;
   font-weight: bold;
-  text-decoration: none
+  text-decoration: none;
 }
 
 /* 僑生港澳生 */
@@ -252,17 +253,218 @@ img {
   padding-bottom: 1.5vh;
   display: inline-block;
   vertical-align: top;
+  word-break: keep-all;
+  white-space: pre-line;
 }
 
-.co-detail li,
-.co-detail p{
+
+.co-detail ol{
+  margin-left: 2vw;
+}
+
+.co-detail li{
   color: rgba(50,50,50,1);
   list-style-type: simp-chinese-informal;
-  margin-left: 2vw;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.8em;
+  margin-bottom: 0.65vh;
   letter-spacing: 0em;
-  margin-bottom: 0.5vh;
-  padding-bottom: 1.5vh;
 }
+
+.co-detail p{
+  font-weight: 300;
+}
+
+/* 活動相簿樣式 */
+
+.a-single{
+  width:21vw;
+  /* margin-right:4.4375vw; */
+  height:43vh;
+  display: inline-block;
+  float: left;
+  /* margin-top: 2vh; */
+  margin-bottom: 4vh;
+}
+
+#a1{
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 0.9em;
+  /* line-height: 2em; */
+  letter-spacing: 0.05em;
+  height:5.5vh;
+  word-break: keep-all;
+}
+
+#a2{
+  font-weight: 300;
+  font-size: 0.6em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+}
+
+#a3{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  letter-spacing: 0.05em;
+}
+
+/* 修業規章樣式 */
+
+.btn-rules{
+  text-align: center;
+  width: 7vw;
+  height: 7vw;;
+  border-radius: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  float:left;
+  margin-top: 6vh;
+}
+
+.compulsory, .required, .elective, .remarks{
+  display: inline-block;
+  margin-right:1.5vw;
+  margin-top: 5vh;
+  float: left;
+}
+
+
+.compulsory p,
+.required p,
+.elective p,
+.remarks p{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.1em;
+  margin-bottom: 1vh;
+}
+
+.list-block{
+  width: 19.75vw;
+  margin-right: 1.5vw;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rule-master-list ul,
+.rule-doctor-list ul{
+  list-style: none;
+}
+
+.rule-master-list li,
+.rule-doctor-list li{
+  text-indent: -.7em;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.75vh;
+  letter-spacing: 0.1em;
+  color: rgba(50,50,50,1);
+      margin-left: 1vw;
+}
+
+.rule-master-list li::before{
+  content: "● ";
+  color: rgba(105,200,255,1); /* or whatever color you prefer */
+}
+
+.rule-doctor-list li::before{
+  content: "● ";
+  color: rgba(180,5,0,1); /* or whatever color you prefer */
+}
+
+/* 畢業論文樣式 */
+
+.thesis-name{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  width:14vw;
+  /* margin-right: 1vw; */
+  display: inline-block;
+  white-space: pre-line;
+}
+
+.thesis-title{
+  width:48vw;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  /* margin-right: 1vw; */
+  display: inline-block;
+  white-space: pre-line;
+}
+
+.thesis-professor{
+  width:7.825vw;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+/* 碩博士論文得獎樣式 */
+
+.name{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  width:4.5vw;
+  display: inline-block;
+  margin-right: 1vw;
+  float: left;
+}
+
+.award{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  white-space: pre-line;
+}
+
+/* 實習／見習／交換紀錄樣式 */
+
+#intership-title{
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.75vh;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.intership-detail{
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 2.75vh;
+  vertical-align:text-top;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  white-space: pre-line;
+}
+
 
 
 /** adjust font size **/

@@ -47,16 +47,3 @@ function recallDefault(t){
 	  if (t.value == "") t.value = t.defaultValue;
 }
 </script>
-
-<!--
-<input type="text" name="tt" id="tt" style="text-align:right; " value ="站內搜尋"
-onfocus="javascript:if(this.value=='站內搜尋')this.value='';">
--->
-
-
-<!--
-<input type="text" name="tt" id="tt" value ="站內搜尋"
-onfocus="cleartext(this)" onblur="resettext(this)">
-<input type="text" value="<//?php echo get_search_query(); ?>" placeholder="" name="s" id="s">
-onfocus="cleartext(this)" onblur="resettext(this)">
--->

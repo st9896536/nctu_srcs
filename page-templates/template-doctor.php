@@ -33,7 +33,8 @@
           <a href="#" class="btn" style="margin-right:0vw;">交大綜合組</a>
         </div> -->
         <a href="" class="btn btn-content">
-          <span>交大 綜合組</span>
+          <span>交大
+            綜合組</span>
         </a>
         <div class="master-title">博士班招生</div>
         <div class="master-num">共3名</div>
@@ -58,7 +59,8 @@
             <a href="#" class="back-to-list" style="margin-right:0vw;">招生特色</a>
           </div> -->
           <a href="" class="btn btn-content" style="white-space: pre-line; font-size: 1.1em;">
-            <span>招生 特色</span>
+            <span>招生
+              特色</span>
           </a>
           <a href="#" class="button_style_gray" style="position:absolute; background-color:rgba(180,5,0,1); color: rgba(255, 255, 255, 1);">甄試入學</a>
           <div class="interview-num">4名</div>

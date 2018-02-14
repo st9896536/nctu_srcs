@@ -31,7 +31,8 @@
         <img style="z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/admissions_img_03.jpg" />
         <div class="overseas-text" >
           <a href="" class="btn btn-content" style="border: 1px solid #fff;margin-right: 3vw;">
-            <span style="color: #fff;">交大 綜合組</span>
+            <span style="color: #fff;">交大
+              綜合組</span>
           </a>
           <div class="overseas-title">僑生港澳生招生</div>
           <div class="overseas-subtitle">詳見本校106學年度招生簡章或請上網查詢本校各類招生訊息</div>

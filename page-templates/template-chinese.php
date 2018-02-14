@@ -28,7 +28,8 @@
 
     <div class="main" style="width:72vw;">
       <a href="" class="btn btn-content">
-        <span>交大 綜合組</span>
+        <span>交大
+          綜合組</span>
       </a>
       <div class="f_block">
 

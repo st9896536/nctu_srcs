@@ -31,7 +31,8 @@
         <img style="z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/admissions_img_04.jpg" />
         <div class="overseas-text" style="height: 11vh; margin-top: -13.5vh;">
           <a href="" class="btn btn-content" style="border: 1px solid #fff;margin-right: 3vw;">
-            <span style="color: #fff;">交大 國際處</span>
+            <span style="color: #fff;">交大
+              國際處</span>
           </a>
           <div class="overseas-title">外籍生招生</div>
           <div class="overseas-subtitle">申請人至多可申請3個系所，並針對每一申請系所各準備一份完整的申請資料</div>

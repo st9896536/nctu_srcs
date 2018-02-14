@@ -33,7 +33,8 @@
           <a href="#" class="back-to-list" style="margin-right:0vw;">交大綜合組</a>
         </div> -->
         <a href="" class="btn btn-content">
-          <span>交大 綜合組</span>
+          <span>交大
+            綜合組</span>
         </a>
         <div class="master-title">碩士班招生</div>
         <div class="master-num">共9名</div>

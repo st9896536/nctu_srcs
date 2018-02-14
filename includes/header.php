@@ -39,7 +39,7 @@
         <a href="<?php echo site_url(); ?>/present-course">課程規劃</a>
         <a href="<?php echo site_url(); ?>/feature" style="width:3.125vw !important;">招生</a>
         <a href="<?php echo site_url(); ?>/academic-cooperation">國際交流</a>
-        <a href="#">學生專區</a>
+        <a href="<?php echo site_url(); ?>/rules">學生專區</a>
       </div>
         <!--<a id="nav-more"style="font-size:15px;" class="icon">&#9776;</a>-->
       </div>
