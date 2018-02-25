@@ -798,8 +798,8 @@ img {
   letter-spacing: 0.1em;
 }
 
-.button_register,
-.button_website
+#button_register,
+#button_website
 {
   border-radius: 5px;
   text-decoration-line: none;

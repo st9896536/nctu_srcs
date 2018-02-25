@@ -45,6 +45,8 @@ img {
   font-size: 1em;
   line-height: 1.8em;
   letter-spacing: 0.1em;
+  color: rgba(50,50,50,1);
+  width: 71.5vw;
 }
 
 .video-title{
@@ -131,7 +133,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -281,7 +283,7 @@ img {
 .a-single{
   width:21vw;
   /* margin-right:4.4375vw; */
-  height:43vh;
+  height:45vh;
   display: inline-block;
   float: left;
   /* margin-top: 2vh; */
@@ -323,7 +325,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   text-decoration: none;
   float:left;
@@ -419,6 +421,7 @@ img {
   display: inline-block;
   float: right;
   text-align: right;
+  white-space: pre-line;
 }
 
 /* 碩博士論文得獎樣式 */

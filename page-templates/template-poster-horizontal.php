@@ -58,10 +58,12 @@
           <HR size="1px" color="#4F4F4F" style="width:20vw; margin-top: 5.5vh; display:inline-block;">
           <HR size="1px" color="#4F4F4F" style="width:20vw; margin-top:0.2vh;  display:inline-block;">
           <div class="button" style="margin-left: 0.6vw; float: right; margin-bottom: 1vh; display: inline-block; margin-right:0.6vw;">
-            <a href="" class="button_register">線上報名</a>
+            <?php if( isset( $GLOBALS['wp_customize'] ) || ! get_theme_mod( 'hide_button_reg' ) ) : // HIDE/SHOW BUTTON ?>
+              <a href="" id="button_register">線上報名</a>
+            <?php endif; // END OF HEADER CHECK ?>
           </div>
           <div class="button" style="float: right; margin-bottom: 1vh; display: inline-block;">
-            <a href="" class="button_website">活動網頁</a>
+            <a href="" id="button_website">活動網頁</a>
           </div>
         </div>
 

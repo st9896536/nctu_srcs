@@ -31,7 +31,8 @@
       <div class="title_block" style="height: 20vh;margin-bottom: 3vh;">
         <div class="title_r" style="width: 10vw; float:left; height:2.75vh;">修業辦法</div>
         <a href="#" class="btn btn-rules" style="margin-left: -10vw;border: 1px solid #000;margin-right: 3vw;">
-          <span>課程規劃 總表</span>
+          <span>課程規劃
+            總表</span>
         </a>
         <a href="#" class="btn btn-rules" style="border: 1px solid #000;margin-right: 3vw;">
           <span>外語能力 認定辦法</span>
@@ -52,7 +53,7 @@
             <p>社會、文化與政治思想（3學分）</p>
           </div>
           <div class="elective" style="width: 9.75vw;">
-            <p>選修：</p>
+            <p>選修：</p>  
             <p>台灣文化研究</p>
             <p>東亞現代性</p>
             <p>文化史比較研究</p>

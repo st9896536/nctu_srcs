@@ -110,7 +110,7 @@ Series</div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.4</div>
           <div class="co-detail" style="width:33vw;">李雪莉， 《報導者》 總主筆</div>
-          <div class="co-detail" style="width:25.375vw; margin-right:1vw;">看 不 見 的 奴 役 — 從〈 血 淚 漁 場 〉調 查 報 導 談 起，R e v e a l i n g
+          <div class="co-detail" style="width:25.375vw; margin-right:1vw;">看不見的奴役 — 從〈血淚漁場〉調查報導談起，Revealing
 the Hidden Modern Day Slavery</div>
         </div>
       </div>

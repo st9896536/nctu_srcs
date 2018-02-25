@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="album-block" style="width:72vw;">
+      <div class="album-block" style="width:72vw;  height: 45vh; margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <div class="a-image" style="width:21vw; height:21vw;">
@@ -82,7 +82,10 @@
           </a>
         </div>
       </div>
-      <div class="album-block" style="width:72vw;">
+
+
+
+      <div class="album-block" style="width:72vw;  height: 45vh; margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <div class="a-image" style="width:21vw; height:21vw;">
@@ -123,6 +126,9 @@
           </a>
         </div>
       </div>
+
+
+
 
     </div>
 

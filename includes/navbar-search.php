@@ -28,7 +28,7 @@ input[type="text"] {  /* 4 + 5 */
 	border-radius: 3px;
 	letter-spacing: 0.1em;
 	color: rgba(180, 180, 180, 1);
-  margin-left: 52.1875vw;
+  margin-left: 53.1875vw;
 	border: 1px solid #fff;
 	padding: 0 1vw 0 0;
 }

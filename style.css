@@ -7,3 +7,12 @@ Author:test_hello
 Author URI:http://wordpress.org
 Tags:Wordpress
 */
+
+
+/* === Import parent CSS === */
+@import '../nctu_srcs/style.css';
+
+/* hide button*/
+.hide_button_reg #button_register{
+    display: none;
+}
