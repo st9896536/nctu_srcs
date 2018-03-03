@@ -25,7 +25,7 @@ img {
 
 .table {
 	/* border-width: 1px 1px 0px 0px; */
-  width:72vw;
+  width:auto;
   margin-bottom: 3vh;
   border:rgba(230, 230, 230, 1) solid 1px;
 }
@@ -42,6 +42,7 @@ img {
 }
 .row {
     display:table-row;
+    width:auto;
 }
 /* .cell {
     border-width: 0px 0px 1px 1px;
@@ -64,6 +65,20 @@ img {
   text-align: center;
   vertical-align: middle;
   padding: 0 2px;
+}
+
+.album-cell-test {
+  width:23.4vw;
+  height: 11.6vw;
+  border:rgba(50, 50, 50, 1) solid 1px;
+  padding-top: 6.25vh;
+  padding-left: 1.25vw;
+  margin-right: 0.8vw;
+  margin-bottom: 1.25vh;
+  float: left;
+  display: inline-block;
+  overflow:hidden;
+  position: relative;
 }
 
 .course{

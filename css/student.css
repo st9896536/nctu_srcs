@@ -282,8 +282,6 @@ img {
 
 .a-single{
   width:21vw;
-  /* margin-right:4.4375vw; */
-  height:45vh;
   display: inline-block;
   float: left;
   /* margin-top: 2vh; */
@@ -467,6 +465,51 @@ img {
   display: inline-block;
   white-space: pre-line;
 }
+
+/*活動相簿內頁詳細頁*/
+#album-title{
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 2.4em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+/* 活動相簿內頁詳細頁樣式 */
+
+.album-text{
+  width:23.4vw;
+  height: 15.6vw;
+  /* padding-left: 1.25vw; */
+  border:rgba(50, 50, 50, 1) solid 1px;
+  margin-right: 0.8vw;
+  margin-bottom: 1.25vh;
+  /* float: left; */
+  display: inline-block;
+  overflow:hidden;
+  position: relative;
+}
+
+.album-area {
+  width:23.4vw;
+  height: 15.6vw;
+  margin-right: 0.8vw;
+  margin-bottom: 1.25vh;
+  display: inline-block;
+  overflow:hidden;
+  position: relative;
+}
+
+.album-area img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  transform:translate(-50%,-50%);
+}
+
 
 
 

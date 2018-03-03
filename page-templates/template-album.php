@@ -42,9 +42,9 @@
         </div>
       </div>
 
-      <div class="album-block" style="width:72vw;  height: 45vh; margin-bottom: 5vh;">
+      <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="#">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="#">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="a-single"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="#">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -83,17 +83,14 @@
         </div>
       </div>
 
-
-
-      <div class="album-block" style="width:72vw;  height: 45vh; margin-bottom: 5vh;">
+      <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo site_url(); ?>/album/album-detail">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
             <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">「日曜日式散步者」
-特映會及映後座談會</div>
+              <div id="a1">年度傑出學者講座─小熊英二</div>
               <div id="a2">35張照片</div>
               <div id="a3">2016.11.28-29</div>
             </div>
@@ -101,12 +98,12 @@
         </div>
 
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo site_url(); ?>/album/album-detail">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
             <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">第二屆 亞際文化研究國際學程分享會</div>
+              <div id="a1">2016 Summer University</div>
               <div id="a2">35張照片</div>
               <div id="a3">2016.11.28-29</div>
             </div>
@@ -114,7 +111,7 @@
         </div>
 
         <div class="a-single"> <!--單一個album-->
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo site_url(); ?>/album/album-detail">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -126,6 +123,8 @@
           </a>
         </div>
       </div>
+
+
 
 
 

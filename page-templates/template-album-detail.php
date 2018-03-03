@@ -29,7 +29,33 @@
 <body>
 
     <div class="main" style="margin-bottom:5vh;">
-      
+      <div class="album-block">
+        <div class="album-text">
+          <a href="" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:15vh;">
+            <span>回列表</span>
+          </a>
+          <div id="a1" style="padding-left: 1.25vw;margin-top:6.25vh; height:10.5vh;">年度傑出學者講座─小熊英二</div>
+          <div id="a2" style="padding-left: 1.25vw;">35張照片</div>
+          <div id="a3" style="padding-left: 1.25vw;">2016.11.28-29</div>
+        </div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
+      </div>
+      <div class="album-block">
+        <div class="album-area"><img src="<?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0004.jpg" /></div>
+      </div>
+      <div class="album-block">
+        <div class="album-area"><img src="<?php bloginfo('template_url'); ?>/images/0003.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
+      </div>
+      <div class="album-block">
+        <div class="album-area"><img src="<?php bloginfo('template_url'); ?>/images/0004.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
+        <div class='album-area'><img src="<?php bloginfo('template_url'); ?>/images/0003.jpg" /></div>
+      </div>
 
     </div>
 

@@ -86,7 +86,7 @@ function menu_item()
 }
 
 add_action("admin_menu", "menu_item");
-
+/*練習新增radiobutton*/
 
 
 
@@ -103,11 +103,24 @@ function my_customize_reg($wp_customize){
 		'transport'  => 'postMessage'
   ));
 
+  $wp_customize->add_setting('hide_button_web',array(
+    'default'    => 0,
+		'transport'  => 'postMessage'
+  ));
+
   // control
   $wp_customize->add_control( 'hide_button_reg', array(
 		'label'      => 'Hide Button (隱藏線上報名)',
 		'section'    => 'title_tagline',
 		'settings'   => 'hide_button_reg',
+		'type'       => 'checkbox',
+		'priority'   => 40,
+	));
+
+  $wp_customize->add_control( 'hide_button_web', array(
+		'label'      => 'Hide Button (隱藏活動網頁)',
+		'section'    => 'title_tagline',
+		'settings'   => 'hide_button_web',
 		'type'       => 'checkbox',
 		'priority'   => 40,
 	));
@@ -128,6 +141,9 @@ add_filter( 'body_class', 'my_body_class' );
 function my_body_class( $classes ){
 	if( get_theme_mod( 'hide_button_reg' ) ){
 		$classes[] = 'hide_button_reg';
+	}
+  else if( get_theme_mod( 'hide_button_web' ) ){
+		$classes[] = 'hide_button_web';
 	}
 	return $classes;
 }

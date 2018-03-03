@@ -16,3 +16,7 @@ Tags:Wordpress
 .hide_button_reg #button_register{
     display: none;
 }
+
+.hide_button_web #button_website{
+    display: none;
+}

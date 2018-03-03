@@ -29,7 +29,7 @@
   <div class="row">
 
     <div class="test">
-      <p id="test_title3">衝突、正義與解殖 II</p>
+      <p id="test_title3">中國新時期興起的精神與思想意涵</p>
     </div>
   </div><!-- /.row -->
 </div><!-- /.container -->

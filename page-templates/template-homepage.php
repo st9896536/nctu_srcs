@@ -57,9 +57,9 @@
                 break;
             case 3:
                 <?php
-                $url = site_url('poster_change/');
+                $url = site_url('poster_change_2/');
                 $content = file_get_contents($url);
-                $first_step = explode( '<p id="test_title1">' , $content );
+                $first_step = explode( '<p id="test_title2">' , $content );
                 $second_step = explode("</p>" , $first_step[1] );
 
                 ?>
@@ -156,27 +156,26 @@
           <img src="<?php bloginfo('template_url'); ?>/images/bg.jpg" />
         </li>
         <li>
+          <img src="<?php bloginfo('template_url'); ?>/images/0001.jpg" />
+        </li>
+        <li>
           <a href="<?php echo site_url(); ?>/poster_change_2">
-            <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_1.png" />
+            <img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" />
 
           </a>
         </li>
         <li>
           <a href="<?php echo site_url(); ?>/poster_change_3">
-            <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_2.png" />
+            <img src="<?php bloginfo('template_url'); ?>/images/0003.jpg" />
 
           </a>
         </li>
         <li>
           <a href="<?php echo site_url(); ?>/poster_change_3">
-            <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_3.png" />
-
+            <img src="<?php bloginfo('template_url'); ?>/images/0004.jpg" />
           </a>
         </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/images/cover_banner_4.png" />
 
-        </li>
       </ul>
     </div>
 
@@ -209,15 +208,6 @@
                   <font style="font-size: 0.7em;line-height: 1.5vh;"><?php the_time('Y'); ?></font>
                   <font style="font-size: 1em;line-height: 2.5vh;"><?php the_time('m/d'); ?></font>
               </span>
-              <!--
-                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" height="40vh">
-                    <tr>
-                      <td height="40vh" width="0.625vw">　</td>
-                      <td width="1" bgcolor="#000000" height="40vh"></td>
-                      <td height="40vh" width="0.1vw">　</td>
-                    </tr>
-                </table>
-              -->
 
                 <a href="<?php the_permalink(); ?>"><p id="content_text"><?php the_title(); ?></p></a>
               </div>

@@ -29,7 +29,7 @@
   <div class="row">
 
     <div class="test">
-      <p id="test_title2">亞際文化研究國際碩士學位學程</p>
+      <p id="test_title2">藝術介入與社會批判:亞際知識對話</p>
     </div>
   </div><!-- /.row -->
 </div><!-- /.container -->

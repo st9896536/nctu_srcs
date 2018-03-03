@@ -52,15 +52,19 @@
 
           <div class="button_block">
             <div class="button" style="width: 9vw; float: left;">
-              <div style="height:5vh;">
-                <a href="#" class="num_button">1</a>
-                <div class="go_register" style="margin-left:0.75vw;display: inline-block;">線上報名</div>
-              </div>
+              <?php if( CFS()->get( 'go_register' ) ) : // HIDE/SHOW BUTTON ?>
+                <div style="height:5vh;">
+                  <a href="<?php echo CFS()->get( 'go_register' ); ?>"  class="num_button">1</a>
+                  <a href="<?php echo CFS()->get( 'go_register' ); ?>"  class="go_register" style="margin-left:0.75vw;display: inline-block;">線上報名</a>
+                </div>
+              <?php endif; // END OF BUTTON CHECK ?>
             </div>
 
             <div class="button" style="width: 9vw;">
-              <a href="#" class="num_button">2</a>
-              <div class="go_website" style="margin-left:0.75vw; display: inline-block;">活動網頁</div>
+              <?php if( CFS()->get( 'go_website' ) ) : // HIDE/SHOW BUTTON ?>
+                <a href="<?php echo CFS()->get( 'go_website' ); ?>" class="num_button">2</a>
+                <a href="<?php echo CFS()->get( 'go_website' ); ?>" class="go_website" style="margin-left:0.75vw; display: inline-block;">活動網頁</a>
+              <?php endif; // END OF BUTTON CHECK ?>
             </div>
           </div>
 
