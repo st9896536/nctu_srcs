@@ -15,12 +15,12 @@ The Single Posts Loop  (最新消息內文)
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
       <div class="title_news" style="width:68.75vw; padding-bottom: 2vh; border-bottom: #000 solid 1px;">
         <div style="height:auto; width: 5vw;border-right: #000 solid 2px; display: inline-block; float: left;">
-          <font class="title_year"><?php the_time('Y'); ?></font>
-          <font class="title_date"><?php the_time('m/d'); ?></font>
+          <div class="title_year" style="padding-left: 7px;"><?php the_time('Y'); ?></div>
+          <div class="title_date" style="font-weight: 400;font-size: 0.8em; letter-spacing: 0.1em;"><?php the_time('m/d'); ?></div>
         </div>
         <div style="height:6vh; width: 62vw; display: inline-block;  padding-left: 1vw;">
-          <font class="title_chi"><a href="<?php the_permalink(); ?>"><?php the_title()?></a></font></br>
-          <!--<font class="title_chi"><a href="</?php the_permalink(); ?>"></?php the_title()?></a></font>-->
+          <div class="title_chi"><?php the_title()?></div></br>
+          <!--<div class="title_chi"><a href="</?php the_permalink(); ?>"></?php the_title()?></a></div>-->
         </div>
 
 
@@ -38,10 +38,10 @@ The Single Posts Loop  (最新消息內文)
 
 
         <div class="button" style="margin-left: 0.6vw; float: right;margin-top:1vh; margin-bottom: 1vh; display: inline-block; margin-right:0.6vw;">
-          <a href="" class="button_register">線上報名</a>
+          <a href="" id="button_register">線上報名</a>
         </div>
         <div class="button" style="float: right; margin-top:1vh; margin-bottom: 1vh; display: inline-block;">
-          <a href="" class="button_website">活動網頁</a>
+          <a href="" id="button_website">活動網頁</a>
         </div>
 
       </div>

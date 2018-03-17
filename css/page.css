@@ -317,9 +317,10 @@ img {
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 1);
   margin-right: 0.9375vw;
+  text-decoration:none;
 }
 
-.button_style_white{  /*依領域*/
+.button_style_white{  /*依學年*/
   border-radius: 5px;
   text-decoration-line: none;
   text-align: justify;
@@ -332,6 +333,7 @@ img {
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 1);
   margin-right: 0.9375vw;
+  text-decoration:none;
 }
 
 .category{
@@ -445,6 +447,7 @@ img {
   color: rgba(0, 0, 0, 1);
   margin-right: 0.9375vw;
   text-decoration-line: unset;
+  text-decoration:none;
 }
 
 /*研究方向樣式*/
@@ -454,6 +457,7 @@ img {
   line-height: 3vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
+  text-align: center;
 }
 
 #content{
@@ -706,7 +710,13 @@ img {
   letter-spacing: 0.1em;
   margin-right: 0.75vw;
   float: right;
+  text-decoration:none;
 }
+
+/* #buttons_course a{
+ background-color: rgba(255,230,160,0.8);
+ color: rgba(100,100,100,1);
+} */
 
 #planname_style,
 #planname_style p{
@@ -727,20 +737,20 @@ img {
   color: rgba(50, 50, 50, 1);
 }
 
-.title_date{
+/* .title_date{
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.5vh;
   text-align: justify;
   color: rgba(255, 255, 255, 1);
   border-radius: 5px;
-  /*text-decoration-line: none;*/
   padding: 2px 6px;
   background-color: rgba(50, 50, 50, 1);
-}
+} */
 
 .host,
-.speaker{
+.speaker,
+.title_date{
   /*
   font-weight: 300;
   font-size: 0.7em;
@@ -754,7 +764,7 @@ img {
   background-color: rgba(50, 50, 50, 1);
   */
 
-  width:4vw;
+  width:3.5vw;
   font-weight: 300;
   font-size: 0.7em;
   line-height: 1.3em;
@@ -960,6 +970,45 @@ img {
  margin-top: 5vh;
 }
 
+#btn-first{
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 2vh;
+  text-align: justify;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 9px 11px;
+  background-color: rgba(60, 0, 110, 0.8);
+  letter-spacing: 0.1em;
+  margin-right: 0.75vw;
+  float: right;
+  text-decoration:none;
+}
+#btn-second,
+#btn-whole{
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 2vh;
+  text-align: justify;
+  background-color: rgba(255, 230, 160, 0.8);
+  color: rgba(100, 100, 100, 1);
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 9px 11px;
+  letter-spacing: 0.1em;
+  margin-right: 0.75vw;
+  float: right;
+  text-decoration:none;
+}
+
+
+
+#buttons_course a:hover{
+  background-color: rgba(50, 50, 50, 1);
+  color: rgb(255, 255, 255);
+}
+
 .course-title-chi{
   font-weight: 600;
   font-size: 1.25em;
@@ -1005,6 +1054,7 @@ img {
   letter-spacing: 0.1em;
   margin-right: 1vw;
   float: left;
+  text-decoration:none;
 }
 
 .button_style_gray{
@@ -1021,6 +1071,7 @@ img {
   letter-spacing: 0.1em;
   margin-right: 1vw;
   float: left;
+  text-decoration:none;
 }
 
 /* 課程內文樣式 */

@@ -28,11 +28,12 @@
 
     <div class="main" style="width:71.5vw;">
 
-      <div class="m_block" style="36vw; float:left; display:inline-block;">
-        <!-- <div class="list_div" style="float: right; margin-top:3vh; display: inline-block;">
-          <a href="#" class="btn" style="margin-right:0vw;">交大綜合組</a>
+      <div class="m_block" style=" float:left; display:inline-block;">
+
+        <!-- <div class="enroll-block" style="padding-bottom:2.25vh; border-bottom: rgba(50,50,50,1) solid 1px;">
+
         </div> -->
-        <a href="" class="btn btn-content">
+        <a target="_blank" href="https://aadm.nctu.edu.tw/admit/" class="btn btn-content">
           <span>交大
             綜合組</span>
         </a>
@@ -58,7 +59,7 @@
           <!-- <div class="list_div" style="float: right; margin-top:3vh; display: inline-block;">
             <a href="#" class="back-to-list" style="margin-right:0vw;">招生特色</a>
           </div> -->
-          <a href="" class="btn btn-content" style="white-space: pre-line; font-size: 1.1em;">
+          <a href="" class="btn btn-content" style="white-space: pre-line; ">
             <span>招生
               特色</span>
           </a>

@@ -44,7 +44,7 @@
 
       <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="a-single"> <!--單一個album-->
-          <a href="#">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -85,7 +85,7 @@
 
       <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo site_url(); ?>/album/album-detail">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="<?php echo site_url(); ?>/album/album-detail">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="a-single"> <!--單一個album-->
-          <a href="<?php echo site_url(); ?>/album/album-detail">
+          <a href="#" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
             </div>

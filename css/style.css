@@ -10,7 +10,7 @@ li{        /* 24 */
   margin-bottom: 1.5vh;
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 2vh;
+  line-height: 4vh;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 1);
 }
@@ -51,6 +51,46 @@ img {
   background-size: cover;
   min-height: 100%;
   width: 100%;
+}
+
+.icons{
+  width: 36px;
+  height: 36px;
+  opacity: 0.3;
+  margin-right: 10px;
+  margin-bottom: 1.5vh;
+  display: inline-block;
+  background-size: cover;
+}
+
+.icons a:hover{
+  opacity: 0.8;
+}
+
+.icons_facebook{
+  background-image: url(../images/btn/icon_fb_30opacity.svg);
+}
+
+.icons_instagram{
+  background-image: url(../images/btn/icon_ig_30opacity.svg);
+}
+
+.icons_twitter{
+  background-image: url(../images/btn/icon_twitter_30opacity.svg);
+}
+
+.icons_youtube{
+  background-image: url(../images/btn/icon_youtube_30opacity.svg);
+}
+
+.icons_blogger{
+  background-image: url(../images/btn/icon_blogger_30opacity.svg);
+  margin-bottom: 0;
+}
+
+.icons_gallery{
+  background-image: url(../images/btn/icon_gallery_30opacity.svg);
+  margin-bottom: 0;
 }
 
 
@@ -168,6 +208,7 @@ img {
   margin-right: 2.8125vw;
   /*height: 25vh;
   width: 100vw;*/
+  float: right;
 }
 
 .nav a {   /*6*/
@@ -229,14 +270,14 @@ img {
 .footer_left{
   float: left;
   height: 22.5vh;
-  width: 99.21875vw;
+  width: 98.21875vw;
   background-color: rgba(60, 0, 110, 0.8);
 }
 
 .footer_right{
   float: right;
   height: 22.5vh;
-  width: 0.78125vw;
+  width: 1.78125vw;
   background-color: rgba(255, 230, 160, 0.8);
 }
 
@@ -249,25 +290,25 @@ img {
 
 .footer_text1{
   float: left;
-  width: 22.5vw;
+  width: 20.5vw;
   display: inline-block;
 }
 
 .footer_text2{
-  width: 25vw;
+  width: 23vw;
   margin-left: -1%;
   display: inline-block;
 }
 
 .footer_text3{
-  float: right;
+  /* float: right; */
   display: inline-block;
   right: 0;
   left: 100%;
   /*margin-right: 43%;*/
   left: 0;
   vertical-align: top;
-  width: 48.9375vw;
+  width: 41.9375vw;
 }
 
 /* side bar*/
@@ -285,6 +326,7 @@ img {
   border-left: 0.78125vw rgba(255, 255, 255, 0) solid;
   display: block;
   text-decoration-line: none;
+  text-decoration: none;
   font-weight: 600;
   font-size: 1em;
   line-height: 2.5vh;
@@ -319,6 +361,7 @@ img {
   /* border-left: 0.78125vw rgba(255, 255, 255, 0) solid; */
   display: block;
   text-decoration-line: none;
+  text-decoration: none;
   font-weight: 600;
   font-size: 1em;
   line-height: 2.5vh;

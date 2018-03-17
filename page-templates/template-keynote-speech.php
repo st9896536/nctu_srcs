@@ -51,7 +51,7 @@
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.6.2</div>
-          <div class="co-detail" style="width:33vw;  margin-top: -2.5vh; margin-bottom: -2.5vh;">
+          <div class="co-detail" style="width:33vw;">
               <p>Sandro Mezzadra，義大利波隆那大學政治與社會科學系副教授</p>
               <p>Jon Solomon 蘇哲安，法國里昂大學教授</p>
               <p>Alain Brossat，巴黎八大、交大社文所客座教授</p>
@@ -127,8 +127,7 @@ the Hidden Modern Day Slavery</div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.4</div>
           <div class="co-detail" style="width:33vw;">Walter Mignolo</div>
-          <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Professor Walter Mignolo 「殖民、去殖民、資本主義」系
-列</div>
+          <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Professor Walter Mignolo 「殖民、去殖民、資本主義」系列</div>
         </div>
       </div>
 

@@ -25,7 +25,7 @@ img {
 
 .table {
 	/* border-width: 1px 1px 0px 0px; */
-  width:auto;
+  width:72vw;
   margin-bottom: 3vh;
   border:rgba(230, 230, 230, 1) solid 1px;
 }

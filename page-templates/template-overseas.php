@@ -30,7 +30,7 @@
       <div class="background_image">
         <img style="z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/admissions_img_03.jpg" />
         <div class="overseas-text" >
-          <a href="" class="btn btn-content" style="border: 1px solid #fff;margin-right: 3vw;">
+          <a target="_blank" href="https://aadm.nctu.edu.tw/admit/" class="btn btn-content" style="border: 1px solid #fff;margin-right: 3vw;">
             <span style="color: #fff;">交大
               綜合組</span>
           </a>

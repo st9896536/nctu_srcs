@@ -43,25 +43,25 @@
       <div class="co_detail" style="width:72vw; padding:1vh 0.8vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
-          <div class="co-detail" style="width:14vw;">韓國中央大學(交換學生) </div>
+          <div id="school-name" style="width:14vw;">韓國中央大學(交換學生) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。</div>
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
-          <div class="co-detail" style="width:14vw;">東京大學(交換學生) </div>
+          <div id="school-name" style="width:14vw;">東京大學(交換學生) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。</div>
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2014.04.08</div>
-          <div class="co-detail" style="width:14vw;">上海大學(交換學生計畫) </div>
+          <div id="school-name" style="width:14vw;">上海大學(交換學生計畫) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。</div>
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;height: 32vh;">
           <div class="co-detail" style="width:7vw;">2012.01.03</div>
-          <div class="co-detail" style="width:14vw;">新加坡南洋理工大學</div>
+          <div id="school-name" style="width:14vw;">新加坡南洋理工大學</div>
           <div class="co-detail" style="width:22.5vw;"></div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。
             <ol>
@@ -75,10 +75,10 @@
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2012.01.03</div>
-          <div class="co-detail" style="width:14vw;">新加坡南洋理工大學 (交換學生計畫)</div>
+          <div id="school-name" style="width:14vw;">新加坡南洋理工大學
+            (交換學生計畫)</div>
           <div class="co-detail" style="width:22.5vw;">3年內有效，到期前30天決定續約或中止。若中途有一方要中止合約應於六個月內書面通知他方，並不得影響原學生之權益。</div>
-          <div class="co-detail" style="width:23.375vw; list-style-type:decimal;    margin-top: -5.5vh;
-    margin-bottom: -4.5vh;">
+          <div class="co-detail" style="width:23.375vw; list-style-type:decimal;">
             <ol>
               <li>依平等互惠原則，每校每學年至10位交換學生。</li>
               <li>交換期間繳交原校註冊費。簽證、住宿、旅遊、餐飲、保險、書籍、文具等費用需自付。</li>
@@ -94,11 +94,11 @@
 
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2011.10.15</div>
-          <div class="co-detail" style="width:14vw;">新加坡大學</div>
+          <div id="school-name" style="width:14vw;">新加坡大學</div>
           <div class="co-detail" style="width:22.5vw;">- 2016</div>
-          <div class="co-detail" style="width:23.375vw; list-style-type:decimal;margin-top: -5.5vh;margin-bottom: -4.5vh;">
+          <div class="co-detail" style="width:23.375vw; list-style-type:decimal;">
             <ol>
-              <li style="height: 4vh;">一學年兩位交換學生名額，若人數不足可保留，合約期限內以兩校交換人數均等為原則。( 一學期兩位等於一學年一位)</li>
+              <li style="height: 7vh;">一學年兩位交換學生名額，若人數不足可保留，合約期限內以兩校交換人數均等為原則。( 一學期兩位等於一學年一位)</li>
               <li>交換學生為非學位性質，亦排除轉校之期待。交換期間結束須回原校註冊。</li>
               <li>交換期間繳交原校註冊費</li>
               <li>原校依標準選送交換學生，接待學校保留評定及拒絕之權。</li>
@@ -109,22 +109,23 @@
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2010.4</div>
-          <div class="co-detail" style="width:14vw;">香港中文大學 文化宗教研究系</div>
+          <div id="school-name" style="width:14vw;">香港中文大學
+            文化宗教研究系</div>
           <div class="co-detail" style="width:22.5vw;">- 2015已再續約</div>
-          <div class="co-detail" style="width:23.375vw; margin-bottom:0vh;margin-top: -2.5vh;margin-bottom: -2.5vh;">
-            <p>每學年的兩學期，兩校各保留一位交換學生的名額，以兩校均等為原則。</p>
-            <p>交換學生由原學校於交換學校的報名期限前提出申
-請。</p>
-            <p>所修學分參照原學校之學分認可辦法。</p>
-            <p>學費付給原學校， CUHK的中文課程不在此限。</p>
-            <p>此協議書五年內有效。</p>
+          <div class="co-detail" style="width:23.375vw; ">
+            <li>每學年的兩學期，兩校各保留一位交換學生的名額，以兩校均等為原則。</li>
+            <li>交換學生由原學校於交換學校的報名期限前提出申請。</li>
+            <li>所修學分參照原學校之學分認可辦法。</li>
+            <li>學費付給原學校， CUHK的中文課程不在此限。</li>
+            <li>此協議書五年內有效。</li>
           </div>
         </div>
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2010.04</div>
-          <div class="co-detail" style="width:14vw;">上海大學 中國當代文化研究中心</div>
+          <div id="school-name" style="width:14vw;">上海大學
+            中國當代文化研究中心</div>
           <div class="co-detail" style="width:22.5vw;"></div>
-          <div class="co-detail" style="width:23.375vw;margin-top: -5.5vh;margin-bottom: -4.5vh;">
+          <div class="co-detail" style="width:23.375vw; ">
             <ol>
               <li>學術研究活動合作</li>
               <li>教師交流</li>
@@ -137,9 +138,10 @@
 
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2009.12</div>
-          <div class="co-detail" style="width:14vw;">華東師範大學 思勉人文高等研究院</div>
+          <div id="school-name" style="width:14vw;">華東師範大學
+            思勉人文高等研究院</div>
           <div class="co-detail" style="width:22.5vw;"></div>
-          <div class="co-detail" style="width:23.375vw;margin-top: -5.5vh;margin-bottom: -4.5vh;">
+          <div class="co-detail" style="width:23.375vw; ">
             <ol>
               <li>學術研究活動合作</li>
               <li>教師交流</li>

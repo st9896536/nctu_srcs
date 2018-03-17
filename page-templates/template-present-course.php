@@ -4,8 +4,6 @@
  */
 ?>
 
-<?php $thisPage="graduate"; ?>
-
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table.css" type="text/css" />
@@ -32,11 +30,13 @@
 
     <div class="main" style="margin-bottom:5vh;">
       <div class="title_block" style="width:73vw; height:5vh; margin-bottom: 3.75vh;">
-        <div class="title_r" style="width:25vw; float:left;">社文所本學年課程</div>
-        <div class="buttons" style="width:48vw; float:right;">
-            <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">全校課程搜尋</a>
-            <a href="#" class="button_style_plan1" style="background-color: rgba(255, 230, 160, 0.8); color: rgba(100, 100, 100, 1);">106下</a>
-            <a href="#" class="button_style_plan1">106上</a>
+        <div class="title_r" style="width:25vw; float:left;"><?php the_title()?></div>
+        <div id="buttons_course" style="width:48vw; float:right;">
+
+            <a id="btn-whole" href="https://timetable.nctu.edu.tw/?flang=zh-tw" >全校課程搜尋</a>
+            <a id="btn-second" href="<?php echo site_url(); ?>/present-course-second-semester" >106下</a>
+            <a id="btn-first" href="<?php echo site_url(); ?>/present-course-first-semester" >106上</a>
+
         </div>
       </div>
       <!-- 星期一 -->
@@ -44,23 +44,33 @@
 
             <div class='row'>
 
-              <div class='cell merged' style="width:2.35vw;">星期一</div>
+              <div class='cell merged' style="width:2.35vw;"><?php echo CFS()->get( 'weekdays' ); ?></div>
                 <div class='intable'>
                   <div class='row'>
-                    <div class='cell'>IJK</div>
+                    <div class='cell'><?php echo CFS()->get( 'time_code' ); ?></div>
                     <div class='course'>
 
-                        <div class="course-title-chi">亞際文化研究導論</div>
-                        <div class="course-title_eng">Introduction to Inter-Asia Cultural Studies</div>
+                        <div class="course-title-chi"><?php echo CFS()->get( 'course-title-chi' ); ?></div>
+                        <div class="course-title_eng"><?php echo CFS()->get( 'course-title-eng' ) ?></div>
                         <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh; margin-right: 1vw;">
-                        <div class="professor-name-chi">劉紀慧 教授</div>
-                        <div class="professor-name-eng">Joyce C.H. Liu</div>
+                        <div class="professor-name-chi"><?php echo CFS()->get( 'professor-name-chi' ) ?></div>
+                        <div class="professor-name-eng"><?php echo CFS()->get( 'professor-name-eng' ) ?></div>
 
                     </div>
-                    <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
-                      <a href="#" class="button_style_blue">選修課程</a>
-                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">英文授課</a>
-                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">輔開課程</a>
+                    <div class='cell' id="btn-course-block" style="width:33.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
+                      <?php if( CFS()->get( 'select_buttons' ) ) :
+                        $values = CFS()->get( 'select_buttons' );
+                        // echo gettype($values);   //array
+                        $valuestostr =  implode(",",$values);  //array to string
+                        $pieces = explode(",", $valuestostr);
+
+                        // echo $pieces[0];
+                      ?>
+                      <?php endif; // END OF BUTTON CHECK ?>
+                      <a href="#" class="button_style_blue"><?php echo $pieces[0];?> </a>
+                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);"><?php echo $pieces[2];?></a>
+
+                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);"><?php echo $pieces[4];?></a>
                     </div>
                   </div>
                   <div class='row'>
@@ -84,7 +94,7 @@
 
         </div>
       <!-- 星期二 -->
-      <div class='table'>
+      <!-- <div class='table'>
 
           <div class='row'>
 
@@ -143,7 +153,7 @@
 
           </div>
 
-      </div>
+      </div> -->
 
 
 

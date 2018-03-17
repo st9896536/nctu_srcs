@@ -56,11 +56,13 @@
 
       <div class="video_block" style="margin-right:8.5vw; margin-top: 5vh; float:left; width:31.25vw; margin-bottom:5vh;">
         <div class="video-title">社會與文化研究所招生宣傳短片</div>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/yE7nLbXTZ6o" frameborder="0" allowfullscreen></iframe>
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/yE7nLbXTZ6o" frameborder="0" allowfullscreen></iframe>
+        <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/yE7nLbXTZ6o" frameborder="0" allowfullscreen></iframe> -->
       </div>
       <div class="video_block" style="margin-top: 5vh; width:31.25vw; display:inline-block;">
         <div class="video-title">亞際文化研究國際學位學程</div>
-        <iframe width="100%" height="315"src="https://www.youtube.com/embed/LkBIpv8FsYU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/LkBIpv8FsYU" frameborder="0"  allowfullscreen></iframe>
+        <!-- <iframe width="100%" height="315"src="https://www.youtube.com/embed/LkBIpv8FsYU" frameborder="0" allowfullscreen></iframe> -->
       </div>
 
 

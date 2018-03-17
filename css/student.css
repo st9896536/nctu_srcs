@@ -118,7 +118,7 @@ img {
   white-space: pre-line;
   float: right;
   display:block;
-  height: 5.5vw;
+  height: 5vw;
   width: 5.5vw;
   border-radius: 50%;
   border: 1px solid rgba(0,0,0,1);
@@ -126,8 +126,8 @@ img {
 
 .btn-content{
   text-align: center;
-  width: 5.5vw;
-  height: 5.5vw;
+  width: 4.5vw;
+  height: 4.5vw;
   border-radius: 100%;
   display: inline-flex;
   flex-direction: column;
@@ -255,7 +255,18 @@ img {
   padding-bottom: 1.5vh;
   display: inline-block;
   vertical-align: top;
-  word-break: keep-all;
+
+}
+
+#school-name{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  padding-left: 1vw;
+  padding-bottom: 1.5vh;
+  display: inline-block;
+  vertical-align: top;
+  /* word-break: keep-all; */
   white-space: pre-line;
 }
 
@@ -272,6 +283,7 @@ img {
   line-height: 1.8em;
   margin-bottom: 0.65vh;
   letter-spacing: 0em;
+  height: 3em;
 }
 
 .co-detail p{
@@ -296,6 +308,7 @@ img {
   letter-spacing: 0.05em;
   height:5.5vh;
   word-break: keep-all;
+
 }
 
 #a2{
@@ -303,6 +316,7 @@ img {
   font-size: 0.6em;
   line-height: 2vh;
   letter-spacing: 0.1em;
+
 }
 
 #a3{
@@ -310,6 +324,7 @@ img {
   font-size: 0.8em;
   line-height: 1.5vh;
   letter-spacing: 0.05em;
+
 }
 
 /* 修業規章樣式 */
@@ -508,6 +523,25 @@ img {
   min-width: 100%;
   min-height: 100%;
   transform:translate(-50%,-50%);
+}
+
+.btn_left_lightgrey{
+  background-image: url(../images/btn/btn_left_lightgrey.svg);
+  width: 42px;
+  height: 42px;
+  float: left;
+  display: inline-block;
+  background-size: cover;
+  margin-right: 2.5vw;
+}
+
+.btn_close_lightgrey{
+  background-image: url(../images/btn/btn_close_lightgrey.svg);
+
+}
+
+.btn_right_lightgrey{
+  background-image: url(../images/btn/btn_right_lightgrey.svg);
 }
 
 

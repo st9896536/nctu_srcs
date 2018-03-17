@@ -27,7 +27,7 @@
 
 
     <div class="main" style="width:72vw;">
-      <a href="" class="btn btn-content">
+      <a target="_blank" href="https://aadm.nctu.edu.tw/admit/" class="btn btn-content">
         <span>交大
           綜合組</span>
       </a>

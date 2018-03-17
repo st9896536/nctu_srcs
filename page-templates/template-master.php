@@ -32,7 +32,7 @@
         <!-- <div class="list_div" style="float: right; margin-top:3vh; display: inline-block;">
           <a href="#" class="back-to-list" style="margin-right:0vw;">交大綜合組</a>
         </div> -->
-        <a href="" class="btn btn-content">
+        <a target="_blank" href="https://aadm.nctu.edu.tw/admit/" class="btn btn-content">
           <span>交大
             綜合組</span>
         </a>
