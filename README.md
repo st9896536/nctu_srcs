@@ -5,6 +5,7 @@ update date: 2018/02/08
 
 ## Used Plugins
 - qTranslate-X
+- ACF Photo Gallery Field
 
 ## 頁面模板
 
@@ -14,9 +15,13 @@ update date: 2018/02/08
 
 ### 文章
 - 文章列表
-	- category.php
+	- newslist.php
 - 文章內文
-	- singletest.php
+	- single_news.php
+- 相簿列表
+	- album.php
+- 相簿詳細頁
+	- single_album.php
 
 ### 關於本所
 - 關於本所
@@ -75,7 +80,26 @@ update date: 2018/02/08
 ### 國際交流
 - 學術合作
 	- page-tepmlates/template-academic-cooperation.php
+- 專題演講
+	- page-tepmlates/template-keynote-speech.php
+- 研討會／工作坊
+	- page-tepmlates/template-workshop.php
+- 活動相簿
+	- page-tepmlates/template-album.php
 
+### 學生專區
+- 修業規章
+	- page-tepmlates/template-rules.php
+- 修業規章
+	- page-tepmlates/template-thesis.php
+- 碩博士論文獲獎
+	- page-tepmlates/template-dissertation-award.php
+- 其他獲獎訊息
+	- page-tepmlates/template-other-award.php
+- 實習／見習／交換紀錄
+	- page-tepmlates/template-intership-exchange-record.php
+- 學生下載
+	- page-tepmlates/template-student-download.php
 
 ### 頁面
 - 預設頁面模板
