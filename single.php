@@ -1,15 +1,20 @@
 <?php get_template_part('includes/header'); ?>
-<?php get_template_part('includes/sidebar-news-relative'); ?>
+
 
 
 </?php get_template_part('includes/footer'); ?>
 
 
-<?php get_template_part('includes/loops/content', 'singletest'); ?>
-<!--
-<div class="col-xs-12 col-sm-8">
-  <div id="content" role="main">
+</?php get_template_part('includes/loops/content', 'singletest'); ?>
+<?php
+$post = $wp_query->post;
 
-  </div>
-</div>
--->
+if ( in_category( 'news_srcs' ) ) {
+  get_template_part('includes/sidebar-news-relative');
+  get_template_part('includes/loops/content', 'single_news');
+}
+else if ( in_category( 'gallery_srcs' ) ) {
+  // get_template_part('includes/sidebar-global-lounge');
+  get_template_part('includes/loops/content', 'single_album');
+}
+?>

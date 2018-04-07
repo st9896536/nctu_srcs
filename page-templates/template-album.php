@@ -42,86 +42,37 @@
         </div>
       </div>
 
-      <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
-        <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
-            <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">年度傑出學者講座─小熊英二</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
-            </div>
-          </a>
-        </div>
 
-        <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
-            <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">2016 Summer University</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="a-single"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
-            <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">青年學者工作坊</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
-            </div>
-          </a>
-        </div>
-      </div>
 
       <div class="album-block" style="width:72vw;  margin-bottom: 5vh;">
-        <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
+<?php
+// wp query
+$args = array(
+  'category_name' => 'gallery_srcs',
+  'orderby' => 'title',
+  'order'   => 'DESC',
+);
+$the_query = new WP_Query($args);
+if($the_query->have_posts()):
+    while($the_query->have_posts()):
+        $the_query->the_post();
+        $image=acf_photo_gallery('album_detail_gallery', $post->ID)[0];
+        $img_url=$image['full_image_url'];
+?>
+        <div class="a-single" style="margin-right:3vw;"> <!--單一個album-->
+          <a href="<?php the_permalink();?>" style="text-decoration:none;">
             <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
+              <img src="<?php echo $img_url; ?>" />
             </div>
             <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">年度傑出學者講座─小熊英二</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
+              <div id="a1"><?php the_title();?></div>
+              <div id="a2"><?php echo count($image) ; ?>張照片</div>
+              <div id="a3"><?php the_time('Y/m/d') ?></div>
             </div>
           </a>
         </div>
+<?php endwhile; endif; ?>
 
-        <div class="a-single" style="margin-right:4.4375vw;"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
-            <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">2016 Summer University</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="a-single"> <!--單一個album-->
-          <a href="#" style="text-decoration:none;">
-            <div class="a-image" style="width:21vw; height:21vw;">
-              <img src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
-            </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1">青年學者工作坊</div>
-              <div id="a2">35張照片</div>
-              <div id="a3">2016.11.28-29</div>
-            </div>
-          </a>
-        </div>
       </div>
 
 

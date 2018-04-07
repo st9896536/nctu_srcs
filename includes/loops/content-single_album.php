@@ -32,10 +32,19 @@
       <div class="album-block">
         <?php
         //Get the images ids from the post_metadata
+        $post_id = $post->ID; // current post ID
+        $cat = get_the_category();
+        $current_cat_id = $cat[0]->cat_ID; // current category ID
+        $args = array(
+            'category' => $current_cat_id,
+            'orderby'  => 'post_date',
+            'order'    => 'DESC'
+        );
         $images = acf_photo_gallery('album_detail_gallery', $post->ID);
         ?>
         <div class="album-text">
-          <a href="" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:15vh;">
+
+          <a href="javascript:history.back()" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:15vh;">
             <span>回列表</span>
           </a>
           <div id="a1" style="padding-left: 1.25vw;margin-top:6.25vh; height:11.5vh;"><?php the_title(); ?></div>

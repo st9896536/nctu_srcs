@@ -44,6 +44,11 @@ img {
     display:table-row;
     width:auto;
 }
+
+.row_container{
+    display:table-row;
+    width:auto;
+}
 /* .cell {
     border-width: 0px 0px 1px 1px;
     width:25%;
@@ -58,6 +63,13 @@ img {
   vertical-align: middle;
 }
 /* .table, .intable, */
+
+.cell_weekdays{
+  display:table-cell;
+  background: rgba(230, 230, 230, 1);
+  text-align: -webkit-center;
+  vertical-align: middle;
+}
 
 .cell {
   height: 12.5vh;
@@ -92,6 +104,12 @@ img {
   padding-top:1.25vh;
 }
 
+#btn-course-block{
+  width:33.825vw;
+  padding-top:1.5vh; 
+  vertical-align: top;
+  padding-left: 1vw;
+}
 /*
 .course-button{
   height: 12.5vh;
