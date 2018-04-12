@@ -14,7 +14,7 @@
   <script>
 
     $( document ).ready(function() {
-      
+
 
       $ ("#top-menu a:eq(2)").addClass('nav_active');
       $ (".sidebarmenu a:eq(0)").removeClass('a_show');
@@ -64,7 +64,7 @@
               final_time[i] = arr_time[i][9] + arr_time[i][10] + arr_time[i][11];
 
             }
-            
+
             var count = [0,0,0,0,0,0]; //計算星期一到星期五的數量
             for(var i = 0; i<arr_weekdays.length; i++){
 
@@ -92,23 +92,32 @@
 
             //控制板型要新增多少
             var num = 0;
-            for(var i = 0; i <count.length; i++) { 
-            // console.log(count[i]);
-            $('.table').append("<div id=weekdays_" + i +" class=row></div>");
-            // $(.row).append("<div class=cell_weekdays></div>");
-            $('#weekdays_' + i).append("<div class=cell_weekdays>" + "星期" + i + "</div>");
+            var c = 0;
+            for(var i = 0; i <count.length; i++) {
+
+              $('.main').append("<div id=weekdays_" + i +" class=table></div>");
+              $('#weekdays_' + i).append("<div id=row_" + i + " class=row></div>");
+              $('#row_' + i).append("<div class=cell_weekdays>" + "星期" + i + "</div>");
+              $('#weekdays_' + (i+1)).append("<div id=cource_block_" + (j+1) +  " class=row></div>");
+
+              // $('.row_block').append("<div class=cell_weekdays>" + "星期" + i + "</div>")
               for (var j = 0; j< count[i];j++){
-                
-                // $('#weekdays_' + (i+1)).append("<div id=cource_block_" + (j+1) +  " class=row></div>");
-                $('#weekdays_' + (i)).append("<div id=cource_block_" + (i) + (j) +  " class=row_container> </div>");
+
+                // $('#weekdays_' + (i)).append("<div id=cource_block_" + (i) + (j) +  " class=row_container> </div>");
+                $('#row_' + (i)).append("<div id=cource_block_" + (i) + (j) +  " class=row_container> </div>");
                 $('#cource_block_' + (i) + (j)).append("<div id=cell_" + num +  " class=cell>" + final_time[num] + "</div>");
                 $('#cource_block_' + (i) + (j)).append("<div id=cour_"  + num + " class=course> </div>");
                 $('#cource_block_' + (i) + (j)).append("<div class=cell id=btn-course-block> </div>");
                 num++;
-                
+
               }
 
             }
+            for(var i = 0;i<count.length; i++){
+
+            }
+
+
             console.log(num);
 
             for (var i = 0; i < num; i++){
@@ -141,7 +150,7 @@
         </div>
       </div>
       <!-- 星期一 -->
-        <div class='table'>
+        <!-- <div class='table'> -->
 
             <!-- <div class='row'>
 

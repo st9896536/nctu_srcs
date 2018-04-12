@@ -65,10 +65,13 @@ img {
 /* .table, .intable, */
 
 .cell_weekdays{
-  display:table-cell;
-  background: rgba(230, 230, 230, 1);
-  text-align: -webkit-center;
+  display: table-cell;
+  border: rgba(230, 230, 230, 1) solid 1px;
+  text-align: center;
   vertical-align: middle;
+  padding: 0 2px;
+  background: rgba(230, 230, 230, 1);
+  width: 2.35vw;
 }
 
 .cell {
@@ -106,7 +109,7 @@ img {
 
 #btn-course-block{
   width:33.825vw;
-  padding-top:1.5vh; 
+  padding-top:1.5vh;
   vertical-align: top;
   padding-left: 1vw;
 }
