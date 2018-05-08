@@ -78,7 +78,7 @@
             </ul>
           </div>
           <div class="right-doctor" style="display:inline-block; float:right;">
-            <a href="#" class="button_style_gray" style="background-color:rgba(180,5,0,1); color: rgba(255, 255, 255, 1);">博士班:</a>
+            <a href="#" class="button_style_red">博士班:</a>
             <p style="padding-top:5vh;">必繳:</p>
             <ul class="chi-features" style=" margin-top: 2vh; margin-left: 1.5vw; list-style-type: decimal;">
 

@@ -27,13 +27,32 @@
   <div class="row">
     <div class="main" >
       <div class="main_long"><font>客座教授</font></div>
-      <div class="name_block" style="width: 71.875vw; display: inline-flex; margin-top: 4vh; margin-bottom: 1.25vh;">
-        <span style="width:10.5vw; margin-right:0.5vw; letter-spacing: 0.3px;">Alain Brossat</span>
+
+
+      <div class="name_block" style="width: 71.875vw; margin-top: 4vh; margin-bottom: 1.25vh;">
+
+        <?php $guest_profeesor = get_post_meta( $post->ID, 'guest_profeesor', true ); 
+            foreach( $guest_profeesor as $guest_pro){?>
+              <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
+                <span style="width:10.5vw; margin-right:0.5vw; letter-spacing: 0.3px;"><?php echo $guest_pro['guest_profeesor_name']?></span>
+                <span style="width:13.125vw; margin-right:0.5vw;"><?php echo $guest_pro['guest_profeesor_type']?></span>
+                <span style="width:24.5vw; margin-right:0.5vw;"><?php echo $guest_pro['guest_profeesor_education']?></span>
+                <span style="width:31.875vw;"><?php echo $guest_pro['guest_profeesor_expertise']?></span>
+              </div>
+              <?php
+              
+            }?>
+
+
+
+        <!-- <span style="width:10.5vw; margin-right:0.5vw; letter-spacing: 0.3px;">Alain Brossat</span>
         <span style="width:13.125vw; margin-right:0.5vw;">交大社文所講座教授</span>
         <span style="width:24.5vw; margin-right:0.5vw;">巴黎第八大學社會學博士</span>
-        <span style="width:31.875vw;">風俗的文明化與和平再造研究</span>
+        <span style="width:31.875vw;">風俗的文明化與和平再造研究</span> -->
       </div>
-      <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
+
+
+      <!-- <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
         <span style="width:10.5vw; margin-right:0.5vw;">錢理群</span>
         <span style="width:13.125vw; margin-right:0.5vw;">交大社文所講座教授</span>
         <span style="width:24.5vw; margin-right:0.5vw;">北京大學中文系現代文學碩士</span>
@@ -116,13 +135,9 @@
         <span style="width:13.125vw; margin-right:0.5vw;">交大社文所客座教授</span>
         <span style="width:24.5vw; margin-right:0.5vw; letter-spacing: 0.1px;">George F. Kneller Chair in the Philosophy of Education</span>
         <span style="width:31.875vw; letter-spacing: 0.3px; ">Philosophy, Education and Information Studies</span>
-      </div>
+      </div> -->
       </div>
     </div>
 
   </div><!-- /.row -->
 </div><!-- /.container -->
-
-
-
-</?php get_template_part('includes/footer'); ?>

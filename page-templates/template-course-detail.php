@@ -19,7 +19,6 @@
 });
 
   </script>
-</head>
 
 <?php get_template_part('includes/header'); ?>
 <?php get_template_part('includes/sidebar-course'); ?>

@@ -7,7 +7,43 @@ $translate = qtranxf_getLanguage()!='zh' ? true : false;
 
 register_nav_menu('top-navbar', __('Main menu', 'bst'));
 
+// function o99_filter_the_content_td( $content ) {
+//     $pattern = '/<td>(.*)<\/td>/';
+//     preg_match($pattern, $content, $matches);
+//     return $matches[0];
+// }
+//
+// add_filter( 'the_content','o99_filter_the_content_td' );
+
 /*** Custom backend login logo ***/
+
+// function myButton($atts, $content = ''){    
+
+//     extract(shortcode_atts(array(
+//         'text' => '',
+//         'link' => ''
+//     ), $atts)); 
+
+//     $html =  $link . '"><div class="' . $class . '" >' . $content . '</div>';
+//     return $html;    
+// }
+
+// add_shortcode('mybutton', 'myButton');
+
+function custom_button_example($wp_admin_bar){
+$args = array(
+'id' => 'custom-button',
+'title' => 'Custom Button',
+'href' => 'http://example.com/',
+'meta' => array(
+'class' => 'custom-button-class'
+)
+);
+$wp_admin_bar->add_node($args);
+}
+
+add_action('admin_bar_menu', 'custom_button_example', 50);
+
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {

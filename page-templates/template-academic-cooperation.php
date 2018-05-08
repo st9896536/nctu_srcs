@@ -41,13 +41,29 @@
       </div>
 
       <div class="co_detail" style="width:72vw; padding:1vh 0.8vw;">
+        <?php $academic_cooperation = get_post_meta( $post->ID, 'academic_cooperation', true ); 
+            foreach( $academic_cooperation as $academic_co){?>
+              <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
+                <div class="co-detail" style="width:7vw;"><?php echo $academic_co['academic_cooperation_signdate']?></div>
+                <div id="school-name" style="width:14vw;"><?php echo $academic_co['academic_cooperation_schoolname']?></div>
+                <div class="co-detail" style="width:22.5vw;"><?php echo $academic_co['academic_cooperation_rules']?></div>
+                <div class="co-detail" style="width:23.375vw;"><?php echo $academic_co['academic_cooperation_contract']?></div>
+              </div>
+              <?php
+              
+            }?>
+
+
+
+
+
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
           <div id="school-name" style="width:14vw;">韓國中央大學(交換學生) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。</div>
         </div>
-        <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
+        <!-- <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
           <div id="school-name" style="width:14vw;">東京大學(交換學生) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
@@ -150,7 +166,7 @@
               <li>經雙方同意進行之交流活動</li>
             </ol>
           </div>
-        </div>
+        </div> -->
 
         <a href="#" class="button_style_gray" style="border-radius:0; background-color:rgba(50,50,50,1); color: rgba(255, 255, 255, 1); margin-top:1.5vh;">校際合作會議</a>
 

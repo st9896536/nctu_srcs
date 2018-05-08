@@ -43,7 +43,7 @@
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.6.6</div>
-          <div class="co-detail" style="width:33vw;">磯前順一教授，京都日本研究國際中心教授</div>
+          <div class="co-detail" style="width:32vw;">磯前順一教授，京都日本研究國際中心教授</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Conflict, Justice and Decolonization Lecture & Workshop Series：6/6(二)</div>
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.6.2</div>
-          <div class="co-detail" style="width:33vw;">
+          <div class="co-detail" style="width:32vw;">
               <p>Sandro Mezzadra，義大利波隆那大學政治與社會科學系副教授</p>
               <p>Jon Solomon 蘇哲安，法國里昂大學教授</p>
               <p>Alain Brossat，巴黎八大、交大社文所客座教授</p>
@@ -74,7 +74,7 @@ and the Aporia of Human Sciences</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.17</div>
-          <div class="co-detail" style="width:33vw;">謝尚伯，澳洲國立大學亞太學院博士</div>
+          <div class="co-detail" style="width:32vw;">謝尚伯，澳洲國立大學亞太學院博士</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">民主轉型國家的改革與公民社會: 印尼經驗的啟示</div>
         </div>
       </div>
@@ -82,7 +82,7 @@ and the Aporia of Human Sciences</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.12</div>
-          <div class="co-detail" style="width:33vw;">
+          <div class="co-detail" style="width:32vw;">
             <p>藤谷藤隆 Takashi Fujitani，多倫多大學東亞研究/歷史系教授</p>
             <p>米山麗莎 Lisa Yoneyama，多倫多大學東亞研究/婦女與性別研究學系教授</p>
             <p>坪井秀人 Hideto Tsuboi，京都日本研究國際中心日本文學教授</p>
@@ -96,7 +96,7 @@ of American Colonial-Empire</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.10</div>
-          <div class="co-detail" style="width:33vw;">
+          <div class="co-detail" style="width:32vw;">
             <p>藤谷藤隆 Takashi Fujitani，多倫多大學東亞研究/歷史系教授</p>
             <p>米山麗莎 Lisa Yoneyama，多倫多大學東亞研究/婦女與性別研究學系教授</p>
 
@@ -109,7 +109,7 @@ Series</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.4</div>
-          <div class="co-detail" style="width:33vw;">李雪莉， 《報導者》 總主筆</div>
+          <div class="co-detail" style="width:32vw;">李雪莉， 《報導者》 總主筆</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">看不見的奴役 — 從〈血淚漁場〉調查報導談起，Revealing
 the Hidden Modern Day Slavery</div>
         </div>
@@ -118,7 +118,7 @@ the Hidden Modern Day Slavery</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.4</div>
-          <div class="co-detail" style="width:33vw;">土井敏邦（Toshikuni Doi）導演，日本獨立記者</div>
+          <div class="co-detail" style="width:32vw;">土井敏邦（Toshikuni Doi）導演，日本獨立記者</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">What Is Going On in Gaza, Palestine</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ the Hidden Modern Day Slavery</div>
       <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.5.4</div>
-          <div class="co-detail" style="width:33vw;">Walter Mignolo</div>
+          <div class="co-detail" style="width:32vw;">Walter Mignolo</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Professor Walter Mignolo 「殖民、去殖民、資本主義」系列</div>
         </div>
       </div>

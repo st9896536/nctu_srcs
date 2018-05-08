@@ -18,6 +18,22 @@
       $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
 });
 
+    function resizeImage(){
+      var window_height = document.body.clientHeight
+      var window_width = document.body.clientWidth
+      var image_width = document.images[0].width
+      var image_height = document.images[0].height
+      var height_ratio = image_height / window_height
+      var width_ratio = image_width / window_width
+      if (height_ratio > width_ratio){
+        document.images[0].style.width = "auto"
+        document.images[0].style.height = "100%"
+      }
+      else{
+      document.images[0].style.width = "100%"
+      document.images[0].style.height = "auto"
+      }
+}
   </script>
 </head>
 
@@ -30,11 +46,11 @@
 <div class="container">
   <div class="row">
 
-      <div id="content_block" style="margin-top: -68vh; width: calc(9.375vw + 106vh); margin-left: 25vw;">
+      <div id="content_block" style="margin-top: -68vh; /*width: calc(9.375vw + 106vh);*/ margin-left: 25vw; width:76vw;">
         <!--社會文化批判理論-->
         <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3vw;  display: inline-block; ">
-          <div class="circle" style="width: 25vh; height: 25vh; ">
-            <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_01.jpg" />
+          <div class="circle_block" style="width: 25vh; height: 25vh; ">
+            <img id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_01.jpg" />
           </div>
           <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>社會文化批判理論</p></div>
           <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -52,8 +68,8 @@
         </div>
         <!--台灣社會與文化-->
         <div class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3vw; vertical-align: top;display: inline-block;">
-          <div class="circle" style="width: 25vh; height: 25vh; ">
-            <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_02.jpg" />
+          <div class="circle_block" style="width: 25vh; height: 25vh; ">
+            <img id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_02.jpg" />
           </div>
           <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>台灣社會與文化</p></div>
           <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -66,9 +82,9 @@
           </div>
         </div>
         <!--東亞歷史與文化-->
-        <div class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3vw; vertical-align: top;display: inline-block;">
-          <div class="circle" style="width: 25vh; height: 25vh; ">
-            <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_03.jpg" />
+        <div  class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3vw; vertical-align: top;display: inline-block;">
+          <div class="circle_block" style="width: 25vh; height: 25vh; ">
+            <img id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_03.jpg" />
           </div>
           <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>東亞歷史與文化</p></div>
           <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
@@ -86,8 +102,8 @@
         </div>
 
         <div class="direction" style="width: 25vh;margin-bottom: 5vh;vertical-align: top;display: inline-block;">
-          <div class="circle" style="width: 25vh; height: 25vh; ">
-            <img style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_04.jpg" />
+          <div class="circle_block" style="width: 25vh; height: 25vh; ">
+            <img  id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_04.jpg" />
           </div>
           <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;"><p>藝術社會行動</p></div>
           <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>

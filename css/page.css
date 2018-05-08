@@ -469,6 +469,20 @@ img {
   text-align: justify;
 }
 
+#circle{
+  position: relative;
+  background-size: cover;
+  height: 25vh;
+  min-height: 100%;
+  float: left;
+}
+
+.circle_block img{
+  max-width:25vh;     
+  myimg:expression(onload=function(){     
+  this.style.width=(this.offsetWidth > 25)?"25vh":"auto"});
+}
+
 /*首頁--消息清單頁*/
 .newslist-title{
   font-weight: 400;
@@ -1064,21 +1078,37 @@ img {
   text-decoration:none;
 }
 
-.button_style_gray{
+.button_style_red{
   font-weight: 300;
   font-size: 0.8em;
   line-height: 1.5vh;
   letter-spacing: 0.3em;
-  color: rgba(50, 50, 50, 1);
+  color: rgba(255, 255, 255, 1);
   text-align: justify;
   border-radius: 5px;
   text-decoration-line: none;
   padding: 9px 11px;
-  background-color: rgba(230, 230, 230, 1);
+  background-color: rgba(180, 5, 0, 1);
   letter-spacing: 0.1em;
   margin-right: 1vw;
   float: left;
   text-decoration:none;
+}
+
+.button_style_gray{
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+  text-align: justify;
+  /*border-radius: 5px;*/
+  /*text-decoration-line: none;*/
+  padding: 9px 7px;
+  /*background-color: rgba(230, 230, 230, 1);*/
+  letter-spacing: 0.1em;
+  margin-right: 1vw;
+  float: left;
+  /*text-decoration:none;*/
 }
 
 /* 課程內文樣式 */

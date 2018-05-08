@@ -42,7 +42,7 @@
         <HR size="1px" style="margin-top:1.75vh; margin-bottom:2.25vh; width:34vw;">
 
         <div class="interview" style="width:34vw;margin-bottom: 3.5vh;">
-          <a href="#" class="button_style_gray" style="position:absolute; background-color:rgba(180,5,0,1); color: rgba(255, 255, 255, 1);">甄試入學</a>
+          <a href="#" class="button_style_red" >甄試入學</a>
           <div class="interview-num">4名</div>
           <div class="interview-register-date">報名日期：105年10月11日至10月14日</div>
           <div class="interview-way">甄試方式：採第一階段審查及第二階段筆試及口試兩階段甄選</div>

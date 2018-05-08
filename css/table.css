@@ -66,6 +66,7 @@ img {
 
 .cell_weekdays{
   display: table-cell;
+  font-size: 1.25em;
   border: rgba(230, 230, 230, 1) solid 1px;
   text-align: center;
   vertical-align: middle;
@@ -76,6 +77,7 @@ img {
 
 .cell {
   height: 12.5vh;
+  width: 2.55vw;
   border:rgba(230, 230, 230, 1) solid 1px;
   text-align: center;
   vertical-align: middle;
@@ -108,11 +110,21 @@ img {
 }
 
 #btn-course-block{
+  display: table-cell;
   width:33.825vw;
   padding-top:1.5vh;
   vertical-align: top;
   padding-left: 1vw;
+  height: 12.5vh;
+  border: rgba(230, 230, 230, 1) solid 1px;
+  text-align: center;
+  /* padding: 0 2px; */
 }
+
+.btn_block{
+  width:15vw;
+}
+
 /*
 .course-button{
   height: 12.5vh;
