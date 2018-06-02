@@ -5,7 +5,6 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
@@ -29,16 +28,26 @@
 
     <div class="main">
       <div class="title_block" style="width:72vw; height:5vh;">
-        <div class="title_r" style="width:25vw; float:left; height:2.75vh;">碩、博班得獎</div>
+        <div class="title_r" style="width:25vw; float:left; height:2.75vh;">其他獲獎訊息</div>
       </div>
       <a href="#" class="button_style_blue" style=" position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">碩士班</a>
       <div class="award-master-block" style="margin-top:6vh;margin-bottom: 2vh;">
-        <div class="award-block" style="width:71.875vw;">
+        <?php $mas_awards = get_post_meta( $post->ID, 'mas_awards', true ); 
+            foreach( $mas_awards as $masaward){?>
+            <div class="award-block" style="width:71.875vw;">
+              <div class="name"><?php echo $masaward['mas_name']?></div>
+              <div class="award"><?php echo $masaward['mas_award']?></div>
+            </div>
+            <?php
+              
+            }?>
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">陳中勳</div>
           <div class="award">獲財團法人鄭福田文教基金會「2014 博碩士學位論文獎助金」
 混血兒與無意識:美軍在台灣的冷戰身影</div>
-        </div>
-        <div class="award-block" style="width:71.875vw;">
+        </div> -->
+
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">陳幼唐</div>
           <div class="award">獲財團法人鄭福田文教基金會「2013 博碩士學位論文獎助金」</div>
         </div>
@@ -61,7 +70,7 @@
           <div class="name">卓于秀</div>
           <div class="award">獲教育部補助短期赴海外專題研究計畫2006年
 文化建制的內與外： 1927-1937年台灣電影文化重探</div>
-        </div>
+        </div> -->
 
 
 
@@ -69,11 +78,21 @@
 
       <a href="#" class="button_style_blue" style="background-color:rgba(180,5,0,1); position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">博士班</a>
       <div class="award-doctor-block" style="margin-top:8vh; margin-bottom: 2vh;">
-        <div class="award-block" style="width:71.875vw;">
+
+          <?php $doc_awards = get_post_meta( $post->ID, 'doc_awards', true ); 
+            foreach( $doc_awards as $docaward){?>
+            <div class="award-block" style="width:71.875vw;">
+              <div class="name"><?php echo $docaward['doc_name']?></div>
+              <div class="award"><?php echo $docaward['doc_award']?></div>
+            </div>
+            <?php
+              
+            }?>
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">張佩思</div>
           <div class="award">5年度獎勵人文與社會科學領域博士候選人撰寫博士論文</div>
-        </div>
-        <div class="award-block" style="width:71.875vw;">
+        </div> -->
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">若遙</div>
           <div class="award">103中研院人文社會科學博士候選人培育計畫</div>
         </div>
@@ -109,7 +128,9 @@
         <div class="award-block" style="width:71.875vw;">
           <div class="name">吳哲良</div>
           <div class="award">獲人社院博班獎學金2005</div>
-        </div>
+        </div> -->
+
+
       </div>
 
 

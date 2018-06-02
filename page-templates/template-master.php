@@ -6,7 +6,6 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
@@ -25,7 +24,7 @@
 <?php get_template_part('includes/header'); ?>
 <?php get_template_part('includes/sidebar-student-recruitment'); ?>
 
-
+<body style="height:90vh;">
     <div class="main" style="width:71.5vw;">
 
       <div class="m_block" style="36vw; float:left; display:inline-block;">
@@ -37,30 +36,78 @@
             綜合組</span>
         </a>
         <div class="master-title">碩士班招生</div>
-        <div class="master-num">共9名</div>
-        <div class="master-extra">另有1名流用給台聯大亞際文化研究國際學位學程</div>
+        <div class="master-num">
+          <?php $master_number = get_field( "master_number" ); 
+            if( $master_number ){
+              echo $master_number;
+            }
+            ?>
+        </div>
+        <div class="master-extra">
+          <?php $master_extra = get_field( "master_extra" ); 
+            if( $master_extra ){
+              echo $master_extra;
+            }
+            ?></div>
         <HR size="1px" style="margin-top:1.75vh; margin-bottom:2.25vh; width:34vw;">
 
         <div class="interview" style="width:34vw;margin-bottom: 3.5vh;">
           <a href="#" class="button_style_red" >甄試入學</a>
-          <div class="interview-num">4名</div>
-          <div class="interview-register-date">報名日期：105年10月11日至10月14日</div>
-          <div class="interview-way">甄試方式：採第一階段審查及第二階段筆試及口試兩階段甄選</div>
+          <div class="interview-num">
+            <?php $interview_number = get_field( "interview_number" ); 
+            if( $interview_number ){
+              echo $interview_number;
+            }
+            ?></div>
+          <div class="interview-register-date">
+            <?php $interview_register_date = get_field( "interview_register_date" ); 
+            if( $interview_register_date ){
+              echo $interview_register_date;
+            }
+            ?>
+          </div>
+          <div class="interview-way">
+            <?php $interview_way = get_field( "interview_way" ); 
+            if( $interview_way ){
+              echo $interview_way;
+            }
+            ?></div>
         </div>
         <div class="test" style="width:34vw; margin-bottom: 3.5vh;">
           <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">考試入學</a>
-          <div class="test-num">5名（與甄試入學流用）</div>
-          <div class="test-register-date">報名日期：105年12月8日至12月13日</div>
-          <div class="test-date">筆試日期：106年2月9或10日</div>
+          <div class="test-num">
+            <?php $test_number = get_field( "test_number" ); 
+            if( $test_number ){
+              echo $test_number;
+            }
+            ?></div>
+          <div class="test-register-date">
+            <?php $test_register_date = get_field( "test_register_date" ); 
+            if( $test_register_date ){
+              echo $test_register_date;
+            }
+            ?></div>
+          <div class="test-date">
+            <?php $test_date = get_field( "test_date" ); 
+            if( $test_date ){
+              echo $test_date;
+            }
+            ?></div>
         </div>
       </div>
 
       <!-- 招生海報 -->
       <div class="poster_img" style="float: right; width:35vw; height:auto; display: inline-block;">
-        <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/admissions_img_02.jpg" />
+        <!-- <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="</?php bloginfo('template_url'); ?>/images/admissions_img_02.jpg" /> -->
+        <?php 
+
+        $image = get_field('poster_image');
+
+        if( !empty($image) ): ?>
+
+          <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>        
       </div>
-
-
-
-
     </div>
+</body>

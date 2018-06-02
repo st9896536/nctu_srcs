@@ -17,4 +17,8 @@ else if ( in_category( 'gallery_srcs' ) ) {
   // get_template_part('includes/sidebar-global-lounge');
   get_template_part('includes/loops/content', 'single_album');
 }
+else if ( in_category( 'poster_srcs' ) ) {
+  // get_template_part('includes/sidebar-global-lounge');
+  get_template_part('includes/loops/content', 'single_posters');
+}
 ?>

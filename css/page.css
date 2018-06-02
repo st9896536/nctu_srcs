@@ -883,7 +883,7 @@ img {
   padding: 2px 6px;
   background-color: rgba(50, 50, 50, 1);
   display: inline-block;
-  float: left;
+  /*float: left;*/
 }
 
 .poster_date{
@@ -920,6 +920,15 @@ img {
   width:37.5vw;
 }
 
+.lecturer_block{
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: rgba(50, 50 ,50, 1);
+  width:37.5vw;
+}
+
 .go_register,
 .go_website{
   font-weight: 400;
@@ -927,6 +936,16 @@ img {
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50 ,50, 1);
+}
+
+.content_guideline{
+  width: 37.5vw;
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: rgba(50, 50 ,50, 1);
+  margin-bottom: 5vh;
 }
 
 .content_guideline p{

@@ -5,7 +5,6 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
@@ -40,15 +39,28 @@
 
       </div>
 
-      <div class="co_detail" style="width:72vw;">
+        <?php $keynote_speech = get_post_meta( $post->ID, 'keynote_speech', true ); 
+            foreach( $keynote_speech as $keynote){?>
+            <div class="co_detail" style="width:72vw;">
+              <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
+                <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;"><?php echo $keynote['speech_date']?></div>
+                <div class="co-detail" style="width:32vw;"><?php echo $keynote['speech_hosts']?></div>
+                <div class="co-detail" style="width:25.375vw;"><?php echo $keynote['speech_topic']?></div>
+              </div>
+            </div>
+              <?php
+              
+            }?>
+
+      <!-- <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.6.6</div>
           <div class="co-detail" style="width:32vw;">磯前順一教授，京都日本研究國際中心教授</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Conflict, Justice and Decolonization Lecture & Workshop Series：6/6(二)</div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="co_detail" style="width:72vw;">
+      <!-- <div class="co_detail" style="width:72vw;">
         <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:6vw; margin-left:1vw; margin-right:2vw;">2017.6.2</div>
           <div class="co-detail" style="width:32vw;">
@@ -129,7 +141,7 @@ the Hidden Modern Day Slavery</div>
           <div class="co-detail" style="width:32vw;">Walter Mignolo</div>
           <div class="co-detail" style="width:25.375vw; margin-right:1vw;">Professor Walter Mignolo 「殖民、去殖民、資本主義」系列</div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 </body>

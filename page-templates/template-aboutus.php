@@ -6,7 +6,6 @@
 
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -32,9 +31,9 @@
         <div class="main_short"><font>設立宗旨</font></div>
           <div class="main-text-p">
             <?php $establishing_purpose = get_field( "establishing_purpose" ); 
-            if( $establishing_purpose ){
-              echo $establishing_purpose;
-            }
+              if( $establishing_purpose ){
+                echo $establishing_purpose;
+              }
             ?>
           </div>
       </div>

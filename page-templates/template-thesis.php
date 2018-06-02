@@ -5,9 +5,7 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -46,14 +44,20 @@
       <HR size="1px" style="margin-top:2.5vh; margin-bottom:2vh; width:71.825vw;">
       <a href="#" class="button_style_blue" style=" position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">碩士班</a>
       <div class="thesis-master" style="width: 71.875vw;margin-top: 8vh;">
-        <div class="thesis-block" style="height:10.75vh; margin-bottom:2.25vh;">
-          <div class="thesis-name">邱子珉</div>
-          <div class="thesis-title">解構幸福： 從「小確幸」現象看台灣八零後世代的失權
-            De-constructing Happiness: A Study of the Recession of the Post-1980 Generation in Contemporary Taiwan Society Through the Phenomenon of "xiaoquexin" (Little Happiness)
-          </div>
-          <div class="thesis-professor">劉紀蕙 教授</div>
-        </div>
-        <div class="thesis-block" style="height:7.75vh; margin-bottom:2.25vh;">
+
+        <?php $master_thesis = get_post_meta( $post->ID, 'master_thesis', true ); 
+            foreach( $master_thesis as $masterthesis){?>
+              <div class="thesis-block" style="height:10.75vh; margin-bottom:2.25vh;">
+                <div class="thesis-name"><?php echo $masterthesis['master_thesis_name']?></div>
+                <div class="thesis-title"><?php echo $masterthesis['master_thesis_topic']?></div>
+                <div class="thesis-professor"><?php echo $masterthesis['master_thesis_professor']?></div>
+              </div>
+              <?php
+              
+            }?>
+        
+
+        <!-- <div class="thesis-block" style="height:7.75vh; margin-bottom:2.25vh;">
           <div class="thesis-name">麗麗
             (Margarita Shutova)</div>
           <div class="thesis-title">現代俄羅斯的光頭次文化：不同種類的表示
@@ -83,7 +87,9 @@
           </div>
           <div class="thesis-professor">朱元鴻 教授
 魏德驥 教授</div>
-        </div>
+        </div> -->
+
+
       </div>
 
 
@@ -92,14 +98,20 @@
 
 
         <div class="thesis-doctor" style="width: 71.875vw;height: 19vh;margin-top: 8vh;">
-          <div class="thesis-block" style="height:10.75vh; margin-bottom:2.25vh;">
-            <div class="thesis-name">邱子珉</div>
-            <div class="thesis-title">解構幸福： 從「小確幸」現象看台灣八零後世代的失權
-              De-constructing Happiness: A Study of the Recession of the Post-1980 Generation in Contemporary Taiwan Society Through the Phenomenon of "xiaoquexin" (Little Happiness)
-            </div>
-            <div class="thesis-professor">劉紀蕙 教授</div>
-          </div>
-          <div class="thesis-block" style="height:7.75vh; margin-bottom:2.25vh;">
+
+          <?php $doctor_thesis = get_post_meta( $post->ID, 'doctor_thesis', true ); 
+            foreach( $doctor_thesis as $doctorthesis){?>
+              <div class="thesis-block" style="height:10.75vh; margin-bottom:2.25vh;">
+                <div class="thesis-name"><?php echo $doctorthesis['doctor_thesis_name']?></div>
+                <div class="thesis-title"><?php echo $doctorthesis['doctor_thesis_topic']?></div>
+                <div class="thesis-professor"><?php echo $doctorthesis['doctor_thesis_professor']?></div>
+              </div>
+              <?php
+              
+            }?>
+
+          
+          <!-- <div class="thesis-block" style="height:7.75vh; margin-bottom:2.25vh;">
             <div class="thesis-name">麗麗
               (Margarita Shutova)</div>
             <div class="thesis-title">現代俄羅斯的光頭次文化：不同種類的表示
@@ -129,7 +141,8 @@
             </div>
             <div class="thesis-professor">朱元鴻 教授
   魏德驥 教授</div>
-          </div>
+          </div> -->
+
         </div>
     </div>
 </body>

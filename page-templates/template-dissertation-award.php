@@ -5,7 +5,6 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
@@ -29,17 +28,27 @@
 
     <div class="main">
       <div class="title_block" style="width:72vw; height:5vh;">
-        <div class="title_r" style="width:25vw; float:left; height:2.75vh;">碩、博班得獎</div>
+        <div class="title_r" style="width:25vw; float:left; height:2.75vh;">碩、博班論文得獎</div>
       </div>
       <a href="#" class="button_style_blue" style=" position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">碩士班</a>
       <div class="award-master-block" style="margin-top:6vh;margin-bottom: 2vh;">
-        <div class="award-block" style="width:71.875vw;">
+
+          <?php $master_award = get_post_meta( $post->ID, 'master_award', true ); 
+            foreach( $master_award as $masteraward){?>
+            <div class="award-block" style="width:71.875vw;">
+              <div class="name"><?php echo $masteraward['master_winner']?></div>
+              <div class="award"><?php echo $masteraward['master_awards']?></div>
+            </div>
+            <?php
+              
+            }?>
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">廖千瑩</div>
           <div class="award">榮獲佑生基金會2007年獎助碩士論文
   論文題目：拯救社區死亡大作戰─未來村對社造重生論述的共同體(community)回應
   指導教授：朱元鴻教授</div>
-        </div>
-        <div class="award-block" style="width:71.875vw;">
+        </div> -->
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">廖宏霖</div>
           <div class="award">榮獲交通大學第二屆文學獎新詩類佳作，2007.06
 <難以敘述的地方>
@@ -108,16 +117,28 @@
           <div class="award">台灣社會研究學會「批判與實踐碩博士論文獎」佳作獎
 論文題目「亞美混血兒，亞細亞的孤兒：追尋美軍在台灣的冷戰身影」
 指導教授：劉紀蕙教授</div>
-        </div>
+        </div> -->
+
+
       </div>
 
       <a href="#" class="button_style_blue" style="background-color:rgba(180,5,0,1); position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">博士班</a>
       <div class="award-doctor-block" style="margin-top:8vh; margin-bottom: 2vh;">
-        <div class="award-block" style="width:71.875vw;">
+
+        <?php $doctor_award = get_post_meta( $post->ID, 'doctors_award', true ); 
+            foreach( $doctor_award as $doctoraward){?>
+            <div class="award-block" style="width:71.875vw;">
+              <div class="name"><?php echo $doctoraward['doctor_winner']?></div>
+              <div class="award"><?php echo $doctoraward['doctor_awards']?></div>
+            </div>
+            <?php
+              
+            }?>
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">林封良</div>
           <div class="award">榮獲上海中國現代文學研究演討會學生論文獎2007</div>
-        </div>
-        <div class="award-block" style="width:71.875vw;">
+        </div> -->
+        <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">劉亮延</div>
           <div class="award">入圍19屆（2008年） 金曲獎,傳統暨藝術音樂作品類,最佳專輯製作人獎,最佳跨界音樂專輯獎,及最佳編曲人獎，
 《2007<曹七巧>劇場音樂原聲帶》</div>
@@ -141,7 +162,8 @@
         <div class="award-block" style="width:71.875vw;">
           <div class="name">洪芳怡</div>
           <div class="award">(2013)第三屆思源人文社會科學博士論文獎，傳播類首獎獎金十萬元及協助論文出版</div>
-        </div>
+        </div> -->
+
       </div>
 
 

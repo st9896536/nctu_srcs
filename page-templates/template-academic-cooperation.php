@@ -5,7 +5,6 @@
 ?>
 
 <head>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
@@ -57,12 +56,12 @@
 
 
 
-        <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
+        <!-- <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
           <div id="school-name" style="width:14vw;">韓國中央大學(交換學生) </div>
           <div class="co-detail" style="width:22.5vw;">有效期5年，協議期滿，如無一方書面中止，視為雙方同意續約三年。</div>
           <div class="co-detail" style="width:23.375vw;">1.依平等互惠原則，每校每學年至多3位交換學生。</div>
-        </div>
+        </div> -->
         <!-- <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 2vh;">
           <div class="co-detail" style="width:7vw;">2015.03.31</div>
           <div id="school-name" style="width:14vw;">東京大學(交換學生) </div>
@@ -168,7 +167,7 @@
           </div>
         </div> -->
 
-        <a href="#" class="button_style_gray" style="border-radius:0; background-color:rgba(50,50,50,1); color: rgba(255, 255, 255, 1); margin-top:1.5vh;">校際合作會議</a>
+        <!-- <a href="#" class="button_style_gray" style="border-radius:0; background-color:rgba(50,50,50,1); color: rgba(255, 255, 255, 1); margin-top:1.5vh;">校際合作會議</a>
 
         <div class="co-buttom-list" style="width:72vw; margin-top: 6vh;">
           <ol>
@@ -176,9 +175,7 @@
             <li><a href="#">台灣大學法律系（98學年上學期-102學年度下學期）</a></li>
             <li><a href="#">台灣大學城鄉所（101學年上學期-105學年度下學期）</a></li>
 
-
-          </ol>
-        </div>
+        </div> -->
 
       </div>
     </div>

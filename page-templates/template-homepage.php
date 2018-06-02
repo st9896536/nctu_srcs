@@ -8,9 +8,9 @@
 
   <!--圖片輪播的css+jquery-->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexslider.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider.js"></script>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://use.typekit.net/hgf1mzq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -93,6 +93,7 @@
 </head>
 
 <?php get_template_part('includes/header'); ?>
+<?php //wp_head(); ?>
   <!-- background-image -->
 
 <body>
@@ -151,32 +152,38 @@
     </div>
 
     <div class="flexslider">
+
       <ul class="slides" style="width:100vw; height:100vh;">
+      <?php
+      $is_multiple=False;
+      $args = array(
+      'category_name' => 'poster_srcs',
+      'posts_per_page' => 5
+      );
+      $the_query = new WP_Query($args);
+      if($the_query->have_posts()):
+          while($the_query->have_posts()):
+              $the_query->the_post();
+              if($is_multiple):
+      ?>
+      <?php endif; ?>
         <li>
-          <img src="<?php bloginfo('template_url'); ?>/images/bg.jpg" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/images/0001.jpg" />
-        </li>
-        <li>
-          <a href="<?php echo site_url(); ?>/poster_change_2">
-            <img src="<?php bloginfo('template_url'); ?>/images/0002.jpg" />
-
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo site_url(); ?>/poster_change_3">
-            <img src="<?php bloginfo('template_url'); ?>/images/0003.jpg" />
-
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo site_url(); ?>/poster_change_3">
-            <img src="<?php bloginfo('template_url'); ?>/images/0004.jpg" />
+          <a href="<?php the_permalink(); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/images/bg.jpg" />
           </a>
         </li>
 
+        <?php
+        $is_multiple=True;
+          endwhile;
+        else:?>
+            <div class="hp-news_item_title">還沒有發佈新活動海報喔！</div>
+        <?php
+        endif;
+        wp_reset_postdata();
+        ?>
       </ul>
+      
     </div>
 
 
@@ -205,12 +212,12 @@
             <?php endif; ?>
             <div class="news_block_content">  <!--每篇文章自己的block-->
               <span class="date">
-                  <font style="font-size: 0.7em;line-height: 1.5vh;"><?php the_time('Y'); ?></font>
-                  <font style="font-size: 1em;line-height: 2.5vh;"><?php the_time('m/d'); ?></font>
+                  <font style="font-size: 0.7em;line-height: 1.5vh; color: rgba(50, 50, 50, 1);"><?php the_time('Y'); ?></font>
+                  <font style="font-size: 1em;line-height: 2.5vh; color: rgba(50, 50, 50, 1);"><?php the_time('m/d'); ?></font>
               </span>
 
                 <a href="<?php the_permalink(); ?>"><p id="content_text"><?php the_title(); ?></p></a>
-              </div>
+            </div>
               <?php
               $is_multiple=True;
                 endwhile;
@@ -220,42 +227,152 @@
               endif;
               wp_reset_postdata();
               ?>
-            </div>
+          </div>
         </div>
 
-
+      <?php 
+          $image = get_field('book_image_1');?>
           <!--右邊的block 有講者+圖書-->
           <div class="new_post" style="float:right; margin-right:0.78125vw; !important"> <!--右邊活動消息欄位  -->
             <div class="right_top_block">
+              
+                <div class="right_book_image">
+                <?php $book_link_1 = get_field( "book_link_1" ); 
+                if( $book_link_1 ){ ?>
+                  <a href="<?php echo $book_link_1?>">
+
+                  <?php 
+                  $image = get_field('book_image_1');
+
+                  if( !empty($image) ): ?>
+
+                    <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                  <?php endif;}?>
+                  <p><?php $book_name_1 = get_field( "book_name_1" ); 
+                    if( $book_name_1 ){
+                      echo $book_name_1;
+                    }
+                  ?></p>
+                  <p style="margin-top:0 !important"><?php $book_date_1 = get_field( "book_date_1" ); 
+                    if( $book_date_1 ){
+                      echo $book_date_1;
+                    }
+                  ?></p>
+                  </a>
+                </div>
+              
+
+               
               <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_01.jpg" />
-                <!--<p>人間思想第10期:</br>重返馬來亞</br>2015.09.20</p>-->
-                <p>人間思想第10期:重返馬來亞</p>
-                <p style="margin-top:0 !important">2015.09.20</p>
+                <?php $book_link_2 = get_field( "book_link_2" ); 
+                if( $book_link_2 ){ ?>
+                  <a href="<?php echo $book_link_2 ;?> ">
+
+                <?php 
+
+                $image = get_field('book_image_2');
+
+                if( !empty($image) ): ?>
+
+                  <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                <?php endif; }?>
+                <p><?php $book_name_2 = get_field( "book_name_2" ); 
+                  if( $book_name_2 ){
+                    echo $book_name_2;
+                  }
+                ?></p>
+                <p style="margin-top:0 !important"><?php $book_date_2 = get_field( "book_date_2" ); 
+                  if( $book_date_2 ){
+                    echo $book_date_2;
+                  }
+                ?></p>
+                </a>
               </div>
+
               <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_02.jpg" />
-                <p>情緒密碼</p>
-                <p style="margin-top:0 !important">2017.10.04</p>
+                <?php $book_link_3 = get_field( "book_link_3" ); 
+                if( $book_link_3 ){ ?>
+                  <a href="<?php echo $book_link_3; ?>">
+
+                <?php 
+
+                $image = get_field('book_image_3');
+
+                if( !empty($image) ): ?>
+
+                  <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                <?php endif; }?>
+                <p><?php $book_name_3 = get_field( "book_name_3" ); 
+                  if( $book_name_3 ){
+                    echo $book_name_3;
+                  }
+                ?></p>
+                <p style="margin-top:0 !important"><?php $book_date_3 = get_field( "book_date_3" ); 
+                  if( $book_date_3 ){
+                    echo $book_date_3;
+                  }
+                ?></p>
+                </a>
               </div>
+              
+
+
+              
+
               <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_03.jpg" />
-                <p>你問的問題決定你是誰</p>
-                <p style="margin-top:0 !important">2016.06.30</p>
+                <?php $book_link_4 = get_field( "book_link_4" ); 
+                if( $book_link_4 ){ ?>
+                  <a href="<?php echo $book_link_4 ;?>">
+
+                <?php 
+
+                $image = get_field('book_image_4');
+
+                if( !empty($image) ): ?>
+
+                  <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                <?php endif; }?>
+                <p><?php $book_name_4 = get_field( "book_name_4" ); 
+                  if( $book_name_4 ){
+                    echo $book_name_4;
+                  }
+                ?></p>
+                <p style="margin-top:0 !important"><?php $book_date_4 = get_field( "book_date_4" ); 
+                  if( $book_date_4 ){
+                    echo $book_date_4;
+                  }
+                ?></p>
+                </a>
               </div>
-              <div class="right_book_image">
-                <img id="book" src="<?php bloginfo('template_url'); ?>/images/home_book_04.jpg" />
-                <p>咖啡聖經</p>
-                <p style="margin-top:0 !important">2012.12.12</p>
-              </div>
-            </div>
-            <div class="right_block_image">
-              <img id="person" src="<?php bloginfo('template_url'); ?>/images/home_01.jpg" />
+              
+
             </div>
             <div class="left_block_text">
-              <p style="font-size: 1.2em; line-height: 2.5vh;">年度傑出學者講座</p>
-              <p style="font-size: 1.6em; line-height: 5.625vh;">小熊英二</p>
+              <p style="font-size: 1.2em; line-height: 2.5vh;">
+                <?php $lecturer_background = get_field( "lecturer_background" ); 
+                  if( $lecturer_background ){
+                    echo $lecturer_background;
+                  }
+                ?>
+              </p>
+              <p style="font-size: 1.6em; line-height: 5.625vh;">
+                <?php $lecturer_name = get_field( "lecturer_name" ); 
+                  if( $lecturer_name ){
+                    echo $lecturer_name;
+                  }
+                ?>
+              </p>
             </div>
+            <?php $lecturer_video_link = get_field( "lecturer_video_link" ); ?>
+            <div class="video-container">
+              <?php $video_link = get_field( "video_link" ); 
+                echo $video_link;?>
+            </div>
+            
             <div class="left_block">
             </div>
 

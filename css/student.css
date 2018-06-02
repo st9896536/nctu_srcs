@@ -30,6 +30,16 @@ img {
   margin-bottom: 1.5vh;
 }
 
+#features{
+  font-weight: 300;
+  font-size: 1.15em;
+  line-height: 4.25vh;
+  letter-spacing: 0.1em;
+  margin-bottom: 2vh;
+  color:rgba(50,50,50,1);
+  /*margin-left: 2vw;*/
+}
+
 .features li{
   font-weight: 300;
   font-size: 1.15em;
@@ -40,7 +50,7 @@ img {
   margin-left: 2vw;
 }
 
-.feature-content p{
+.feature-content{
   font-weight: 400;
   font-size: 1em;
   line-height: 1.8em;
@@ -206,7 +216,18 @@ img {
   letter-spacing: 0.1em;
 }
 
-.chi-features li,
+.chi-features,
+.chi-content{
+  margin-bottom: 1.25vh;
+  /*height: 1.5vh;*/
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(50,50,50,1);
+}
+
+/*.chi-features li,
 .chi-content p{
   margin-bottom: 1.25vh;
   height: 1.5vh;
@@ -215,7 +236,7 @@ img {
   line-height: 1.5vh;
   letter-spacing: 0.1em;
   color: rgba(50,50,50,1);
-}
+}*/
 
 /* 外籍生招生樣式 */
 .foreign_block{
