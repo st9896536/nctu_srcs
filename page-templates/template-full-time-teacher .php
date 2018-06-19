@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -27,60 +25,44 @@
   <div class="row">
     <div class="main" >
       <div class="main_long"><font>專任師資</font></div>
-      <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
-        <div class="teacher_block">
-          <div class="photo">
-          <img src="<?php bloginfo('template_url'); ?>/images/professor/prof劉紀蕙_photo3.jpg" />
-          </div>
-          <span class="teacher">
-            <div id="t1">教授兼所長</div>
-            <div id="t2">劉紀蕙</div>
-          </span>
-          <div class="profession">
-            <div id="graduate">美國伊利諾大學比較文學博士</div>
-            <HR size="1px" color="#000">
-            <ol class="v" style="margin-top:1.25vh; ">
-    					<li>精神分析與批判思想</li>
-    					<li>哲學:政治－美學－倫理</li>
-    					<li>台灣文學與文化研究</li>
-    					<li>東亞現代性思想</li>
-    					<li>視覺文化與跨藝術研究</li>
-    				</ol>
-          </div>
-          <div class="line" style="margin-top:13.5vh;">
-            <HR size="1px" color="#4F4F4F" style="margin-bottom:0.2vh;">
-            <HR size="3px" color="#4F4F4F">
-          </div>
-        </div>
+        <!--left side teacher's block-->
 
 
-        <!--右邊老師欄位-->
-        <div class="teacher_block" style="float:right; margin-top:-16.75vh; !important;">
-          <div class="photo">
-          <img src="<?php bloginfo('template_url'); ?>/images/professor/prof陳光興_photo1.jpg" />
+        <?php 
+        $fulltime = get_post_meta( $post->ID, 'fulltime_teacher', true );
+        if( !empty( $fulltime ) ){
+            foreach( $fulltime as $full_t ){?>
+          <div class="teacher_block" style="float: left; margin-right: 1vw; display: inline-block; margin-top: 5vh; height: auto;">
+              <div class="photo">
+                <?php
+                $src = wp_get_attachment_image_src( $full_t['teacher_photo'], 'full' );
+                echo '<img src="'.$src[0].'" />';
+                ?>
+              </div>
+              <span class="teacher">
+                <div id="t1"><?php echo $full_t['teacher_position_name']?></div>
+              </span>
+              <div class="profession">
+                <div id="graduate"><?php echo $full_t['teacher_education']?></div>
+                <HR size="1px" color="#000">
+                <div id="t2" style="white-space: pre-line; margin-top: -1vh;">
+                  <?php echo $full_t['teacher_profession']?>
+                </div>
+              </div>
+              <div class="line" style="margin-top: 5vh;">
+                <HR size="1px" color="#4F4F4F" style="margin-bottom:0.2vh;">
+                <HR size="3px" color="#4F4F4F">
+              </div>
           </div>
-          <span class="teacher">
-            <div id="t1">教授</div>
-            <div id="t2">陳光興</div>
-          </span>
-          <span class="profession">
-            <div id="graduate">美國愛荷華大學大眾傳播博士</div>
-            <HR size="1px" color="#000">
-            <ol class="v" style="margin-top:1.25vh; ">
-    					<li>亞洲文化研究</li>
-    					<li>東亞學術思想與知識狀況</li>
-    					<li>去殖民理論</li>
-    				</ol>
-          </span>
-          <div class="line" style="margin-top:13.5vh;">
-            <HR size="1px" color="#4F4F4F" style="margin-bottom:0.2vh;">
-            <HR size="3px" color="#4F4F4F">
-          </div>
-        </div>
-      </div>
-      <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
+            <?php
+            }
+        }
+        ?>
+
+
+
+
+      <!-- <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
         <div class="teacher_block">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof朱元鴻_photo1.jpg" />
@@ -106,7 +88,7 @@
         </div>
 
 
-        <!--右邊老師欄位-->
+        
         <div class="teacher_block" style="float:right; margin-top:-16.75vh; !important;">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof林淑芬_photo1.jpg" />
@@ -133,7 +115,7 @@
       </div>
 
       <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
+        
         <div class="teacher_block">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof邱德亮_photo1.jpg" />
@@ -160,7 +142,7 @@
         </div>
 
 
-        <!--右邊老師欄位-->
+        
         <div class="teacher_block" style="float:right; margin-top:-16.75vh; !important;">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof藍弘岳_photo3.jpg" />
@@ -186,7 +168,7 @@
       </div>
 
       <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
+        
         <div class="teacher_block">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof彭明偉_photo2.jpg" />
@@ -212,7 +194,7 @@
         </div>
 
 
-        <!--右邊老師欄位-->
+        
         <div class="teacher_block" style="float:right; margin-top:-16.75vh; !important;">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof陳奕麟_photo1.jpg" />
@@ -239,7 +221,7 @@
       </div>
 
       <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
+        
         <div class="teacher_block">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof邱德亮_photo.jpg" />
@@ -265,7 +247,7 @@
         </div>
 
 
-        <!--右邊老師欄位-->
+        
         <div class="teacher_block" style="float:right; margin-top:-16.75vh; !important;">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof王智明_photo1.jpg" />
@@ -291,7 +273,7 @@
       </div>
 
       <div class="inblock" style="width:71.875vw; margin-bottom: 10vh;">
-        <!--左邊老師欄位-->
+        
         <div class="teacher_block">
           <div class="photo">
           <img src="<?php bloginfo('template_url'); ?>/images/professor/prof蔡晏霖_photo1.jpg" />
@@ -315,7 +297,7 @@
             <HR size="1px" color="#4F4F4F" style="margin-bottom:0.2vh;">
             <HR size="3px" color="#4F4F4F">
           </div>
-        </div>
+        </div> -->
 
 
         <!--右邊老師欄位-->

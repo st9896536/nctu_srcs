@@ -8,8 +8,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -34,14 +32,14 @@
 
         <div class="chinese-title">陸生招生</div>
         <div class="chinese-class">
-          <?php $chinese_class = get_field( "chinese_class" ); 
+          <?php $chinese_class = get_field( "chinese_class" );
             if( $chinese_class ){
               echo $chinese_class;
             }
             ?>
         </div>
         <div class="chinese-extra" style="font-size: 0.8em; letter-spacing: 0em;">
-          <?php $chinese_extra = get_field( "chinese_extra" ); 
+          <?php $chinese_extra = get_field( "chinese_extra" );
             if( $chinese_extra ){
               echo $chinese_extra;
             }
@@ -49,7 +47,7 @@
         </div>
         <HR size="1px" style="margin-top:1.75vh; margin-bottom:2.25vh; width:66.5vw;">
         <div class="chinese-reg">
-          <?php $chinese_register = get_field( "chinese_register" ); 
+          <?php $chinese_register = get_field( "chinese_register" );
             if( $chinese_register ){
               echo $chinese_register;
             }
@@ -60,7 +58,7 @@
         <div class="chinese-class" style="margin-top: 2.75vh; margin-bottom:1.75vh;">本所特色</div>
 
           <div class="chi-features" style="margin-top: 2vh;">
-            <?php $chi_features = get_field( "chi_features" ); 
+            <?php $chi_features = get_field( "chi_features" );
             if( $chi_features ){
               echo $chi_features;
             }
@@ -74,7 +72,7 @@
           </div>
 
         <div class="chi-content">
-          <?php $chi_content = get_field( "chi_content" ); 
+          <?php $chi_content = get_field( "chi_content" );
             if( $chi_content ){
               echo $chi_content;
             }
@@ -93,7 +91,7 @@
             <a href="#" class="button_style_blue">碩士班:</a>
             <p style="padding-top:5vh;">必繳:</p>
             <ul class="chi-features" style=" margin-top: 2vh; margin-left: 1.5vw; list-style-type: decimal;">
-              <?php $master_need = get_field( "master_need" ); 
+              <?php $master_need = get_field( "master_need" );
                 if( $master_need ){
                   echo $master_need;
                 }
@@ -107,7 +105,7 @@
             </ul>
             <p>選繳:</p>
             <ul class="chi-features" style=" margin-top: 2vh; margin-left: 1.5vw; list-style-type: decimal;">
-              <?php $master_non_essential = get_field( "master_non_essential" ); 
+              <?php $master_non_essential = get_field( "master_non_essential" );
                 if( $master_non_essential ){
                   echo $master_non_essential;
                 }
@@ -119,7 +117,7 @@
             <a href="#" class="button_style_red">博士班:</a>
             <p style="padding-top:5vh;">必繳:</p>
             <ul class="chi-features" style=" margin-top: 2vh; margin-left: 1.5vw; list-style-type: decimal;">
-              <?php $doctor_need = get_field( "doctor_need" ); 
+              <?php $doctor_need = get_field( "doctor_need" );
                 if( $doctor_need ){
                   echo $doctor_need;
                 }
@@ -134,7 +132,7 @@
             </ul>
             <p>選繳:</p>
             <ul class="chi-features" style=" margin-top: 2vh; margin-left: 1.5vw; list-style-type: decimal;">
-              <?php $doctor_non_essential = get_field( "doctor_non_essential" ); 
+              <?php $doctor_non_essential = get_field( "doctor_non_essential" );
                 if( $doctor_non_essential ){
                   echo $doctor_non_essential;
                 }

@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -33,14 +31,14 @@
       <a href="#" class="button_style_blue" style=" position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">碩士班</a>
       <div class="award-master-block" style="margin-top:6vh;margin-bottom: 2vh;">
 
-          <?php $master_award = get_post_meta( $post->ID, 'master_award', true ); 
+          <?php $master_award = get_post_meta( $post->ID, 'master_award', true );
             foreach( $master_award as $masteraward){?>
             <div class="award-block" style="width:71.875vw;">
               <div class="name"><?php echo $masteraward['master_winner']?></div>
               <div class="award"><?php echo $masteraward['master_awards']?></div>
             </div>
             <?php
-              
+
             }?>
         <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">廖千瑩</div>
@@ -125,14 +123,14 @@
       <a href="#" class="button_style_blue" style="background-color:rgba(180,5,0,1); position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">博士班</a>
       <div class="award-doctor-block" style="margin-top:8vh; margin-bottom: 2vh;">
 
-        <?php $doctor_award = get_post_meta( $post->ID, 'doctors_award', true ); 
+        <?php $doctor_award = get_post_meta( $post->ID, 'doctors_award', true );
             foreach( $doctor_award as $doctoraward){?>
             <div class="award-block" style="width:71.875vw;">
               <div class="name"><?php echo $doctoraward['doctor_winner']?></div>
               <div class="award"><?php echo $doctoraward['doctor_awards']?></div>
             </div>
             <?php
-              
+
             }?>
         <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">林封良</div>

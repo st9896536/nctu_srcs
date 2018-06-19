@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -90,7 +88,7 @@
           </div>
           <!--右邊區塊-->
           <div class="main_block" style=" width: 34.6vw; float:right; vertical-align:top;">
-            <div class="category" >社會學類</div>
+            <div class="category" >人文類</div>
             <HR size="1px" color="#4F4F4F">
             <div class="names">
               <ol>
@@ -107,7 +105,7 @@
                 <li>李宜臻</li>
               </ol>
             </div>
-            <div class="category" >傳播類</div>
+            <div class="category" >藝術類</div>
             <HR size="1px" color="#4F4F4F">
             <div class="names">
               <ol>
@@ -127,7 +125,7 @@
                 <li>徐德育</li>
               </ol>
             </div>
-            <div class="category" >商管類</div>
+            <div class="category" >其他類</div>
             <HR size="1px" color="#4F4F4F">
             <div class="names">
               <ol>

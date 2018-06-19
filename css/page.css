@@ -137,12 +137,10 @@ img {
 }
 
 .teacher_block{
-  /*width: calc(27.5vh + 100px);*/
-  width: 35.5vw;
+  width: 35.9vw;
   height: 16.5vh;
   margin-top: 4vh;
-  margin-right: -2%;
-  /*margin-right: calc(71.875vh - 55vh - 200px);*/
+  /*border-bottom: solid 1px #000;*/
 }
 /*
 .photo_right{
@@ -160,26 +158,35 @@ img {
   margin-right: 1vw;
 }
 
+.photo img{
+  max-width: 25vh;
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+}
+
 #t1{
   /*width: 6.5vw;*/
   font-weight: 500;
   font-size: 1em;
-  line-height: 1.25em;
+  line-height: 1.95em;
   letter-spacing: 0.025em;
   color: rgba(50, 50, 50, 1);
+  white-space: pre-line;
 }
 
 #t2{
   /*width: 6.5vw;*/
   font-weight: 500;
-  font-size: 1em;
-  line-height: 2.25em;
+  font-size: 0.75em;
+  line-height: 1.75em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
 
 .teacher{
-  width: 6.5vw;
+  width: 5.5vw;
   display: inline-block;
   /*margin-left: 1%;*/
 }
@@ -187,19 +194,19 @@ img {
 #graduate{
   margin-bottom: 1.5vh;
   font-weight: 500;
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 1.25em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
 
 .profession{
-  float: right;
+  /*float: right;*/
   display: inline-block;
   left: 100%;
   top:0;
   vertical-align: top;
-  width: 20vw;
+  width: 21.5vw;
   height: 16.8vh;
 }
 
@@ -278,7 +285,7 @@ img {
 #n1{
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 2vh;
+  line-height: 2.5em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
   margin-bottom: 1vh;
@@ -293,13 +300,14 @@ img {
   margin-bottom: 1vh;
 }
 
-.staff_data li, .job_content li{
+.staff_data p, .job_content p{
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 1.5em;
+  line-height: 2.5em;
   color: rgba(50, 50, 50, 1);
   margin-bottom: 2.25vh;
   letter-spacing: 0em;
+  white-space: pre-line;
 }
 
 /*在校生樣式*/
@@ -390,7 +398,7 @@ img {
   display: block;
   min-width: 100%;
   min-height: 100%;
-
+  height: auto;
 }
 
 #g1{ /*畢業生姓名*/
@@ -414,7 +422,7 @@ img {
 .education p{
   font-weight: 300;
   font-size: 0.8em;
-  line-height: 2vh;
+  line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
@@ -422,14 +430,14 @@ img {
 #graduate_email{
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 1.75vh;
+  line-height: 2.5vh;
   color: rgba(50, 50, 50, 1);
 }
 
 .experience p{
   font-weight: 300;
   font-size: 0.8em;
-  line-height: 1.4em;
+  line-height: 2em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
   margin-bottom: 1vh;
@@ -453,7 +461,7 @@ img {
 /*研究方向樣式*/
 .direction p{
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 3vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -470,7 +478,7 @@ img {
 }
 
 #circle{
-  position: relative;
+  /*position: relative;*/
   background-size: cover;
   height: 25vh;
   min-height: 100%;
@@ -479,8 +487,74 @@ img {
 
 .circle_block img{
   max-width:25vh;     
-  myimg:expression(onload=function(){     
-  this.style.width=(this.offsetWidth > 25)?"25vh":"auto"});
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+/*專任師資詳細頁*/
+.professor_position{
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 2.75vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.professor_name{
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 4vh;
+  letter-sapcing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.pro_blocks li{
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 2.5vh;
+  letter-spacing: 0.3em;
+  color: rgba(50, 50, 50, 1);
+  margin-left: -1.5vw;
+}
+
+.teacher_education{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+}
+
+.profession_area,
+.profession_intro{
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 2.5vh;
+  letter-spacing: 0.1em;
+  color: rgba(20, 20, 20, 1);
+}
+
+.teacher_profile p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2vh;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.teacher_detail_content p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  color: rgba(50, 50, 50, 1);
+  margin-bottom: 5vh;
+  white-space: pre-line;
 }
 
 /*首頁--消息清單頁*/
@@ -638,20 +712,24 @@ img {
   box-shadow: 0px 0px 17px -1px rgba(20%,20%,40%,0.5);
 }
 
-#click_Y_book{
+.click_Y_book{
   font-weight: 400;
   font-size: 1.2em;
-  line-height: 2vh;
+  line-height: 2em;
   color: rgba(50, 50, 50, 1);
+  /*margin-top:2vh;*/
+  height:2vh;
+  display: inline-block;
 }
 
 .other_Y_block{
   font-weight: 300;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.75em;
   color: rgba(230, 230, 230, 1);
   margin-top:2vh;
   height:1.5vh;
+  display: inline-block;
 }
 
 .book_content_block{
@@ -948,7 +1026,8 @@ img {
   margin-bottom: 5vh;
 }
 
-.content_guideline p{
+.content_guideline p,
+.left_content p{
   width: 37.5vw;
   font-weight: 300;
   font-size: 0.7em;

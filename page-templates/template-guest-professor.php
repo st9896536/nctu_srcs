@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -30,7 +28,7 @@
 
       <div class="name_block" style="width: 71.875vw; margin-top: 4vh; margin-bottom: 1.25vh;">
 
-        <?php $guest_profeesor = get_post_meta( $post->ID, 'guest_profeesor', true ); 
+        <?php $guest_profeesor = get_post_meta( $post->ID, 'guest_profeesor', true );
             foreach( $guest_profeesor as $guest_pro){?>
               <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
                 <span style="width:10.5vw; margin-right:0.5vw; letter-spacing: 0.3px;"><?php echo $guest_pro['guest_profeesor_name']?></span>
@@ -39,7 +37,7 @@
                 <span style="width:31.875vw;"><?php echo $guest_pro['guest_profeesor_expertise']?></span>
               </div>
               <?php
-              
+
             }?>
 
 

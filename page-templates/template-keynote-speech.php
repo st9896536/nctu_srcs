@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -39,7 +37,7 @@
 
       </div>
 
-        <?php $keynote_speech = get_post_meta( $post->ID, 'keynote_speech', true ); 
+        <?php $keynote_speech = get_post_meta( $post->ID, 'keynote_speech', true );
             foreach( $keynote_speech as $keynote){?>
             <div class="co_detail" style="width:72vw;">
               <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
@@ -49,7 +47,7 @@
               </div>
             </div>
               <?php
-              
+
             }?>
 
       <!-- <div class="co_detail" style="width:72vw;">

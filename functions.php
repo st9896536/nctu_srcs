@@ -7,28 +7,6 @@ $translate = qtranxf_getLanguage()!='zh' ? true : false;
 
 register_nav_menu('top-navbar', __('Main menu', 'bst'));
 
-// function o99_filter_the_content_td( $content ) {
-//     $pattern = '/<td>(.*)<\/td>/';
-//     preg_match($pattern, $content, $matches);
-//     return $matches[0];
-// }
-//
-// add_filter( 'the_content','o99_filter_the_content_td' );
-
-/*** Custom backend login logo ***/
-
-// function myButton($atts, $content = ''){    
-
-//     extract(shortcode_atts(array(
-//         'text' => '',
-//         'link' => ''
-//     ), $atts)); 
-
-//     $html =  $link . '"><div class="' . $class . '" >' . $content . '</div>';
-//     return $html;    
-// }
-
-// add_shortcode('mybutton', 'myButton');
 
 function custom_button_example($wp_admin_bar){
 $args = array(
@@ -43,6 +21,12 @@ $wp_admin_bar->add_node($args);
 }
 
 add_action('admin_bar_menu', 'custom_button_example', 50);
+
+function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
+    $html = '<a href="' . get_permalink( $post_id ) . '" alt="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'wpdocs_post_image_html', 10, 3 );
 
 function my_login_logo() { ?>
     <style type="text/css">

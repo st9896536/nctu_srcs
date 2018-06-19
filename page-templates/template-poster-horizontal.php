@@ -8,16 +8,12 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 </head>
 
 <?php get_template_part('includes/header'); ?>
 <?php get_template_part('includes/sidebar'); ?>
 
-<div class="container">
-  <div class="row">
+<body>
     <div class="main">
       <div class="poster_img" style="width:68.75vw; height:auto; display: inline-block;">
         <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/bg.jpg" />
@@ -92,5 +88,4 @@
 
       </div>
     </div>
-  </div>
-</div>
+</body>

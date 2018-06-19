@@ -1,6 +1,6 @@
 <?php
 /*
-The Single Posts Loop  (活動海報內文)
+The Single Posts Loop  (活動海報直式內文)
 =====================
 */
 
@@ -10,16 +10,12 @@ The Single Posts Loop  (活動海報內文)
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 </head>
 
 <?php get_template_part('includes/header'); ?>
 <?php get_template_part('includes/sidebar'); ?>
 
-<div class="container">
-  <div class="row">
+<body>
     <div class="main">
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
       <div class="poster_img" style="width:31.25vw; height:auto; display: inline-block;">
@@ -152,7 +148,5 @@ The Single Posts Loop  (活動海報內文)
 
           </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
+</body>

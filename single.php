@@ -17,8 +17,12 @@ else if ( in_category( 'gallery_srcs' ) ) {
   // get_template_part('includes/sidebar-global-lounge');
   get_template_part('includes/loops/content', 'single_album');
 }
-else if ( in_category( 'poster_srcs' ) ) {
+else if ( in_category( 'poster_straight_srcs' ) ) {
   // get_template_part('includes/sidebar-global-lounge');
-  get_template_part('includes/loops/content', 'single_posters');
+  get_template_part('includes/loops/content', 'single_straight_posters');
+}
+else if ( in_category( 'poster_horizontal_srcs' ) ) {
+  // get_template_part('includes/sidebar-global-lounge');
+  get_template_part('includes/loops/content', 'single_horizontal_posters');
 }
 ?>

@@ -380,10 +380,11 @@ img {
 .remarks p{
   font-weight: 300;
   font-size: 0.8em;
-  line-height: 1.75vh;
+  line-height: 2.75vh;
   vertical-align:text-top;
   letter-spacing: 0.1em;
   margin-bottom: 1vh;
+  padding-top: 0.5vh;
 }
 
 .list-block{

@@ -8,8 +8,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -46,8 +44,8 @@
             <?php endif; ?>
             <div class="news_block_content">  <!--每篇文章自己的block-->
               <span class="date">
-                  <font style="font-size: 0.7em;line-height: 1.5vh;"><?php the_time('Y'); ?></font>
-                  <font style="font-size: 1em;line-height: 2.5vh;"><?php the_time('m/d'); ?></font>
+                  <font style="font-size: 0.7em;line-height: 1.5vh; color: rgba(50,50,50,1);"><?php the_time('Y'); ?></font>
+                  <font style="font-size: 1em;line-height: 2.5vh; color: rgba(50,50,50,1);"><?php the_time('m/d'); ?></font>
               </span>
               <!--
                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" height="40vh">

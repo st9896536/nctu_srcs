@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -32,56 +30,109 @@
 
     <div class="main">
       <div class="photo-graduate">
-        <img src="<?php bloginfo('template_url'); ?>/images/professor/personal_info_ex.jpg" />
+        <?php 
+
+        $image = get_field('graduate_photo');
+
+        if( !empty($image) ): ?>
+
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>
       </div>
       <div class="graduate-data" style="width:50vw; height:31.25vh; display:inline-block; vertical-align: top;">
-        <!--回列表-->
-
         <div class="list_div" style="float: right; margin-top:5vh; margin-bottom: 3vh; display: inline-block;">
           <a href="#" class="back-to-list">回列表</a>
         </div>
 
         <div class="border" style="width: 52.5vw;  padding-right: 1vw;  border-right-color: rgba(60, 0, 110, 0.8);  border-right-style: solid;  border-right-width: 0.5vw;">
-          <!--畢業生姓名-->
           <div class="graduate-name" style="height:4vh; margin-top:2vh;">
 
             <span style="padding-right: 1.7vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
-              <p id="g1">闞 清子</p>
+              <p id="g1">
+                <?php $graduate_name_chi = get_field( "graduate_name_chi" );
+                  if( $graduate_name_chi ){
+                    echo $graduate_name_chi;
+                  }
+                ?>
+              </p>
             </span>
 
             <span style="padding-left: 1.7vw;vertical-align: top;display: inline-block; ">
-              <p id="g1">Kan, Qing-Zi</p>
+              <p id="g1">
+                <p id="g1">
+                <?php $graduate_name_eng = get_field( "graduate_name_eng" );
+                  if( $graduate_name_eng ){
+                    echo $graduate_name_eng;
+                  }
+                ?>
+              </p>
+              </p>
             </span>
           </div>
           <!--畢業生職業-->
           <div class="graduate-name" style="height:2.5vh; margin-top:1vh; margin-bottom:2.5vh;">
             <span style="padding-right: 1.2vw; vertical-align: top;display: inline-block;float: left;border-right-style: solid; border-width: 2px;">
-              <p id="g2">自由演員</p>
+              <p id="g2">
+                <?php $graduate_career_chi = get_field( "graduate_career_chi" );
+                  if( $graduate_career_chi ){
+                    echo $graduate_career_chi;
+                  }
+                ?>
+              </p>
             </span>
 
             <span style="padding-left: 1.2vw;vertical-align: top;display: inline-block; ">
-              <p id="g2">Freelence</p>
+              <p id="g2">
+                <?php $graduate_career_eng = get_field( "graduate_career_eng" );
+                  if( $graduate_career_eng ){
+                    echo $graduate_career_eng;
+                  }
+                ?>
+              </p>
             </span>
           </div>
 
-          <div class="description" style="font-weight: 500;font-size: 1.5em;line-height: 3vh;  letter-spacing: 0.1em;  color: rgba(50, 50, 50, 1); margin-bottom:5vh;"><p>萬般過眼成空。</p></div>
+          <div class="description" style="font-weight: 500;font-size: 1.5em;line-height: 3vh;  letter-spacing: 0.1em;  color: rgba(50, 50, 50, 1); margin-bottom:5vh;">
+            <p>
+              <?php $motto = get_field( "motto" );
+                if( $motto ){
+                  echo $motto;
+                }
+              ?>
+            </p>
+          </div>
       </div>
         <div class="education" style="height:5vh; margin-bottom:2.25vh;">
-          <p style="margin-bottom:0.75vh;">電影學院表演系 畢</p>
-          <p>舞台表演、電影表演</p>
+          <p style="margin-bottom:0.75vh;">
+            <?php $graduate_department = get_field( "graduate_department" );
+              if( $graduate_department ){
+                echo $graduate_department;
+              }
+            ?>
+          </p>
         </div>
 
         <div class="education" style="height:4vh; margin-bottom:3vh;">
-          <p id="graduate_email" style="margin-bottom:0.75vh;">justtest1234@gmail.com</p>
-          <p>www.justtest1234.com.tw</p>
+          <p id="graduate_email" style="margin-bottom:0.75vh;">
+            <?php $graduate_info = get_field( "graduate_info" );
+              if( $graduate_info ){
+                echo $graduate_info;
+              }
+            ?>
+          </p>
         </div>
 
-        <div class="experience" style="width:47.75vw; height:auto;">
+        <div class="experience" style="width:47.75vw; height:auto; ">
 
-            <p>2009年，在電視劇《娘妻》飾演楊靜怡正式出道。</p>
-            <p>2011年，參演古裝言情劇《新還珠格格》，飾演欣榮格格，該劇在優酷大劇盛典上榮獲年度十大電視劇優秀獎。</p>
-            <p>2013年，參演青春偶像劇《璀璨人生》，飾演葉琳，被觀眾所熟知；同年參演民國年代劇《新京華煙雲》，飾演姚莫愁。</p>
-            <p>2014年在家族鬥爭劇《繼承人》中首次擔綱女主角，飾演何星然。</p>
+            <p>
+              <?php $graduate_experience = get_field( "graduate_experience" );
+              if( $graduate_experience ){
+                echo $graduate_experience;
+              }
+            ?>
+            </p>
+            
 
         </div>
       </div>

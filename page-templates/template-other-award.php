@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -32,14 +30,14 @@
       </div>
       <a href="#" class="button_style_blue" style=" position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">碩士班</a>
       <div class="award-master-block" style="margin-top:6vh;margin-bottom: 2vh;">
-        <?php $mas_awards = get_post_meta( $post->ID, 'mas_awards', true ); 
+        <?php $mas_awards = get_post_meta( $post->ID, 'mas_awards', true );
             foreach( $mas_awards as $masaward){?>
             <div class="award-block" style="width:71.875vw;">
               <div class="name"><?php echo $masaward['mas_name']?></div>
               <div class="award"><?php echo $masaward['mas_award']?></div>
             </div>
             <?php
-              
+
             }?>
         <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">陳中勳</div>
@@ -79,14 +77,14 @@
       <a href="#" class="button_style_blue" style="background-color:rgba(180,5,0,1); position: absolute;margin-bottom:1.25vh;color: rgba(255, 255, 255, 1);">博士班</a>
       <div class="award-doctor-block" style="margin-top:8vh; margin-bottom: 2vh;">
 
-          <?php $doc_awards = get_post_meta( $post->ID, 'doc_awards', true ); 
+          <?php $doc_awards = get_post_meta( $post->ID, 'doc_awards', true );
             foreach( $doc_awards as $docaward){?>
             <div class="award-block" style="width:71.875vw;">
               <div class="name"><?php echo $docaward['doc_name']?></div>
               <div class="award"><?php echo $docaward['doc_award']?></div>
             </div>
             <?php
-              
+
             }?>
         <!-- <div class="award-block" style="width:71.875vw;">
           <div class="name">張佩思</div>

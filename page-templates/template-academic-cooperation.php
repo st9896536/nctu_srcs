@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -40,7 +38,7 @@
       </div>
 
       <div class="co_detail" style="width:72vw; padding:1vh 0.8vw;">
-        <?php $academic_cooperation = get_post_meta( $post->ID, 'academic_cooperation', true ); 
+        <?php $academic_cooperation = get_post_meta( $post->ID, 'academic_cooperation', true );
             foreach( $academic_cooperation as $academic_co){?>
               <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
                 <div class="co-detail" style="width:7vw;"><?php echo $academic_co['academic_cooperation_signdate']?></div>
@@ -49,7 +47,7 @@
                 <div class="co-detail" style="width:23.375vw;"><?php echo $academic_co['academic_cooperation_contract']?></div>
               </div>
               <?php
-              
+
             }?>
 
 

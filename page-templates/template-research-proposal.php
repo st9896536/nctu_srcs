@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -54,7 +52,7 @@
 
 
 
-        <?php $research_proposal = get_post_meta( $post->ID, 'research_proposal', true ); 
+        <?php $research_proposal = get_post_meta( $post->ID, 'research_proposal', true );
             foreach( $research_proposal as $research_pro){?>
               <div class="plan_content">
                 <div id="planname_style" style="width:47vw; margin-bottom: 2vh;"><?php echo $research_pro['research_proposal_name']?></div>
@@ -62,7 +60,7 @@
                 <div id="planname_style" style="width:9.7vw; margin-bottom: 2vh;"><?php echo $research_pro['research_proposal_host']?></div>
               </div>
               <?php
-              
+
             }?>
         <!-- <div class="plan_content">
           <div id="planname_style" style="width:47vw; margin-bottom: 2vh;">一分為二：中國現代政治思想的拓撲學研究</div>

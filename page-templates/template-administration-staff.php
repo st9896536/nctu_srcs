@@ -6,8 +6,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -28,21 +26,44 @@
     <div class="main" >
       <div class="main_long"><font>行政人員</font></div>
       <div class="professor_big_image">
-        <img style="width=:71.875vw; z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/graduate_chair.jpg" />
+        <?php 
+
+        $image = get_field('chairman_photo');
+
+        if( !empty($image) ): ?>
+
+          <img style="width=:71.875vw; z-index:-1;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>
+        <!-- <img style="width=:71.875vw; z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/graduate_chair.jpg" /> -->
         <div class="professor_text" style="width:34.5vw; margin-top:-25vh; margin-left:2.5vw;">
           <div class="professor_block">
             <div class="professor_block_text1" style="width:32vw; margin-bottom:1vh;">
               <p>社文所&nbsp;所長</p>
             </div>
             <div class="professor_block_text2" style="width:32vw; height:4.75vh; margin-bottom:2.25vh;">
-              <p>劉紀慧</p>
+              <p>
+                <?php $chairman_name = get_field( "chairman_name" );
+                  if( $chairman_name ){
+                    echo $chairman_name;
+                  }
+                ?>
+            </p>
+              <!-- <p>劉紀慧</p> -->
             </div>
             <div id="hr-line" style="margin-top:4.25vh; margin-bottom:1.5vh;">
               <HR color="#ffffffe6" size="1px" >
             </div>
 
             <div class="professor_block_text3" style="width:32vw; height:2.5vh;">
-              <p>美國伊利諾大學比較文學博士</p>
+              <p>
+                <?php $chairman_education = get_field( "chairman_education" );
+                  if( $chairman_education ){
+                    echo $chairman_education;
+                  }
+                ?>
+              </p>
+              <!-- <p>美國伊利諾大學比較文學博士</p> -->
             </div>
           </div>
         </div>
@@ -54,7 +75,32 @@
           <HR color="#323232" size="1px" >
         </div>
         <!--行政人員欄位-->
-        <div class="inblock" style="width:73.875vw; margin-top: 3vh;">
+
+            <?php $administration_staff = get_post_meta( $post->ID, 'administration_staff', true );
+              foreach( $administration_staff as $staff){?>
+              <div class="inblock" style="width:73.875vw; margin-top: 3vh;  height: auto;">
+                <div class="staff_name" style="width:8.28125vw; margin-right:0.78125vw;float: left;    height: 48vh;">
+                  <div id="n1">行政人員</div>
+                  <div id="n2"><?php echo $staff['staff_name']?></div>
+                </div>
+                <span class="staff_data" style="width:14vw; height: 48vh; margin-right: 0.78125vw; list-style-type: none; display: inline-block;">
+                  <p><?php echo $staff['staff_contact']?></p>
+                  
+                </span>
+                <span class="job_content" style="width:49vw; height: auto; float:right;">
+                  <p><?php echo $staff['staff_job_content']?></p>
+                  <!-- <HR size="1px" color="#4F4F4F" style="width:21vw; margin-left: -25vw;"> -->
+                </span>
+                <div class="line" style="margin-top:6.75vh; width:21vw;">
+                  <HR size="1px" color="#4F4F4F">
+                </div>
+              </div>
+              <?php
+
+            }?>
+
+
+        <!-- <div class="inblock" style="width:73.875vw; margin-top: 3vh;">
             <div class="staff_name" style="width:8.28125vw; margin-right:0.78125vw;float: left;">
               <div id="n1">行政人員</div>
               <div id="n2">洪慧芳</div>
@@ -87,6 +133,7 @@
               <HR size="1px" color="#4F4F4F">
             </div>
         </div>
+
         <div class="inblock" style="width:73.875vw; margin-top: 3vh;">
             <div class="staff_name" style="width:8.28125vw; margin-right:0.78125vw;float: left;">
               <div id="n1">行政人員</div>
@@ -282,12 +329,10 @@
                 <li>執行教育部優秀外國青年來臺短期蹲點計畫─亞際文化研究全球網絡計畫書</li>
 
             </span>
-            <!--
             <div class="line" style="margin-top:2.75vh; width:21vw;">
               <HR size="1px" color="#4F4F4F">
             </div>
-          -->
-        </div>
+        </div> -->
 
 
 

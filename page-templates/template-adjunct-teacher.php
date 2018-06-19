@@ -7,8 +7,6 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -29,12 +27,12 @@
   <div class="row">
     <div class="main" >
       <div class="main_long"><font>兼任師資</font></div>
-      
-        
-          <div class="name_block" style="width: 71.875vw; margin-top: 4vh; margin-bottom: 1.25vh;">
-            
 
-            <?php $adjunct_teacher = get_post_meta( $post->ID, 'adjunct_teacher', true ); 
+
+          <div class="name_block" style="width: 71.875vw; margin-top: 4vh; margin-bottom: 1.25vh;">
+
+
+            <?php $adjunct_teacher = get_post_meta( $post->ID, 'adjunct_teacher', true );
             foreach( $adjunct_teacher as $teacher){?>
               <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
                 <span style="width:10.5vw; margin-right:1.5vw; letter-spacing: 0.5px;"><?php echo $teacher['adjunct_teacher_name']?></span>
@@ -43,17 +41,17 @@
                 <span style="width:31.875vw;"><?php echo $teacher['adjunct_teacher_areas_of_expertise']?></span>
               </div>
               <?php
-              
+
             }?>
           </div>
-        
 
-        
+
+
         <!-- <span style="width:10.5vw; margin-right:1.5vw; letter-spacing: 0.5px;">Thomas Carl Wall</span>
         <span style="width:11vw; margin-right:1.5vw;">台北科大副教授</span>
         <span style="width:20vw; margin-right:1.5vw;">華盛頓大學英美文學博士</span>
         <span style="width:31.875vw;">20世紀思想史、文學批評史、電影理論與批評</span> -->
-      
+
       <!-- <div class="name_block" style="width:71.875vw; display: inline-flex; margin-top: 1.25vh; margin-bottom: 1.25vh;">
         <span style="width:10.5vw; margin-right:1.5vw;">司黛蕊</span>
         <span style="width:11vw; margin-right:1.5vw;">中研院助研究員</span>

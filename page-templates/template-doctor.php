@@ -8,8 +8,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -35,14 +33,14 @@
         </a>
         <div class="master-title">博士班招生</div>
         <div class="master-num">
-          <?php $doctor_number = get_field( "doctor_number" ); 
+          <?php $doctor_number = get_field( "doctor_number" );
             if( $doctor_number ){
               echo $doctor_number;
             }
             ?>
         </div>
         <div class="master-extra" style="font-size: 0.8em; letter-spacing: 0em;">
-          <?php $doctor_extra = get_field( "doctor_extra" ); 
+          <?php $doctor_extra = get_field( "doctor_extra" );
             if( $doctor_extra ){
               echo $doctor_extra;
             }
@@ -51,7 +49,7 @@
         <HR size="1px" style="margin-top:1.75vh; margin-bottom:2.25vh; width:34vw;">
 
         <div class="d-content" >
-          <?php $doctor_content = get_field( "doctor_content" ); 
+          <?php $doctor_content = get_field( "doctor_content" );
             if( $doctor_content ){
               echo $doctor_content;
             }
@@ -78,21 +76,21 @@
           </a>
           <a href="#" class="button_style_red">甄試入學</a>
           <div class="interview-num">
-            <?php $doctor_interview_number = get_field( "doctor_interview_number" ); 
+            <?php $doctor_interview_number = get_field( "doctor_interview_number" );
             if( $doctor_interview_number ){
               echo $doctor_interview_number;
             }
             ?>
           </div>
           <div class="interview-register-date">
-            <?php $interview_register_date = get_field( "interview_register_date" ); 
+            <?php $interview_register_date = get_field( "interview_register_date" );
             if( $interview_register_date ){
               echo $interview_register_date;
             }
             ?>
           </div>
           <div class="interview-way">
-            <?php $doctor_interview_way = get_field( "doctor_interview_way" ); 
+            <?php $doctor_interview_way = get_field( "doctor_interview_way" );
             if( $doctor_interview_way ){
               echo $doctor_interview_way;
             }
@@ -102,21 +100,21 @@
         <div class="test" style="width:34vw; margin-bottom: 3.5vh;">
           <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">考試入學</a>
           <div class="test-num">
-            <?php $doctor_test_number = get_field( "doctor_test_number" ); 
+            <?php $doctor_test_number = get_field( "doctor_test_number" );
             if( $doctor_test_number ){
               echo $doctor_test_number;
             }
             ?>
           </div>
           <div class="test-register-date">
-            <?php $doctor_test_register_date = get_field( "doctor_test_register_date" ); 
+            <?php $doctor_test_register_date = get_field( "doctor_test_register_date" );
             if( $doctor_test_register_date ){
               echo $doctor_test_register_date;
             }
             ?>
           </div>
           <div class="test-date">
-            <?php $doctor_test_date = get_field( "doctor_test_date" ); 
+            <?php $doctor_test_date = get_field( "doctor_test_date" );
             if( $doctor_test_date ){
               echo $doctor_test_date;
             }
@@ -127,7 +125,7 @@
 
       <!-- 招生海報 -->
       <div class="poster_img" style="float: right; width:35vw; height:auto; display: inline-block;">
-        <?php 
+        <?php
 
         $image = get_field('doctor_image');
 
@@ -135,7 +133,7 @@
 
           <img style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-        <?php endif; ?> 
+        <?php endif; ?>
       </div>
     </div>
 </body>

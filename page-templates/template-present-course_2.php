@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/table.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="//script.sheetsu.com/"></script>
   <script>
 
@@ -18,7 +16,7 @@
       $ ("#top-menu a:eq(2)").addClass('nav_active');
       $ (".sidebarmenu a:eq(0)").removeClass('a_show');
       $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
-    
+
     // 讀取json檔進來
       $.getJSON("<?php bloginfo('template_url'); ?>/srcs_1062.json", function(data){
             console.log(data);
@@ -174,15 +172,15 @@
                 $('.cell_' + i).append("<div class=button_style_gray>" + attribute_second[i] +"</div>");
                 $('.cell_' + i).append("<div class=button_style_gray>" + attribute_third[i] +"</div>");
                 $('.cell_' + i).append("<div class=button_style_gray>" + attribute_fourth[i] +"</div>");
-                
+
               }
 
-             
-              
+
+
           }
         }
 
-        
+
         Sheetsu.read("https://sheetsu.com/apis/v1.0qw/87e2ee421ee9/",{},successFunc);
 
 });

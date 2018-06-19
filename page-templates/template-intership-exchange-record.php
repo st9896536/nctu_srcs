@@ -7,8 +7,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -37,8 +35,8 @@
         <div id="intership-title" style="width:32vw;">見習單位</div>
       </div>
 
-      
-          <?php $foreign_study = get_post_meta( $post->ID, 'foreign_study', true );          
+
+          <?php $foreign_study = get_post_meta( $post->ID, 'foreign_study', true );
             foreach( $foreign_study as $foreignstudy){ ?>
               <div class="intership_detail" style="width:55vw;">
                 <div class="intership_content" style=" padding-top: 1.5vh; ">
@@ -46,10 +44,10 @@
                   <div class="intership-detail" style="width:15vw;"><?php echo $foreignstudy['exchange_school']?></div>
                   <div class="intership-detail" style="width:32vw;"><?php echo $foreignstudy['trainee_office']?></div>
                 </div>
-              </div> 
+              </div>
               <?php
             }?>
-        
+
 
       <!-- <div class="intership_detail" style="width:55vw;">
         <div class="intership_content" style=" padding-top: 1.5vh;">
@@ -122,7 +120,7 @@
         <div id="intership-title" style="width:32vw;">見習單位</div>
       </div>
 
-      <?php $student_traineeship = get_post_meta( $post->ID, 'student_traineeship', true );          
+      <?php $student_traineeship = get_post_meta( $post->ID, 'student_traineeship', true );
             foreach( $student_traineeship as $trainee){ ?>
               <div class="intership_detail" style="width:55vw;">
                 <div class="intership_content" style=" padding-top: 1.5vh; ">
@@ -130,7 +128,7 @@
                   <div class="intership-detail" style="width:15vw;"><?php echo $trainee['102-103_exchange_school']?></div>
                   <div class="intership-detail" style="width:32vw;"><?php echo $trainee['102-103_trainee_office']?></div>
                 </div>
-              </div> 
+              </div>
               <?php
             }?>
       <!-- <div class="intership_detail" style="width:55vw;">
@@ -155,7 +153,7 @@
       </div>
 
 
-        <?php $student_traineeship_98 = get_post_meta( $post->ID, '98_student_traineeship', true );          
+        <?php $student_traineeship_98 = get_post_meta( $post->ID, '98_student_traineeship', true );
             foreach( $student_traineeship_98 as $trainee){ ?>
               <div class="intership_detail" style="width:55vw;">
                 <div class="intership_content" style=" padding-top: 1.5vh; ">
@@ -163,7 +161,7 @@
                   <div class="intership-detail" style="width:15vw;"><?php echo $trainee['98_exchange_school']?></div>
                   <div class="intership-detail" style="width:32vw;"><?php echo $trainee['98_trainee_office']?></div>
                 </div>
-              </div> 
+              </div>
               <?php
             }?>
       <!-- <div class="intership_detail" style="width:55vw;">
@@ -201,7 +199,7 @@
         <div id="intership-title" style="width:32vw;">見習單位</div>
       </div>
 
-        <?php $student_traineeship_97 = get_post_meta( $post->ID, '97_student_traineeship', true );          
+        <?php $student_traineeship_97 = get_post_meta( $post->ID, '97_student_traineeship', true );
             foreach( $student_traineeship_97 as $trainee){ ?>
               <div class="intership_detail" style="width:55vw;">
                 <div class="intership_content" style=" padding-top: 1.5vh; ">
@@ -209,7 +207,7 @@
                   <div class="intership-detail" style="width:15vw;"><?php echo $trainee['97_exchange_school']?></div>
                   <div class="intership-detail" style="width:32vw;"><?php echo $trainee['97_trainee_office']?></div>
                 </div>
-              </div> 
+              </div>
               <?php
             }?>
       <!-- <div class="intership_detail" style="width:55vw;">

@@ -1,11 +1,14 @@
 # nctu_{srcs}
 WordPress theme for the 社文所 in NCTU
-update date: 2018/04/07
+update date: 2018/06/09
 
 
 ## Used Plugins
 - qTranslate-X
 - ACF Photo Gallery Field
+- Advanced Custom Fields
+- WCK - Custom Fields and Custom Post Types Creator
+- YouTube
 
 ## 頁面模板
 

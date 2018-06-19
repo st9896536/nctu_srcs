@@ -8,8 +8,6 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/student.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://use.typekit.net/hgf1mzq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
 
     $( document ).ready(function() {
@@ -35,7 +33,7 @@
           </a>
           <div class="overseas-title">僑生港澳生招生</div>
           <div class="overseas-subtitle">
-            <?php $overseas_subtitle = get_field( "overseas_subtitle" ); 
+            <?php $overseas_subtitle = get_field( "overseas_subtitle" );
             if( $overseas_subtitle ){
               echo $overseas_subtitle;
             }
@@ -43,7 +41,7 @@
           </div>
           <HR size="1px" style="margin-top:2.75vh; margin-bottom:1.5vh; width:62.5vw; color:#fff;">
           <div class="overseas-content">
-            <?php $overseas_content = get_field( "overseas_content" ); 
+            <?php $overseas_content = get_field( "overseas_content" );
             if( $overseas_content ){
               echo $overseas_content;
             }
