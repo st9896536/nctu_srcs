@@ -40,9 +40,9 @@
 
         <?php endif; ?>
       </div>
-      <div class="graduate-data" style="width:50vw; height:31.25vh; display:inline-block; vertical-align: top;">
+      <div class="graduate-data" style="width:50vw; height:auto; display:inline-block; vertical-align: top;">
         <div class="list_div" style="float: right; margin-top:5vh; margin-bottom: 3vh; display: inline-block;">
-          <a href="#" class="back-to-list">回列表</a>
+          <a href="<?php echo site_url(); ?>/graduate-list" class="back-to-list">回列表</a>
         </div>
 
         <div class="border" style="width: 52.5vw;  padding-right: 1vw;  border-right-color: rgba(60, 0, 110, 0.8);  border-right-style: solid;  border-right-width: 0.5vw;">
@@ -103,7 +103,7 @@
             </p>
           </div>
       </div>
-        <div class="education" style="height:5vh; margin-bottom:2.25vh;">
+        <div class="education" style="height:5vh; margin-bottom:3.25vh;">
           <p style="margin-bottom:0.75vh;">
             <?php $graduate_department = get_field( "graduate_department" );
               if( $graduate_department ){
@@ -113,7 +113,7 @@
           </p>
         </div>
 
-        <div class="education" style="height:4vh; margin-bottom:3vh;">
+        <div class="education" style="height:4vh; margin-bottom:5vh;">
           <p id="graduate_email" style="margin-bottom:0.75vh;">
             <?php $graduate_info = get_field( "graduate_info" );
               if( $graduate_info ){

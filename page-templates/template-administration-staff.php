@@ -36,8 +36,8 @@
 
         <?php endif; ?>
         <!-- <img style="width=:71.875vw; z-index:-1;" src="<?php bloginfo('template_url'); ?>/images/graduate_chair.jpg" /> -->
-        <div class="professor_text" style="width:34.5vw; margin-top:-25vh; margin-left:2.5vw;">
-          <div class="professor_block">
+        <div class="professor_text" style="width:34.5vw; margin-top:-27vh; margin-left:2.5vw;">
+          <div class="professor_block" style="padding: 1vw 1vh;">
             <div class="professor_block_text1" style="width:32vw; margin-bottom:1vh;">
               <p>社文所&nbsp;所長</p>
             </div>
@@ -52,10 +52,10 @@
               <!-- <p>劉紀慧</p> -->
             </div>
             <div id="hr-line" style="margin-top:4.25vh; margin-bottom:1.5vh;">
-              <HR color="#ffffffe6" size="1px" >
+              <HR style="color:rgba(255,255,255,0.8);" size="2px" >
             </div>
 
-            <div class="professor_block_text3" style="width:32vw; height:2.5vh;">
+            <div class="professor_block_text3" style="width:32vw;">
               <p>
                 <?php $chairman_education = get_field( "chairman_education" );
                   if( $chairman_education ){
@@ -79,19 +79,19 @@
             <?php $administration_staff = get_post_meta( $post->ID, 'administration_staff', true );
               foreach( $administration_staff as $staff){?>
               <div class="inblock" style="width:73.875vw; margin-top: 3vh;  height: auto;">
-                <div class="staff_name" style="width:8.28125vw; margin-right:0.78125vw;float: left;    height: 48vh;">
+                <div class="staff_name" style="width:8.28125vw; margin-right:0.78125vw;display: inline-block; vertical-align: top; height: auto;">
                   <div id="n1">行政人員</div>
                   <div id="n2"><?php echo $staff['staff_name']?></div>
                 </div>
-                <span class="staff_data" style="width:14vw; height: 48vh; margin-right: 0.78125vw; list-style-type: none; display: inline-block;">
+                <div class="staff_data" style="width:14vw; display: inline-block;vertical-align: top; margin-right: 0.78125vw; list-style-type: none; display: inline-block;">
                   <p><?php echo $staff['staff_contact']?></p>
                   
-                </span>
-                <span class="job_content" style="width:49vw; height: auto; float:right;">
+                </div>
+                <div class="job_content" style="width:49vw; height: auto;    display: inline-block;">
                   <p><?php echo $staff['staff_job_content']?></p>
                   <!-- <HR size="1px" color="#4F4F4F" style="width:21vw; margin-left: -25vw;"> -->
-                </span>
-                <div class="line" style="margin-top:6.75vh; width:21vw;">
+                </div>
+                <div class="line" style="width:21vw; margin-bottom: 5vh;">
                   <HR size="1px" color="#4F4F4F">
                 </div>
               </div>

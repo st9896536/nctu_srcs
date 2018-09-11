@@ -15,22 +15,7 @@
       $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
 });
 
-    function resizeImage(){
-      var window_height = document.body.clientHeight
-      var window_width = document.body.clientWidth
-      var image_width = document.images[0].width
-      var image_height = document.images[0].height
-      var height_ratio = image_height / window_height
-      var width_ratio = image_width / window_width
-      if (height_ratio > width_ratio){
-        document.images[0].style.width = "auto"
-        document.images[0].style.height = "100%"
-      }
-      else{
-      document.images[0].style.width = "100%"
-      document.images[0].style.height = "auto"
-      }
-}
+    
   </script>
 </head>
 
@@ -52,6 +37,10 @@
             if( !empty($image) ): ?>
               <img id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             <?php endif; ?>
+
+            
+
+
             <!-- <img id="circle" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_01.jpg" /> -->
           </div>
           <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;">

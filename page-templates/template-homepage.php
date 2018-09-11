@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/homepage.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider.js"></script>
+  <script src="https://use.typekit.net/hgf1mzq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <!-- Place in the <head>, after the three links -->
   <script type="text/javascript" charset="utf-8">
 
@@ -70,6 +72,7 @@
 </head>
 
 <?php get_template_part('includes/header'); ?>
+<?php //get_template_part('includes/header-en_header'); ?>
 <?php //wp_head(); ?>
 
 <body>
@@ -85,19 +88,7 @@
         </div>
 
         <!-- dynamically change poster title and other info -->
-        <?php
-        $is_multiple=False;
-        $args = array(
-        'category_name' => 'poster_horizontal_srcs',
-        'posts_per_page' => 5
-        );
-        $the_query = new WP_Query($args);
-        if($the_query->have_posts()):
-            while($the_query->have_posts()):
-                $the_query->the_post();
-                if($is_multiple):
-        ?>
-        <?php endif; ?>
+        
         <p id="poster-title"> <?php echo the_title();?></p>
 
 
@@ -125,15 +116,7 @@
           </p>
         </div>
         <a target="_blank" href="<?php the_permalink(); ?>" class="button_style1">繼續閱讀</a>
-        <?php
-        $is_multiple=True;
-          endwhile;
-        else:?>
-            <div class="poster-title">還沒有發佈新活動海報喔！</div>
-        <?php
-        endif;
-        wp_reset_postdata();
-        ?>
+        
       </span>
     </div>
 
@@ -183,14 +166,13 @@
 
     <div class="post-content">
       <!-- left side block : srcs_news -->
-      <div class="new_post" style="background-color: rgba(230,230,230,1); !important">  
+      <div id="new_post" class="new_post" style="background-color: rgba(230,230,230,1); !important">  
         <div class="newtext"> 
           <p id="p_style">最新消息</p>
-          <span>
+          <div class="bottom_line"></div>
             <a target="_blank" href="<?php bloginfo('template_url')?>/newslist" class="button_style2">更多消息</a>
-          </span>
         </div>
-        <HR size="1px" style="width:44.828125vw; margin-left:2vw;"/>
+        <HR id="hr" size="1px" style="width:44.828125vw; margin-left:2vw;"/>
           <div class="news_block">
             <?php
             $is_multiple=False;
@@ -208,11 +190,12 @@
 
             <!--every srcs_news block-->
 
-            <div class="news_block_content">  
-              <span class="date">
+            <div class="news_block_content"> 
+              <div class="purple_block"></div>
+              <div class="date">
                   <font style="font-size: 0.7em;line-height: 1.5vh; color: rgba(50, 50, 50, 1);"><?php the_time('Y'); ?></font>
                   <font style="font-size: 1em;line-height: 2.5vh; color: rgba(50, 50, 50, 1);"><?php the_time('m/d'); ?></font>
-              </span>
+              </div>
                 <a target="_blank" href="<?php the_permalink(); ?>"><p id="content_text"><?php the_title(); ?></p></a>
             </div>
               <?php
@@ -230,7 +213,7 @@
       <?php
           $image = get_field('book_image_1');?>
           <!--right side block : lecturer + books -->
-          <div class="new_post" style="float:right; margin-right:0.78125vw; !important">
+          <div id="right_post" class="new_post" style="float:right; margin-right:0.78125vw; !important">
             <div class="right_top_block">
                 <!-- book1 -->
                 <div class="right_book_image">
@@ -380,3 +363,4 @@
 </body>
 
 <?php get_template_part('includes/footer'); ?>
+<?php //get_template_part('includes/footer-en_footer'); ?>

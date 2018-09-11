@@ -9,6 +9,8 @@ The Single Posts Loop  (最新消息內文)
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page.css" type="text/css" />
 </head>
 
+<?php get_template_part('includes/sidebar'); ?>
+
 <div class="container">
   <div class="row">
     <div class="main">

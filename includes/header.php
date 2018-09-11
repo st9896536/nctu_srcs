@@ -13,6 +13,8 @@
     <script src="https://use.typekit.net/hgf1mzq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    
+
 </head>
 
 
@@ -34,14 +36,8 @@
   </div>
   <div class="header_right">
     <div class="right_item" style="margin-top:3.25vh;">
-      <div><?php get_template_part('includes/navbar-search'); ?>
+      <div class="search"><?php get_template_part('includes/navbar-search'); ?>
       <div class="nav" id="top-menu">
-        <!-- <a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
-        <a href="<?php echo site_url(); ?>/research-direction">研究發展</a>
-        <a href="<?php echo site_url(); ?>/present-course">課程規劃</a>
-        <a href="<?php echo site_url(); ?>/feature" style="width:3.125vw !important;">招生</a>
-        <a href="<?php echo site_url(); ?>/academic-cooperation">國際交流</a>
-        <a href="<?php echo site_url(); ?>/rules">學生專區</a> -->
 
         <ul>
         <li class="aboutus"><a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
@@ -62,9 +58,9 @@
             <li><a href="<?php echo site_url(); ?>/research-proposal">研究計畫</a></li>
           </ul>
         </li>
-        <li class="courses"><a href="<?php echo site_url(); ?>/present-course_1">課程規劃</a>
+        <li class="courses"><a href="<?php echo site_url(); ?>/present-course-first-semester">課程規劃</a>
           <ul>
-            <li><a href="<?php echo site_url(); ?>/present-course_1">本學年課程</a></li>
+            <li><a href="<?php echo site_url(); ?>/present-course-first-semester">本學年課程</a></li>
             <li><a href="<?php echo site_url(); ?>/past-course">歷年課程</a></li>
             <li><a href="<?php echo site_url(); ?>/lecture-course">講座課程</a></li>
           </ul>
@@ -84,7 +80,7 @@
             <li><a href="<?php echo site_url(); ?>/academic-cooperation">學術合作</a></li>
             <li><a href="<?php echo site_url(); ?>/keynote-speech">專題演講</a></li>
             <li><a href="<?php echo site_url(); ?>/workshop">研討會工作坊</a></li>
-            <li><a href="<?php echo site_url(); ?>/albums">活動相簿</a></li>
+            <li><a href="<?php echo site_url(); ?>/album">活動相簿</a></li>
           </ul>
         </li>
         <li class="student"><a href="<?php echo site_url(); ?>/rules">學生專區</a>

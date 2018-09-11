@@ -33,6 +33,7 @@
                 echo $establishing_purpose;
               }
             ?>
+            
           </div>
       </div>
       <div class="main-text" style="float:right; margin-top:-40.125vh; !important">  <!--右邊text block-->
@@ -43,6 +44,7 @@
               echo $educational_goals;
             }
             ?>
+
           </div>
       </div>
       <div class="main_long"><font>學術特色</font></div>

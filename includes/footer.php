@@ -1,9 +1,10 @@
+<!-- 
 <footer class="site-footer">
 
 
 	<div class="dynamic-footer">
     </?php dynamic_sidebar('footer-widget-area'); ?>
-  </div>
+  </div> -->
 <!--
   <div class="page-footer">
 		<link rel="stylesheet" href="</?php bloginfo('template_url'); ?>/css/style.css" type="text/css" />
@@ -44,14 +45,14 @@
 						<li>版權所有 任何形式之轉載，請先與國立交通大學社會與文化研究所網頁製作小組聯繫</li>
 					</ol>
 				</div>
-				<div class="footer_icons" style="margin-top: -6vh; margin-left: 86vw;width: 8vw;">
+				<div class="footer_icons" style="display: inline-block; vertical-align: top;">
 					<div class="icons_block" style="    width: 8vw;">
-						<a  class="icons icons_facebook" href="<?php echo site_url(); ?>/aboutus"></a>
+						<a class="icons icons_facebook" href="#"></a>
 						<a  class="icons icons_instagram" href="<?php echo site_url(); ?>/aboutus"></a>
 					</div>
 					<div class="icons_block" style="    width: 8vw;">
 						<a  class="icons icons_twitter" href="<?php echo site_url(); ?>/aboutus"></a>
-						<a  class="icons icons_twitter" href="<?php echo site_url(); ?>/aboutus"></a>
+						<a  class="icons icons_youtube" href="<?php echo site_url(); ?>/aboutus"></a>
 					</div>
 					<div class="icons_block" style="    width: 8vw;">
 						<a  class="icons icons_blogger" href="<?php echo site_url(); ?>/aboutus"></a>

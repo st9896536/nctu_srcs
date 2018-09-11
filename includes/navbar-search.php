@@ -22,13 +22,13 @@ Then you can insert the Search Widget into the sidebar.
 input[type="text"] {  /* 4 + 5 */
 	font-family: 'Noto Serif CJK TC', 'Noto Serif CJK', 'Source Han Serif TC', 'Source Han Serif', source-han-serif-sc, serif;
 	width: 19vw;
-  height: 3vh;
+  	height: 3vh;
 	font-weight: 400;
 	font-size: 0.8em; /* 5 */
 	border-radius: 3px;
 	letter-spacing: 0.1em;
 	color: rgba(180, 180, 180, 1);
-  margin-left: 53.1875vw;
+  	margin-left: 53.1875vw;
 	border: 1px solid #fff;
 	padding: 0 1vw 0 0;
 }
