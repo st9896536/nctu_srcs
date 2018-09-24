@@ -18,16 +18,16 @@
       $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
 
 		// 讀取json檔進來
-      $.getJSON("<?php bloginfo('template_url'); ?>/srcs_1061.json", function(data){
+      $.getJSON("<?php bloginfo('template_url'); ?>/srcs_1071.json", function(data){
             console.log(data);
-            console.log( "success" );
-            console.log(typeof(data));
             var obj = Object.keys(data).map(function(_) { return data[_]; }); //轉array
-            console.log(obj);
+            // console.log(obj);
             var new_obj = Object.keys(obj[0]).map(function(_) { return obj[0][_]; }); //轉array
-            console.log(new_obj[0]);
+            // console.log(new_obj);
             var new_obj_arr = Object.keys(new_obj[0]).map(function(_) { return new_obj[0][_]; });  //轉array
+            var second_arr = Object.keys(new_obj[1]).map(function(_) { return new_obj[1][_]; });  //轉array
             // console.log(new_obj_arr);  //還沒排序過
+            new_obj_arr = new_obj_arr.concat(second_arr) //將兩個array合併
             // console.log(new_obj_arr[0]);
 
             new_obj_arr = new_obj_arr.sort(function (a, b) {
@@ -35,7 +35,6 @@
             });
 
             console.log(new_obj_arr) //已排序
-
 
             var cos_time = []; //授課時間
             var arr_weekdays = []; //星期幾
@@ -103,21 +102,6 @@
                 weekdays_chi[i] = "星期五"
               }
 
-              // switch (i) {
-              //   case 0:
-              //     weekdays_chi[i] = "個別安排"
-              //   case 1:
-              //     weekdays_chi[i] = "星期一"
-              //   case 2:
-              //     weekdays_chi[i] = "星期二"
-              //   case 3:
-              //     weekdays_chi[i] = "星期三"
-              //   case 4:
-              //     weekdays_chi[i] = "星期四"
-              //   case 5:
-              //     weekdays_chi[i] = "星期五"
-              // }
-
               $('.main').append("<div id=weekdays_" + i +" class=table></div>");
               $('#weekdays_' + i).append("<div id=row_" + i + " class=row></div>");
               $('#row_' + i).append("<div class=cell_weekdays>" + weekdays_chi[i] + "</div>");
@@ -134,10 +118,7 @@
                 }
                 num++;
               }
-
             }
-
-
             for (var i = 0; i < num; i++){
               $('#cour_' + i).append("<div class=course-title-chi>" + new_obj_arr[i].cos_cname +  "</div>");
               $('#cour_' + i).append("<div class=course-title-eng>" + new_obj_arr[i].cos_ename +  "</div>");
@@ -177,14 +158,9 @@
                 $('.cell_' + i).append("<div class=button_style_gray>" + attribute_fourth[i] +"</div>");
 
               }
-
-
-
           }
         }
-
-
-        Sheetsu.read("https://sheetsu.com/apis/v1.0qw/d84322613df5/",{},successFunc);
+        Sheetsu.read("https://sheetsu.com/apis/v1.0qu/88e849b06cfc",{},successFunc);
 
 });
 
@@ -208,118 +184,6 @@
 
         </div>
       </div>
-
-      <!-- 星期一 -->
-        <!-- <div class='table'>
-
-            <div class='row'>
-
-              <div class='cell_weekdays' style="width:2.35vw;">星期一</div>
-                <div class='intable'>
-                  <div class='row_container'>
-                    <div class='cell'>EFG</div>
-                    <div class='course'>
-
-
-                        <div class="course-title-chi">文化研究理論(博)</div>
-                        <div class="course-title-eng">Introduction to Cultural Studies</div>
-                        <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh; margin-right: 1vw;">
-                        <div class="professor-name-chi">朱元鴻／劉紀蕙／陳奕麟教授 合授</div>
-                        <div class="professor-name-eng">Yuan-Horng Chu, Joyce C.H. Liu and Allen Chun</div>
-
-                    </div>
-                    <div class='cell' id="btn-course-block" >
-                        <script>
-                            function successFunc(data) {
-                              console.log(data);
-                            }
-                            // Get all rows where column 'score' is '42'
-                            var searchQuery = {
-                              "屬性／課程領域1": *,
-                            };
-                            Sheetsu.read("https://sheetsu.com/apis/v1.0qw/d84322613df5/", {
-                              search: searchQuery
-                            }, successFunc);
-                        </script>
-
-                      <a href="#" class="button_style_blue">選修課程</a>
-                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">核心課程</a>
-                      <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">英文授課</a>
-
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-
-        </div> -->
-      <!-- 星期二 -->
-      <!-- <div class='table'>
-
-          <div class='row'>
-
-            <div class='cell merged' style="width:2.35vw;">星期二</div>
-              <div class='intable'>
-                <div class='row'>
-                  <div class='cell'>CDX</div>
-                  <div class='course'>
-
-                      <div class="course-title-chi">近現代日本思想史專題</div>
-                      <div class="course-title_eng">Seminar on Modern Japanese Intellectual History</div>
-                      <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh; margin-right: 1vw;">
-                      <div class="professor-name-chi">藍弘岳 教授</div>
-                      <div class="professor-name-eng">Hung-Yueh Lan</div>
-
-                  </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
-                    <a href="#" class="button_style_blue">選修課程</a>
-                    <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
-                    <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">東亞現代研究</a>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='cell'>EFG</div>
-                  <div class='course'>
-
-                      <div class="course-title-chi">國家與社會</div>
-                      <div class="course-title_eng">State and Society</div>
-                      <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh; margin-right: 1vw;">
-                      <div class="professor-name-chi">林淑芬 教授</div>
-                      <div class="professor-name-eng">Shu-fen Lin</div>
-
-                  </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
-                    <a href="#" class="button_style_blue">選修課程</a>
-                    <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
-                  </div>
-                </div>
-                <div class='row'>
-                  <div class='cell'>EFG</div>
-                  <div class='course'>
-
-                    <div class="course-title-chi">當代議題：老化的現代性</div>
-                    <div class="course-title_eng">Contemporary Issue: Aging Modernity</div>
-                    <HR size="1px" style="margin-top:0.25vh; margin-bottom:1.25vh; margin-right: 1vw;">
-                    <div class="professor-name-chi">朱元鴻 教授</div>
-                    <div class="professor-name-eng">Yuan-Horng Chu</div>
-
-                  </div>
-                  <div class='cell' style="width:33.825vw; padding-top:1.5vh; vertical-align: top; padding-left: 1vw;">
-                    <a href="#" class="button_style_blue" style="color: rgba(255, 255, 255, 1);">選修課程</a>
-                    <a href="#" class="button_style_gray" style=" color: rgba(50, 50, 50, 1);">社會文化與政治思想</a>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-      </div>
-
- -->
-
-
-
-
     </div>
 
 

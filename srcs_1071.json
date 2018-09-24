@@ -1,0 +1,1174 @@
+{
+    "249": {
+        "1": {
+            "1071_4035": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "4035",
+                "cos_code": "ICS5010",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "文化研究理論(博)",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "朱元鴻、劉紀蕙、陳奕麟",
+                "cos_time": "1IJK-F106A",
+                "memo": " ",
+                "cos_ename": "Introduction to Cultural Theories",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "7",
+                "depType": "G"
+            },
+            "1071_4036": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "4036",
+                "cos_code": "ICS5008",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "學術訓練討論課(博)",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": "http://www.srcs.nctu.edu.tw/joyceliu/",
+                "teacher": "劉紀蕙",
+                "cos_time": "3EFG-F106A",
+                "memo": " ",
+                "cos_ename": "Pro-seminar",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "4",
+                "depType": "G"
+            },
+            "1071_5445": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5445",
+                "cos_code": "ICS5367",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "影像與檔案",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "蔡華臻",
+                "cos_time": "4YIJ-F106A",
+                "memo": " ",
+                "cos_ename": "Image and the Archive",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "1",
+                "depType": "G"
+            },
+            "1071_5446": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5446",
+                "cos_code": "ICS5368",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "數位電影製作",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "蔡華臻",
+                "cos_time": "5YIJ-F106A",
+                "memo": " ",
+                "cos_ename": "Digital Film Production",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "1",
+                "depType": "G"
+            },
+            "1071_5862": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5862",
+                "cos_code": "ICS5003",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "學術訓練討論課",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "彭明偉",
+                "cos_time": "3EFG-FB10",
+                "memo": " ",
+                "cos_ename": "Pro-seminar",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "12",
+                "depType": "G"
+            },
+            "1071_5863": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5863",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "朱元鴻",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": null,
+                "reg_num": "4",
+                "depType": "G"
+            },
+            "1071_5864": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5864",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "藍弘岳",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "5",
+                "depType": "G"
+            },
+            "1071_5865": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5865",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "林淑芬",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "9",
+                "depType": "G"
+            },
+            "1071_5866": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5866",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "彭明偉",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": null,
+                "reg_num": "3",
+                "depType": "G"
+            },
+            "1071_5867": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5867",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "邱德亮",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "0",
+                "depType": "G"
+            },
+            "1071_5868": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5868",
+                "cos_code": "ICS5007",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "個別研究",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": "http://www.srcs.nctu.edu.tw/joyceliu/",
+                "teacher": "劉紀蕙",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Independent Study",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "8",
+                "depType": "G"
+            },
+            "1071_5869": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5869",
+                "cos_code": "ICS5011",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "文化研究導論",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "邱德亮、林淑芬、彭明偉、藍弘岳",
+                "cos_time": "3CDX-F106A",
+                "memo": " ",
+                "cos_ename": "Introduction to Cultural Studies",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "18",
+                "depType": "G"
+            },
+            "1071_5870": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5870",
+                "cos_code": "ICS5354",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "民主專題",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "林淑芬",
+                "cos_time": "2EFG-F106A",
+                "memo": " ",
+                "cos_ename": "Seminar on Democracy",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "9",
+                "depType": "G"
+            },
+            "1071_5871": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5871",
+                "cos_code": "ICS5355",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "東亞論專題",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "藍弘岳",
+                "cos_time": "2CDX-F106A",
+                "memo": " ",
+                "cos_ename": "Seminar on the discourses of East Asia",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "12",
+                "depType": "G"
+            },
+            "1071_5872": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5872",
+                "cos_code": "ICS5356",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "社會思想當代議題:宗教暴力",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "朱元鴻",
+                "cos_time": "2IJK-F106A",
+                "memo": " ",
+                "cos_ename": "Contemporary Issue in Social Thoughts: Religious Violence",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "10",
+                "depType": "G"
+            },
+            "1071_5873": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5873",
+                "cos_code": "ICS5357",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "社會傳記與文化研究",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "邱德亮",
+                "cos_time": "5CDX-F106A",
+                "memo": " ",
+                "cos_ename": "Social Biography and Cultural Studies",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "7",
+                "depType": "G"
+            },
+            "1071_5874": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5874",
+                "cos_code": "ICS5358",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "現代與鄉土：冷戰時期的台灣文學專題",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "彭明偉",
+                "cos_time": "4CDX-F106A",
+                "memo": " ",
+                "cos_ename": " ",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "4",
+                "depType": "G"
+            },
+            "1071_5875": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5875",
+                "cos_code": "ICS5359",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "殖民社會與後殖民主義理論",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "陳奕麟",
+                "cos_time": "3IJK-F106A",
+                "memo": "[English Medium Course]",
+                "cos_ename": "Colonial Societies and Postcolonial Theories: Historical-Comparative Perspectives",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "13",
+                "depType": "G"
+            },
+            "1071_5876": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5876",
+                "cos_code": "ICS5360",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "人種差異佈置",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "蘇哲安",
+                "cos_time": "5EFG-F106A",
+                "memo": "[English Medium Course]",
+                "cos_ename": "The apparatus of anthropological difference",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "3",
+                "depType": "G"
+            },
+            "1071_5877": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5877",
+                "cos_code": "ICS5362",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "德勒茲與口述哲學",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "Alain Brossat",
+                "cos_time": "1CD-HC101",
+                "memo": "[English Medium Course]",
+                "cos_ename": "Gilles Deleuze's Oral Philoso",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "10",
+                "depType": "G"
+            },
+            "1071_5878": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5878",
+                "cos_code": "ICS5363",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "「自我思想重定方位」意味著什麼？",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": " ",
+                "teacher": "Alain Brossat",
+                "cos_time": "1CD-HC101",
+                "memo": "[English Medium Course]",
+                "cos_ename": "\"What Does it Mean to Reorient  Oneself in Thinking?\"  ",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "6",
+                "depType": "G"
+            },
+            "1071_5879": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5879",
+                "cos_code": "ICS9001",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "教學實務",
+                "cos_credit": "1",
+                "cos_hours": "1",
+                "TURL": "http://www.srcs.nctu.edu.tw/joyceliu/",
+                "teacher": "劉紀蕙",
+                "cos_time": " ",
+                "memo": " ",
+                "cos_ename": "Teaching Technique Practice",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": null,
+                "reg_num": "0",
+                "depType": "G"
+            },
+            "1071_5980": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5980",
+                "cos_code": "ICS5296",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "空間、地方與都市",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": "http://hs.nctu.edu.tw/Faculty/YCCuang",
+                "teacher": "莊雅仲",
+                "cos_time": "1CDX-F106A",
+                "memo": " ",
+                "cos_ename": "Space, Place, and the City",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "11",
+                "depType": "G"
+            },
+            "1071_5981": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5981",
+                "cos_code": "ICS5365",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "東南亞民族誌",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": " ",
+                "teacher": "蔡晏霖",
+                "cos_time": "4EFG-F106A",
+                "memo": "[English Medium Course]",
+                "cos_ename": "Ethnographies of Southeast Asia",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "1",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "選修",
+                "cos_type_e": "Elective",
+                "crsoutline_type": "data",
+                "reg_num": "11",
+                "depType": "G"
+            }
+        },
+        "2": {
+            "1071_5921": {
+                "acy": "107",
+                "sem": "1",
+                "cos_id": "5921",
+                "cos_code": "IAS5001",
+                "num_limit": "9999",
+                "dep_limit": "*",
+                "URL": null,
+                "cos_cname": "亞際文化研究導論",
+                "cos_credit": "3",
+                "cos_hours": "3",
+                "TURL": "http://www.srcs.nctu.edu.tw/joyceliu/",
+                "teacher": "劉紀蕙",
+                "cos_time": "1EFG-F106A",
+                "memo": "[English Medium Course]",
+                "cos_ename": "Introduction to Inter-Asia Cultural Studies",
+                "brief": " ",
+                "degree": "2",
+                "dep_id": "49",
+                "dep_primary": "2",
+                "dep_cname": "社會與文化研究所",
+                "dep_ename": "Institute for Social Research and Cultural Studies",
+                "cos_type": "必修",
+                "cos_type_e": "Required",
+                "crsoutline_type": "data",
+                "reg_num": "17",
+                "depType": "G"
+            }
+        },
+        "dep_id": "249",
+        "dep_cname": "社會與文化研究所",
+        "dep_ename": "Institute for Social Research and Cultural Studies",
+        "costype": {
+            "1071_4035": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_4036": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5445": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5446": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5862": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5863": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5864": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5865": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5866": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5867": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5868": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5869": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5870": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5871": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5872": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5873": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5874": {
+                "通識校基本素養_通識校基本": {
+                    "course_category_cname": "通識校基本素養_通識校基本",
+                    "course_category_ename": "General Education Course: Literacy_GECL",
+                    "course_category_type": "15",
+                    "GECIName": "管",
+                    "GECIEngName": "COM"
+                },
+                "通識跨院基本素養_通識跨院": {
+                    "course_category_cname": "通識跨院基本素養_通識跨院",
+                    "course_category_ename": "General Education Course: Intercollegiate_GECI",
+                    "course_category_type": "16",
+                    "GECIName": "管",
+                    "GECIEngName": "COM"
+                }
+            },
+            "1071_5875": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5876": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5877": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5878": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5879": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5921": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5980": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            },
+            "1071_5981": {
+                " ": {
+                    "course_category_cname": " ",
+                    "course_category_ename": " ",
+                    "course_category_type": " ",
+                    "GECIName": " ",
+                    "GECIEngName": " "
+                }
+            }
+        },
+        "brief": {
+            "1071_4035": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_4036": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5445": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5446": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5862": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5863": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5864": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5865": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5866": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5867": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5868": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5869": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5870": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5871": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5872": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5873": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5874": {
+                "A201,A504,A505": {
+                    "brief_code": "A201,A504,A505",
+                    "brief": "文化/進階(96),跨院基本素養(106),校基本素養(106)"
+                }
+            },
+            "1071_5875": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5876": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5877": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5878": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5879": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5921": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5980": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            },
+            "1071_5981": {
+                " ": {
+                    "brief_code": " ",
+                    "brief": " "
+                }
+            }
+        },
+        "language": {
+            "1071_4035": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_4036": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5445": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5446": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5862": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5863": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5864": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5865": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5866": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5867": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5868": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5869": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5870": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5871": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5872": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5873": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5874": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5875": {
+                "授課語言代碼": "en-us"
+            },
+            "1071_5876": {
+                "授課語言代碼": "en-us"
+            },
+            "1071_5877": {
+                "授課語言代碼": "en-us"
+            },
+            "1071_5878": {
+                "授課語言代碼": "en-us"
+            },
+            "1071_5879": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5921": {
+                "授課語言代碼": "en-us"
+            },
+            "1071_5980": {
+                "授課語言代碼": "zh-tw"
+            },
+            "1071_5981": {
+                "授課語言代碼": "en-us"
+            }
+        }
+    }
+}

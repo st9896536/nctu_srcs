@@ -285,7 +285,7 @@ font{   /*最新消息內文樣式*/
   line-height: 2.4vh;
   color: rgba(50, 50, 50, 1);
   margin-left: 6.125vw;
-  margin-top: -4.5vh;
+  margin-top: -4vh;
   display: inline-block;
   vertical-align: top;
   padding-left: 0.625vw;
@@ -510,16 +510,18 @@ font{   /*最新消息內文樣式*/
   float: left;
   height: 20vh;
   margin: 2.1875vh 1vw;
+  margin: 2.5vh 1.5vw;
 }
 
 .right_top_block p{
-  margin-top: 8.75vh;
-  margin-left: 11vw;
+  margin-top: 3.75vh;
+  margin-left: 8vw;
+  margin-bottom: 6vh;
   padding-left: 11px;
   color: rgba(50,50,50,1);
-  line-height: 3vh;
-  width: 8vw;
-  font-size: 0.9em;
+  line-height: 2.5vh;
+  width: 11vw;
+  font-size: 0.8em;
 }
 
 .right_block_text{
@@ -559,22 +561,34 @@ font{   /*最新消息內文樣式*/
   }
 }
 
+
+
 /*mobile css*/
 @media screen and (max-width: 700px) {
   .post-content{
-    background-image: url(../images/mobile/index_bg.jpg);
-    background-size:cover,auto;
+    background-image: url(../images/mobile/homepage-01.jpg);
+    background-size:cover;
     height:100vh;
     width: 100vw;
     z-index:9999;
   }
 
   .new_post{
+    background-image: url(../images/mobile/background.jpg);
+    background-size: cover;
     margin-left: 0;
     height: 100vh;
     width: 100vw;
     margin-bottom: 0;
     margin-top: 100vh;
+  }
+
+  .dropbtn{
+    background-image: url(../images/mobile/btn/menu-button.svg);
+  }
+
+  .year_date{
+    display: inline-block;
   }
 
   .newtext{
@@ -583,11 +597,11 @@ font{   /*最新消息內文樣式*/
   }
 
   #p_style{
-    width: 18vw;
-    margin-left: 6vw;
+    width: 17vw;
+    margin-left: 5vw;
     margin-right: 2vw;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
     color: rgba(20, 20, 20, 1);
     display: inline-block;
@@ -661,5 +675,7 @@ font{   /*最新消息內文樣式*/
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
   }
+
+  
 
 }

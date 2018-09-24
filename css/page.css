@@ -60,7 +60,8 @@ img {
     body{ font-size: 100%; }
 }
 @media screen and (min-width: 1344px) and (max-width: 1407px){
-    body{ font-size: 105%; }
+    /*body{ font-size: 105%; }*/
+    body{ font-size: 85%; }
 }
 @media screen and (min-width: 1408px) and (max-width: 1471px){
     body{ font-size: 110%; }
@@ -72,7 +73,8 @@ img {
     body{ font-size: 120%; }
 }
 @media screen and (min-width: 1600px) and (max-width: 2000px){
-    body{ font-size: 120%; }
+    /*body{ font-size: 120%; }*/
+    body{ font-size: 115%; }
 }
 @media screen and (min-width: 2001px) and (max-width: 4000px){
     body{ font-size: 180%; }
@@ -525,17 +527,31 @@ img {
 }
 
 .teacher_education{
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 1.2em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
 
+.click_style{
+  width: 30px; 
+  display: inline-block; 
+  margin: 6px 10px; 
+  border: 0.5px solid;
+}
+
+.normal_style{
+  width: 30px; 
+  display: inline-table; 
+  margin: 6px 10px; 
+  border: 0.5px solid;
+}
+
 .profession_area,
 .profession_intro{
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(20, 20, 20, 1);
@@ -543,11 +559,21 @@ img {
 
 .teacher_profile p{
   width: -webkit-fill-available;
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.1em;
   line-height: 4vh;
   letter-spacing: 0.1em;
   margin-bottom: 1.5vh;
+  color: rgba(50, 50, 50, 1);
+}
+
+.professional_area p{
+  width: -webkit-fill-available;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 3.5vh;
+  letter-spacing: 0.1em;
+  margin-bottom: 4.5vh;
   color: rgba(50, 50, 50, 1);
 }
 
@@ -696,7 +722,7 @@ img {
 }
 
 .book_block{
-  width: 66.5vw;
+  /*width: 66.5vw;*/
   height: 27vh;
   background-color: rgba(230, 230, 230, 1);
   margin-bottom: 2vh;

@@ -15,7 +15,6 @@
         $(".block_3").hide();
         $(".block_4").hide();
         $(".block_5").hide();
-        
     }
 
     function refresh(){
@@ -33,6 +32,7 @@
 
     $( document ).ready(function() {
       // control the sidebar menu effect
+      
       $ ("#top-menu a:eq(1)").addClass('nav_active');
       $ (".sidebarmenu a:eq(1)").removeClass('a_show');
       $ (".sidebarmenu a:eq(1)").addClass('sidebarmenu_active');
@@ -40,6 +40,8 @@
       clean();
       $(".b_1").addClass('click_Y_book');
       $(".block_1").css("display","inline-block");
+      $(".block_1").css("position","fixed");
+      $(".block_1").css("width","80vw");
       $(".b1").addClass("book_block_animation");
       $(".bc_block1").addClass("book_content_block_animation");
       $(".bk1").addClass("book_animation");
@@ -48,6 +50,8 @@
       $(".b_1").click(function(){
         clean();
         $(".block_1").css("display","inline-block");
+        $(".block_1").css("position","fixed");
+        $(".block_1").css("width","80vw");
         refresh();
         $(".b_1").removeClass('other_Y_block');
         $(".b_1").addClass('click_Y_book');
@@ -59,6 +63,8 @@
       $(".b_2").click(function(){
         clean();
         $(".block_2").css("display","inline-block");
+        $(".block_2").css("position","fixed");
+        $(".block_2").css("width","80vw");
         refresh();
         $(".b_2").removeClass('other_Y_block');
         $(".b_2").addClass('click_Y_book');
@@ -95,16 +101,12 @@
         refresh();
         $(".b_5").removeClass('other_Y_block');
         $(".b_5").addClass('click_Y_book');
-        
         $(".b5").addClass("book_block_animation");
         $(".bc_block5").addClass("book_content_block_animation");
         $(".bk5").addClass("book_animation"); 
       });
         
   });
-
-    
-
 
   </script>
 </head>
@@ -113,7 +115,7 @@
 <?php get_template_part('includes/sidebar-research'); ?>
 
 
-<body style="height:75vh;">
+<body style="height:67vh;">
     <div class="main">
       <!--year block-->
       <div class="year_block" style="width:8.5vw; height:auto; float:left; display:inline-block;">
@@ -130,179 +132,131 @@
 
       </div>
       <!--book block-->
+
       <div class="books block_1" style="display: inline-block;">
-        <div class="gray-block" style="width:auto;">
-          <div class="book bk1" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/east-asian.jpg" />
-          </div>
+      <?php $teachers_works_2017 = get_post_meta( $post->ID, 'teachers_works_2017', true );
 
-          <div class="book_content_block bc_block1">
-            <div class="book_content_title">
-              East-Asian Marxisms and Their Trajectories, Edited by Joyce C.H. Liu and Viren Murthy
+        foreach( $teachers_works_2017 as $works_2017){?>
+          <div class="gray-block" style="width:auto;">
+            <div class="book bk1" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
+              <?php
+                $src = wp_get_attachment_image_src( $works_2017['book_image'], 'full' );
+                        echo '<img src="'.$src[0].'"/>';
+              ?>
             </div>
-            <div class="subtitle1">Joyce C.H. Liu and Viren Murthy</div>
-            <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
-          </div>
-          <div class="book_block b1" style="z-index:-1;"></div>
-        </div>
-
-
-
-        <div class="gray-block" style="width:66.5vw;">
-          <div class="book bk1" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/Renjian_Thought_Review_6.jpg" />
-          </div>
-
-          <div class="book_content_block bc_block1">
-            <div class="book_content_title">
-              求生意志（Will to Live)
+            <div class="book_content_block bc_block1">
+              <div class="book_content_title">
+                <?php echo $works_2017['book_content_title']?>
+              </div>
+              <div class="subtitle1"><?php echo $works_2017['author_name']?></div>
+              <div class="subtitle2"><?php echo $works_2017['other_content']?></div>
             </div>
-            <div class="subtitle1">Joao Biehl</div>
-            <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
+            <div class="book_block b1" style="z-index:-1;"></div>
           </div>
+          <?php
 
-          <div class="book_block b1" style="z-index:-1;"></div>
-        </div>
+        }?>
+
       </div>
 
       <div class="books block_2" style="display: inline-block;">
-        <div class="gray-block" style="width:auto;">
-          <div class="book bk2" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_03.jpg" />
-          </div>
+        <?php $teachers_works_2014 = get_post_meta( $post->ID, 'teachers_works_2014', true );
 
-          <div class="book_content_block bc_block2">
-            <div class="book_content_title">
-              East-Asian Marxisms and Their Trajectories, Edited by Joyce C.H. Liu and Viren Murthy
+        foreach( $teachers_works_2014 as $works_2014){?>
+          <div class="gray-block" style="width:auto;">
+            <div class="book bk2" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
+              <?php
+                $src = wp_get_attachment_image_src( $works_2014['book_image_2014'], 'full' );
+                        echo '<img src="'.$src[0].'"/>';
+              ?>
             </div>
-            <div class="subtitle1">Joyce C.H. Liu and Viren Murthy</div>
-            <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
-          </div>
-          <div class="book_block b2" style="z-index:-1;"></div>
-        </div>
-
-
-
-        <div class="gray-block" style="width:66.5vw;">
-          <div class="book bk2" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_01.jpg" />
-          </div>
-
-          <div class="book_content_block bc_block2">
-            <div class="book_content_title">
-              求生意志（Will to Live)
+            <div class="book_content_block bc_block2">
+              <div class="book_content_title">
+                <?php echo $works_2014['book_content_title_2014']?>
+              </div>
+              <div class="subtitle1"><?php echo $works_2014['author_name_2014']?></div>
+              <div class="subtitle2"><?php echo $works_2014['other_content_2014']?></div>
             </div>
-            <div class="subtitle1">Joao Biehl</div>
-            <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
+            <div class="book_block b2" style="z-index:-1;"></div>
           </div>
+          <?php
 
-          <div class="book_block b2" style="z-index:-1;"></div>
-        </div>
+        }?>
       </div>
 
       <div class="books block_3" style="display: inline-block;">
-        <div class="gray-block" style="width:auto;">
-          <div class="book bk3" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_04.jpg" />
-          </div>
+        <?php $teachers_works_2011 = get_post_meta( $post->ID, 'teachers_works_2011', true );
 
-          <div class="book_content_block bc_block3">
-            <div class="book_content_title">
-              East-Asian Marxisms and Their Trajectories, Edited by Joyce C.H. Liu and Viren Murthy
+        foreach( $teachers_works_2011 as $works_2011){?>
+          <div class="gray-block" style="width:auto;">
+            <div class="book bk3" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
+              <?php
+                $src = wp_get_attachment_image_src( $works_2011['book_image_2011'], 'full' );
+                        echo '<img src="'.$src[0].'"/>';
+              ?>
             </div>
-            <div class="subtitle1">Joyce C.H. Liu and Viren Murthy</div>
-            <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
-          </div>
-          <div class="book_block b3" style="z-index:-1;"></div>
-        </div>
-
-
-
-        <div class="gray-block" style="width:66.5vw;">
-          <div class="book bk3" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_02.jpg" />
-          </div>
-
-          <div class="book_content_block bc_block3">
-            <div class="book_content_title">
-              求生意志（Will to Live)
+            <div class="book_content_block bc_block3">
+              <div class="book_content_title">
+                <?php echo $works_2011['book_content_title_2011']?>
+              </div>
+              <div class="subtitle1"><?php echo $works_2011['author_name_2011']?></div>
+              <div class="subtitle2"><?php echo $works_2011['other_content_2011']?></div>
             </div>
-            <div class="subtitle1">Joao Biehl</div>
-            <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
+            <div class="book_block b3" style="z-index:-1;"></div>
           </div>
+          <?php
 
-          <div class="book_block b3" style="z-index:-1;"></div>
-        </div>
+        }?>
       </div>
 
       <div class="books block_4" style="display: inline-block;">
-        <div class="gray-block" style="width:auto;">
-          <div class="book bk4" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_01.jpg" />
-          </div>
+        <?php $teachers_works_2008 = get_post_meta( $post->ID, 'teachers_works_2008', true );
 
-          <div class="book_content_block bc_block4">
-            <div class="book_content_title">
-              East-Asian Marxisms and Their Trajectories, Edited by Joyce C.H. Liu and Viren Murthy
+        foreach( $teachers_works_2008 as $works_2008){?>
+          <div class="gray-block" style="width:auto;">
+            <div class="book bk4" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
+              <?php
+                $src = wp_get_attachment_image_src( $works_2008['book_image_2008'], 'full' );
+                        echo '<img src="'.$src[0].'"/>';
+              ?>
             </div>
-            <div class="subtitle1">Joyce C.H. Liu and Viren Murthy</div>
-            <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
-          </div>
-          <div class="book_block b4" style="z-index:-1;"></div>
-        </div>
-
-
-
-        <div class="gray-block" style="width:66.5vw;">
-          <div class="book bk4" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_03.jpg" />
-          </div>
-
-          <div class="book_content_block bc_block4">
-            <div class="book_content_title">
-              求生意志（Will to Live)
+            <div class="book_content_block bc_block4">
+              <div class="book_content_title">
+                <?php echo $works_2008['book_content_title_2011']?>
+              </div>
+              <div class="subtitle1"><?php echo $works_2008['author_name_2008']?></div>
+              <div class="subtitle2"><?php echo $works_2008['other_content_2008']?></div>
             </div>
-            <div class="subtitle1">Joao Biehl</div>
-            <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
+            <div class="book_block b4" style="z-index:-1;"></div>
           </div>
+          <?php
 
-          <div class="book_block b4" style="z-index:-1;"></div>
-        </div>
+        }?>
       </div>
 
       <div class="books block_5" style="display: inline-block;">
-        <div class="gray-block" style="width:auto;">
-          <div class="book bk5" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_04.jpg" />
-          </div>
+        <?php $teachers_works_2005 = get_post_meta( $post->ID, 'teachers_works_2005', true );
 
-          <div class="book_content_block bc_block5">
-            <div class="book_content_title">
-              East-Asian Marxisms and Their Trajectories, Edited by Joyce C.H. Liu and Viren Murthy
+        foreach( $teachers_works_2005 as $works_2005){?>
+          <div class="gray-block" style="width:auto;">
+            <div class="book bk5" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
+              <?php
+                $src = wp_get_attachment_image_src( $works_2005['book_image_2005'], 'full' );
+                        echo '<img src="'.$src[0].'"/>';
+              ?>
             </div>
-            <div class="subtitle1">Joyce C.H. Liu and Viren Murthy</div>
-            <div class="subtitle2">Routledge, Feb 16, 2017, ISBN | 9781138919846</div>
-          </div>
-          <div class="book_block b5" style="z-index:-1;"></div>
-        </div>
-
-
-
-        <div class="gray-block" style="width:66.5vw;">
-          <div class="book bk5" style="height: 22vh; float:left; width: 132px; padding: 2.5vh 2.5vw; display: inline-block;">
-            <img src="<?php bloginfo('template_url'); ?>/images/home_book_02.jpg" />
-          </div>
-
-          <div class="book_content_block bc_block5">
-            <div class="book_content_title">
-              求生意志（Will to Live)
+            <div class="book_content_block bc_block5">
+              <div class="book_content_title">
+                <?php echo $works_2005['book_content_title_2005']?>
+              </div>
+              <div class="subtitle1"><?php echo $works_2005['author_name_2005']?></div>
+              <div class="subtitle2"><?php echo $works_2005['other_content_2005']?></div>
             </div>
-            <div class="subtitle1">Joao Biehl</div>
-            <div class="subtitle2">譯者 | 陳秋山、李佳霖、曹寶文　交通大學出版社 , Dec, 2015, ISBN | 9789866301834</div>
+            <div class="book_block b5" style="z-index:-1;"></div>
           </div>
+          <?php
 
-          <div class="book_block b5" style="z-index:-1;"></div>
-        </div>
+        }?>
       </div>
 
     </div>

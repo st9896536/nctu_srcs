@@ -138,16 +138,14 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   /* font-family: "flexslider-icon"; */
-  font-size: 50px;
+  /*font-size: 50px;*/
   display: inline-block;
   content: '\f001';
-  background-image: url(../images/btn/btn_slideshow_left_808080.svg);
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
-  background-image: url(../images/btn/btn_slideshow_right_808080.svg);
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
@@ -160,6 +158,8 @@ html[xmlns] .flexslider .slides {
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
+  background-size: cover;
+  background-image: url(../images/btn/btn_slideshow_left_808080.svg);
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
@@ -167,6 +167,8 @@ html[xmlns] .flexslider .slides {
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 10px;
+  background-size: cover;
+  background-image: url(../images/btn/btn_slideshow_right_808080.svg);
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
@@ -191,7 +193,7 @@ html[xmlns] .flexslider .slides {
   color: #000;
 }
 .flex-pauseplay a:before {
-  font-family: "flexslider-icon";
+  /*font-family: "flexslider-icon";*/
   font-size: 20px;
   display: inline-block;
   content: '\f004';

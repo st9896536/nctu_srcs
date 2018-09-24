@@ -16,46 +16,74 @@
   <script type="text/javascript" charset="utf-8">
 
   $(window).load(function() {
+    var poster_title = [];
+    var poster_date = [];
+    var poster_place = [];
+
+    <?php
+      $is_multiple=False;
+      $args = array(
+      'category_name' => 'poster_horizontal_srcs',
+      'posts_per_page' => 5
+      );
+      $the_query = new WP_Query($args);
+      if($the_query->have_posts()):
+          while($the_query->have_posts()):
+              $the_query->the_post();
+    ?>
+        var newTitle = "<?php echo the_title();?>";  //海報文章標題
+        var newDate = "<?php
+            $poster_date = get_field( "poster_date" );
+            if ( $poster_date ){
+              echo $poster_date;
+            }
+            ?>";  //海報活動日期
+        var newPlace = "<?php
+            $poster_place_chi = get_field( "poster_place_chi" );  
+             if ( $poster_place_chi){
+              echo $poster_place_chi;
+            }
+            ?>";  //海報活動地點
+        poster_title.push(newTitle);
+        poster_date.push(newDate);
+        poster_place.push(newPlace);
+              
+      <?php endwhile; ?>
+    <?php endif; ?>
+
+
     $('.flexslider').flexslider({
       animation: "slide",
       controlNav: true,
       directionNav: true,
       after: function(slides){
-
-        <?php
-        $is_multiple=False;
-        $args = array(
-        'category_name' => 'poster_horizontal_srcs',
-        'posts_per_page' => 5
-        );
-        $the_query = new WP_Query($args);
-        if($the_query->have_posts()):
-            while($the_query->have_posts()):
-                $the_query->the_post();
-        ?>
-        var title = '';
-        var date = '';
-        var place = '';
         switch(slides.currentSlide){
-            case 0:
-                
+            case 0: 
+              $('#poster-title').html(poster_title[0]);
+              $('.poster_time').html(poster_date[0]);
+              $('.poster_place').html(poster_place[0]);
                 break;
             case 1:
-                
+              $('#poster-title').html(poster_title[1]);
+              $('.poster_time').html(poster_date[1]);
+              $('.poster_place').html(poster_place[1]);
                 break;
             case 2:
-                
+              $('#poster-title').html(poster_title[2]);
+              $('.poster_time').html(poster_date[2]);
+              $('.poster_place').html(poster_place[2]);
                 break;
             case 3:
-                
+              $('#poster-title').html(poster_title[3]);
+              $('.poster_time').html(poster_date[3]);
+              $('.poster_place').html(poster_place[3]);
                 break;
             case 4:
-                
+              $('#poster-title').html(poster_title[4]);
+              $('.poster_time').html(poster_date[4]);
+              $('.poster_place').html(poster_place[4]);
                 break;
         }
-        $('#poster-title').html(title);
-      <?php endwhile; ?>
-    <?php endif; ?>
     }
   });
 });
@@ -83,30 +111,40 @@
       <span class="content_left"></span>
       <span class="content_right">
         <div class="textbox1">
-          <p>交通大學人才曜昇計畫</p>
-          <p>2017 春季駐校課程</p>
+          <p>交通大學</p>
+          <p>社會與文化研究所</p>
         </div>
+
+        <?php
+          $is_multiple=False;
+          $args = array(
+          'category_name' => 'poster_horizontal_srcs',
+          'posts_per_page' => 1
+          );
+          $the_query = new WP_Query($args);
+          if($the_query->have_posts()):
+              while($the_query->have_posts()):
+                  $the_query->the_post();
+        ?>
 
         <!-- dynamically change poster title and other info -->
         
-        <p id="poster-title"> <?php echo the_title();?></p>
+        <p id="poster-title"> <?php echo the_title();?> </p>
 
 
         <HR size="1px" color="#ffe6a0">
         <div class="textbox2">
           <!-- poster time -->
-          <p id="p_text">
+          <p id="p_text" class="poster_time">
             <?php
-            $poster_year = get_field( "poster_year" );
             $poster_date = get_field( "poster_date" );
-            if ( $poster_date || $poster_date){
-              echo $poster_year;
+            if ( $poster_date ){
               echo $poster_date;
             }
             ?>
           </p>
           <!-- poster place -->
-          <p id="p_text">
+          <p id="p_text" class="poster_place">
             <?php
             $poster_place_chi = get_field( "poster_place_chi" );  
              if ( $poster_place_chi){
@@ -116,8 +154,9 @@
           </p>
         </div>
         <a target="_blank" href="<?php the_permalink(); ?>" class="button_style1">繼續閱讀</a>
-        
       </span>
+        <?php endwhile; ?>
+    <?php endif; ?>
     </div>
 
     <div class="flexslider">
@@ -137,7 +176,7 @@
       ?>
       <?php endif; ?>
         <li>
-          <a href="<?php the_permalink(); ?>">
+          <a target="_blank" href="<?php the_permalink(); ?>">
             <?php 
 
             $image = get_field('poster_image');

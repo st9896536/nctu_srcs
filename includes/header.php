@@ -13,6 +13,16 @@
     <script src="https://use.typekit.net/hgf1mzq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.height = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.height = "0vh";
+      }
+    </script>
+
     
 
 </head>
@@ -100,4 +110,31 @@
       </div>
     </div> <!--search bar-->
   </div>
+
+  <!-- <div class="mobile_header formobile">
+    <div class="bottom-dropbtn">
+        <div id="menucontainer" class="menubuttoncontainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><div class="close_btn"></div></a>
+      <div class="sidenavlink">
+          <a href="#"><div id="mysidetext1" class="menu_block" style="transition:0.8s;"><div class="menutext">關於本所</div></div></a>
+          <a href="#"><div id="mysidetext2" class="menu_block" style="transition:1.2s;"><div class="menutext">研究發展</div></div></a>
+          <a href="#"><div id="mysidetext3" class="menu_block" style="transition:1.6s;"><div class="menutext">課程重點</div></div></a>
+          <a href="#"><div id="mysidetext4" class="menu_block" style="transition:2.0s;"><div class="menutext">招生</div></div></a>
+          <a href="#"><div id="mysidetext5" class="menu_block" style="transition:2.4s;"><div class="menutext">國際交流</div></div></a>
+          <a href="#"><div id="mysidetext6" class="menu_block" style="transition:2.8s;"><div class="menutext">學生專區</div></div></a>
+      </div>
+    </div> -->
+
+    <!-- Use any element to open the sidenav -->
+    <!-- <span onclick="openNav()" class="dropbtn"></span> -->
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<!-- </div> -->
 </div>

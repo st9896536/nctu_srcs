@@ -9,7 +9,7 @@ li{        /* 24 */
   height:2vh;
   margin-bottom: 1.5vh;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 4vh;
   /*letter-spacing: 0.1em;*/
   color: rgba(255, 255, 255, 1);
@@ -141,7 +141,8 @@ img {
     body{ font-size: 100%; }
 }
 @media screen and (min-width: 1344px) and (max-width: 1407px){
-    body{ font-size: 105%; }
+    /*body{ font-size: 105%; }*/
+    body{ font-size: 85%; }
 }
 @media screen and (min-width: 1408px) and (max-width: 1471px){
     body{ font-size: 110%; }
@@ -153,7 +154,8 @@ img {
     body{ font-size: 120%; }
 }
 @media screen and (min-width: 1600px) and (max-width: 2000px){
-    body{ font-size: 120%; }
+    /*body{ font-size: 120%; }*/
+    body{ font-size: 115%; }
 }
 @media screen and (min-width: 2001px) and (max-width: 4000px){
     body{ font-size: 180%; }
@@ -360,7 +362,8 @@ img {
   margin-left:2vw;
   margin-bottom:2.5vh;
   width: 36vw;
-  font-size: 1.5em;
+  height: auto;
+  font-size: 1.3em;
   line-height: 3vh;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -395,15 +398,15 @@ img {
 
 .footer_left{
   float: left;
-  height: 22.5vh;
-  width: 98.21875vw;
+  height: 25.5vh;
+  width: 99%;
   background-color: rgba(60, 0, 110, 0.8);
 }
 
 .footer_right{
   float: right;
-  height: 22.5vh;
-  width: 1.78125vw;
+  height: 25.5vh;
+  width: 1%;
   background-color: rgba(255, 230, 160, 0.8);
 }
 
