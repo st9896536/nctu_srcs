@@ -289,11 +289,11 @@ img {
 .nav li li a{
   background-color: rgba(50,50,50,0.8);
   color: #fff;
-  width: 6.5vw;
+  width: 7.5vw;
   text-align: center;
   line-height: 3.5vh;
   height: auto;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 300;
 }
 

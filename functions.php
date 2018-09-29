@@ -1,3 +1,4 @@
+
 <?php
 function template_is($pageName='') {
     return is_page_template('page-templates/template-'.$pageName.'.php');
@@ -21,6 +22,22 @@ $wp_admin_bar->add_node($args);
 }
 
 add_action('admin_bar_menu', 'custom_button_example', 50);
+
+/**
+ * Filter the upload size limit for non-administrators.
+ *
+ * @param string $size Upload size limit (in bytes).
+ * @return int (maybe) Filtered size limit.
+ */
+function filter_site_upload_size_limit( $size ) {
+    // Set the upload size limit to 10 MB for users lacking the 'manage_options' capability.
+    if ( ! current_user_can( 'manage_options' ) ) {
+        // 10 MB.
+        $size = 1024 * 10000;
+    }
+    return $size;
+}
+add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 20 );
 
 function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
     $html = '<a href="' . get_permalink( $post_id ) . '" alt="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';

@@ -66,6 +66,9 @@ The Single Posts Loop  (專任師資詳細內文)
 <body>
     <div class="main">
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+        <a href="#" class="button" style="margin-top:3vh; margin-bottom: 3vh;">
+          <div id="btn_area" class="button_style_top">TOP</div>
+        </a>
       <div class="float_area" style="display: inline-block;">
         <div class="photo-teacher" style="margin-right: 1.5vw; width: auto; display: inline-block; vertical-align: top;">
 
@@ -82,7 +85,7 @@ The Single Posts Loop  (專任師資詳細內文)
 
       </div>
       
-        <div class="professor_name_block" style="width: 15.5vw; margin-right: 1.5vw; display: inline-block;  vertical-align: top;">
+        <div class="professor_name_block" style="width: 15.5vw; display: inline-block;  vertical-align: top;">
           <div class="professor_position" style="height: 2.75vh; margin-bottom: 1vh;">
             <?php $teacher_position = get_field( "teacher_position" ); 
               if( $teacher_position ){
@@ -108,7 +111,6 @@ The Single Posts Loop  (專任師資詳細內文)
 
         </div>
       </div>
-      
 
 
 
@@ -154,11 +156,23 @@ The Single Posts Loop  (專任師資詳細內文)
           
         </div>
         <HR width="15px" size="1px" style="margin-bottom: 2.5vh;">
+        <div id="teacher_works" class="profession_intro" style="    margin-bottom: 1.5vh;">著作</div>
+        <div class="teacher_detail_content" style="margin-bottom: 2.5vh;">
+          <p>
+            <?php $teacher_works = get_field( "teacher_works" ); 
+              if( $teacher_works ){
+                echo $teacher_works;
+              }
+            ?>
+          </p>
+          
+        </div>
+        <HR width="15px" size="1px" style="margin-bottom: 2.5vh;">
         <div id="research_project" class="profession_intro" style="    margin-bottom: 1.5vh;">研究領域與計畫</div>
         <div class="teacher_detail_content" style="margin-bottom: 2.5vh;">         
-          <p><?php $teacher_works_research_plans = get_field( "teacher_works_research_plans" ); 
-              if( $teacher_works_research_plans ){
-                echo $teacher_works_research_plans;
+          <p><?php $teacher_research_projects = get_field( "teacher_research_projects" ); 
+              if( $teacher_research_projects ){
+                echo $teacher_research_projects;
               }
             ?></p>
         </div>

@@ -36,8 +36,7 @@
       $ ("#top-menu a:eq(1)").addClass('nav_active');
       $ (".sidebarmenu a:eq(1)").removeClass('a_show');
       $ (".sidebarmenu a:eq(1)").addClass('sidebarmenu_active');
-
-      clean();
+      
       $(".b_1").addClass('click_Y_book');
       $(".block_1").css("display","inline-block");
       $(".block_1").css("position","fixed");
@@ -159,7 +158,7 @@
 
       </div>
 
-      <div class="books block_2" style="display: inline-block;">
+      <div class="books block_2" style="display: none;">
         <?php $teachers_works_2014 = get_post_meta( $post->ID, 'teachers_works_2014', true );
 
         foreach( $teachers_works_2014 as $works_2014){?>
@@ -184,7 +183,7 @@
         }?>
       </div>
 
-      <div class="books block_3" style="display: inline-block;">
+      <div class="books block_3" style="display: none;">
         <?php $teachers_works_2011 = get_post_meta( $post->ID, 'teachers_works_2011', true );
 
         foreach( $teachers_works_2011 as $works_2011){?>
@@ -209,7 +208,7 @@
         }?>
       </div>
 
-      <div class="books block_4" style="display: inline-block;">
+      <div class="books block_4" style="display: none;">
         <?php $teachers_works_2008 = get_post_meta( $post->ID, 'teachers_works_2008', true );
 
         foreach( $teachers_works_2008 as $works_2008){?>
@@ -234,7 +233,7 @@
         }?>
       </div>
 
-      <div class="books block_5" style="display: inline-block;">
+      <div class="books block_5" style="display: none;">
         <?php $teachers_works_2005 = get_post_meta( $post->ID, 'teachers_works_2005', true );
 
         foreach( $teachers_works_2005 as $works_2005){?>
