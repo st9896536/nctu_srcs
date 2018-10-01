@@ -385,7 +385,6 @@
             </div>
 
             <!-- lecturer video -->
-            <?php $lecturer_video_link = get_field( "lecturer_video_link" ); ?>
             <div class="video-container">
               <?php $video_link = get_field( "video_link" );
                 echo $video_link;?>

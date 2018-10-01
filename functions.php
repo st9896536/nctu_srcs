@@ -1,4 +1,3 @@
-
 <?php
 function template_is($pageName='') {
     return is_page_template('page-templates/template-'.$pageName.'.php');
