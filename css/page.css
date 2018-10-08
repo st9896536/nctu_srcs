@@ -57,27 +57,27 @@ img {
     body{ font-size: 95%; }
 }
 @media screen and (min-width: 1280px) and (max-width: 1343px){
-    body{ font-size: 100%; }
+    body{ font-size: 90%; }
 }
 @media screen and (min-width: 1344px) and (max-width: 1407px){
     /*body{ font-size: 105%; }*/
-    body{ font-size: 85%; }
+    body{ font-size: 90%; }
 }
 @media screen and (min-width: 1408px) and (max-width: 1471px){
-    body{ font-size: 110%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1472px) and (max-width: 1535px){
-    body{ font-size: 115%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1536px) and (max-width: 1599px){
-    body{ font-size: 120%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1600px) and (max-width: 2000px){
     /*body{ font-size: 120%; }*/
-    body{ font-size: 115%; }
+    body{ font-size: 110%; }
 }
 @media screen and (min-width: 2001px) and (max-width: 4000px){
-    body{ font-size: 180%; }
+    body{ font-size: 115%; }
 }
 @media screen and (min-width: 4001px) {
     body{ font-size: 280%; }

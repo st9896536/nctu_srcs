@@ -138,27 +138,27 @@ img {
     body{ font-size: 95%; }
 }
 @media screen and (min-width: 1280px) and (max-width: 1343px){
-    body{ font-size: 100%; }
+    body{ font-size: 90%; }
 }
 @media screen and (min-width: 1344px) and (max-width: 1407px){
     /*body{ font-size: 105%; }*/
-    body{ font-size: 85%; }
+    body{ font-size: 90%; }
 }
 @media screen and (min-width: 1408px) and (max-width: 1471px){
-    body{ font-size: 110%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1472px) and (max-width: 1535px){
-    body{ font-size: 115%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1536px) and (max-width: 1599px){
-    body{ font-size: 120%; }
+    body{ font-size: 100%; }
 }
 @media screen and (min-width: 1600px) and (max-width: 2000px){
     /*body{ font-size: 120%; }*/
-    body{ font-size: 115%; }
+    body{ font-size: 110%; }
 }
 @media screen and (min-width: 2001px) and (max-width: 4000px){
-    body{ font-size: 180%; }
+    body{ font-size: 115%; }
 }
 @media screen and (min-width: 4001px) {
     body{ font-size: 280%; }
@@ -202,7 +202,7 @@ img {
   line-height: 3.25vh;
   color: rgba(255, 255, 255, 1);
   /*height:3.25vh;*/
-  margin-bottom:0.5vh;
+  margin-bottom:1vh;
 }
 
 .text_2 {     /*2*/
@@ -227,13 +227,55 @@ img {
 
 /* Top navigation  */
 .nav {
-  overflow: hidden;
-  margin-top: 13vh;
-  text-align: -webkit-right;
+  /*overflow: hidden;*/
+  margin-top: 12.5vh;
+  text-align: -webkit-center;
   margin-right: 2.8125vw;
   float: right;
   letter-spacing: 0.1em;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    color: rgba(50,50,50,1);
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(50,50,50,0.8);
+    min-width: 10vw;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {/*background-color: #ddd;*/}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {/*background-color: #3e8e41;*/}
 
 /*.nav a {   
   font-size: 1.2em;
@@ -264,7 +306,7 @@ img {
 
 .nav a {
   text-decoration: none;
-  color: rgba(50,50,50,1);
+  color: #fff;
   display: inline-block;
   text-align:justify;
   font-weight:400;

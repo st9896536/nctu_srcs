@@ -47,63 +47,67 @@
   <div class="header_right">
     <div class="right_item" style="margin-top:3.25vh;">
       <div class="search"><?php get_template_part('includes/navbar-search'); ?>
-      <div class="nav" id="top-menu">
-
-        <ul>
-        <li class="aboutus"><a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/aboutus">關於本所</a></li>
-            <li><a href="<?php echo site_url(); ?>/full-time-teacher">專任師資</a></li>
-            <li><a href="<?php echo site_url(); ?>/adjunct-teacher">兼任師資</a></li>
-            <li><a href="<?php echo site_url(); ?>/guest-professor">客座教授</a></li>
-            <li><a href="<?php echo site_url(); ?>/administration-staff">行政人員</a></li>
-            <li><a href="<?php echo site_url(); ?>/current-student">在校生</a></li>
-            <li><a href="<?php echo site_url(); ?>/graduate">畢業生</a></li>
-          </ul>
-        </li>
-        <li class="research"><a href="<?php echo site_url(); ?>/research-direction">研究發展</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/research-direction">研究方向</a></li>
-            <li><a href="<?php echo site_url(); ?>/teachers-works">教師著作</a></li>
-            <li><a href="<?php echo site_url(); ?>/research-proposal">研究計畫</a></li>
-          </ul>
-        </li>
-        <li class="courses"><a href="<?php echo site_url(); ?>/present-course-first-semester">課程規劃</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/present-course-first-semester">本學年課程</a></li>
-            <li><a href="<?php echo site_url(); ?>/past-course">歷年課程</a></li>
-            <li><a href="<?php echo site_url(); ?>/lecture-course">講座課程</a></li>
-          </ul>
-        </li>
-        <li class="recruit"><a href="<?php echo site_url(); ?>/feature">招生</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/feature">社文所特色</a></li>
-            <li><a href="<?php echo site_url(); ?>/master">碩士班</a></li>
-            <li><a href="<?php echo site_url(); ?>/doctor">博士班</a></li>
-            <li><a href="<?php echo site_url(); ?>/overseas">僑生港澳生</a></li>
-            <li><a href="<?php echo site_url(); ?>/chinese">陸生</a></li>
-            <li><a href="<?php echo site_url(); ?>/foreign">外籍生</a></li>
-          </ul>
-        </li>
-        <li class="cooperate"><a href="<?php echo site_url(); ?>/academic-cooperation">國際交流</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/academic-cooperation">學術合作</a></li>
-            <li><a href="<?php echo site_url(); ?>/keynote-speech">專題演講</a></li>
-            <li><a href="<?php echo site_url(); ?>/workshop">研討會工作坊</a></li>
-            <li><a href="<?php echo site_url(); ?>/album">活動相簿</a></li>
-          </ul>
-        </li>
-        <li class="student"><a href="<?php echo site_url(); ?>/rules">學生專區</a>
-          <ul>
-            <li><a href="<?php echo site_url(); ?>/rules">修業規章</a></li>
-            <li><a href="<?php echo site_url(); ?>/thesis">畢業論文</a></li>
-            <li><a href="<?php echo site_url(); ?>/dissertation-award">論文獲獎</a></li>
-            <li><a href="<?php echo site_url(); ?>/other-award">其他獲獎訊息</a></li>
-            <li><a href="<?php echo site_url(); ?>/intership-exchange-record">見習交換紀錄</a></li>
-            <li><a href="<?php echo site_url(); ?>/student-download">學生下載</a></li>
-          </ul>
-        </li>
-      </ul>
+        
+      <div class="nav">
+        <div class="dropdown">
+          <div class="dropbtn">關於本所</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/aboutus">關於本所</a>
+            <a href="<?php echo site_url(); ?>/full-time-teacher">專任師資</a>
+            <a href="<?php echo site_url(); ?>/adjunct-teacher">兼任師資</a>
+            <a href="<?php echo site_url(); ?>/guest-professor">客座教授</a>
+            <a href="<?php echo site_url(); ?>/administration-staff">行政人員</a>
+            <a href="<?php echo site_url(); ?>/current-student">在校生</a>
+            <a href="<?php echo site_url(); ?>/graduate">畢業生</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">研究發展</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/research-direction">研究方向</a>
+            <a href="<?php echo site_url(); ?>/teachers-works">教師著作</a>
+            <a href="<?php echo site_url(); ?>/research-proposal">研究計畫</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">課程規劃</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/present-course-first-semester">本學年課程</a>
+            <a href="<?php echo site_url(); ?>/past-course">歷年課程</a>
+            <a href="<?php echo site_url(); ?>/lecture-course">講座課程</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">招生</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/feature">社文所特色</a>
+            <a href="<?php echo site_url(); ?>/master">碩士班</a>
+            <a href="<?php echo site_url(); ?>/doctor">博士班</a>
+            <a href="<?php echo site_url(); ?>/overseas">僑生港澳生</a>
+            <a href="<?php echo site_url(); ?>/chinese">陸生</a>
+            <a href="<?php echo site_url(); ?>/foreign">外籍生</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">國際交流</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/academic-cooperation">學術合作</a>
+            <a href="<?php echo site_url(); ?>/keynote-speech">專題演講</a>
+            <a href="<?php echo site_url(); ?>/workshop">研討會工作坊</a>
+            <a href="<?php echo site_url(); ?>/album">活動相簿</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">學生專區</div>
+          <div class="dropdown-content">
+            <a href="<?php echo site_url(); ?>/rules">修業規章</a>
+            <a href="<?php echo site_url(); ?>/thesis">畢業論文</a>
+            <a href="<?php echo site_url(); ?>/dissertation-award">論文獲獎</a>
+            <a href="<?php echo site_url(); ?>/other-award">其他獲獎訊息</a>
+            <a href="<?php echo site_url(); ?>/intership-exchange-record">見習交換紀錄</a>
+            <a href="<?php echo site_url(); ?>/student-download">學生下載</a>
+          </div>
+        </div>
       </div>
 
         <!--<a id="nav-more"style="font-size:15px;" class="icon">&#9776;</a>-->

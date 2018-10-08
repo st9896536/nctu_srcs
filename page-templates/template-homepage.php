@@ -368,7 +368,7 @@
 
             <!-- lecturer block -->
             <div class="left_block_text">
-              <p style="font-size: 1.2em; line-height: 2.5vh;">
+              <p style="font-size: 1.2em; line-height: 2.5vh;width: 20.5vw;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">
                 <?php $lecturer_background = get_field( "lecturer_background" );
                   if( $lecturer_background ){
                     echo $lecturer_background;
