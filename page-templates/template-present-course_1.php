@@ -160,7 +160,7 @@
               }
           }
         }
-        Sheetsu.read("https://sheetsu.com/apis/v1.0qu/88e849b06cfc",{},successFunc);
+        Sheetsu.read("https://sheetsu.com/apis/v1.0su/88e849b06cfc",{},successFunc);
 
 });
 
