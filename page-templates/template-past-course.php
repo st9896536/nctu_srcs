@@ -64,6 +64,95 @@
       });
     };
 
+    // $.loadJSON = function(jsonUrl) {
+    //   $.getJSON(jsonUrl, function(data){
+    //         console.log(data);
+    //         var obj = Object.keys(data).map(function(_) { return data[_]; }); //轉array
+    //         // console.log(obj);
+    //         var new_obj = Object.keys(obj[0]).map(function(_) { return obj[0][_]; }); //轉array
+    //         // console.log(new_obj);
+    //         var new_obj_arr = Object.keys(new_obj[0]).map(function(_) { return new_obj[0][_]; });  //轉array
+    //         var second_arr = Object.keys(new_obj[1]).map(function(_) { return new_obj[1][_]; });  //轉array
+    //         // console.log(new_obj_arr);  //還沒排序過
+    //         new_obj_arr = new_obj_arr.concat(second_arr) //將兩個array合併
+    //         // console.log(new_obj_arr[0]);
+
+    //         new_obj_arr = new_obj_arr.sort(function (a, b) {
+    //          return a.cos_time > b.cos_time ? 1 : -1;
+    //         });
+
+    //         console.log(new_obj_arr) //已排序
+
+    //         var cos_time = []; //授課時間
+    //         var arr_weekdays = []; //星期幾
+    //         var arr_time = []; //undefinedEFG
+    //         var final_time = []; //EFG
+    //         var arr_timetable = []; //最後合併的課表array
+
+    //         for (var i in new_obj_arr){
+    //           cos_time[i] = new_obj_arr[i].cos_time;
+
+    //           // 切割cos_time區分為星期與時間
+    //           arr_weekdays[i] = cos_time[i][0];
+    //           for (var j=1; j<4;j++){
+    //             arr_time[i] += cos_time[i][j];
+    //           }
+    //           final_time[i] = arr_time[i][9] + arr_time[i][10] + arr_time[i][11];
+    //         }
+
+    //         var count = [0,0,0,0,0,0]; //計算星期一到星期五的數量
+    //         for(var i = 0; i<arr_weekdays.length; i++){
+
+    //           // console.log(weekdays[i]);
+    //           if (arr_weekdays[i] == 1){
+    //             count[1]++;
+    //           }
+    //           else if (arr_weekdays[i] == 2){
+    //             count[2]++;
+    //           }
+    //           else if (arr_weekdays[i] == 3){
+    //             count[3]++;
+    //           }
+    //           else if (arr_weekdays[i] == 4){
+    //             count[4]++;
+    //           }
+    //           else if (arr_weekdays[i] == 5){
+    //             count[5]++;
+    //           }
+    //           else{
+    //             count[0]++;
+    //           }
+    //         }
+    //          console.log(count);
+
+    //         //控制板型要新增多少
+    //         var num = 0;
+    //         var weekdays_chi = [];
+    //         for(var i = 0; i <count.length; i++) {
+    //           $('.main').append("<div id=107_first_sem></div>");
+    //           $('#107_first_sem').append("<div id=weekdays_" + i +" class=table></div>");
+    //           $('#weekdays_' + i).append("<div id=row_" + i + " class=row></div>");
+    //           $('#weekdays_' + (i+1)).append("<div id=cource_block_" + (j+1) +  " class=row></div>");
+    //           for (var j = 0; j< count[i];j++){
+    //             $('#row_' + i).append("<div id=cource_block_" + i + j +  " class=row_container> </div>");
+    //             $('#cource_block_' + i + j).append("<div id=cour_"  + num + " class=course> </div>");
+    //             $('#cource_block_' + i + j).append("<div id=btn-course-block class=cell_" + num + "> </div>");
+    //             // if (document.getElementById("cell_" + num).innerHTML == "NaN" ){
+    //             //    document.getElementById("cell_" + num).innerHTML = "預約";
+    //             // }
+    //             num++;
+    //           }
+    //           $('#btn-course-block').css("width","36.825vw");
+    //         }
+    //         for (var i = 0; i < num; i++){
+    //           $('#cour_' + i).append("<div class=course-title-chi>" + new_obj_arr[i].cos_cname +  "</div>");
+    //           $('#cour_' + i).append("<div class=course-title-eng>" + new_obj_arr[i].cos_ename +  "</div>");
+    //           $('#cour_' + i).append("<HR size=1px style=margin-right:1vw; >");
+    //           $('#cour_' + i).append("<div class=professor-name-chi>" + new_obj_arr[i].teacher +  "</div>");
+    //         }
+    //     });
+    // };
+
     $.getJSON("<?php bloginfo('template_url'); ?>/srcs_1071.json", function(data){
             console.log(data);
             var obj = Object.keys(data).map(function(_) { return data[_]; }); //轉array
@@ -134,18 +223,19 @@
               $('#weekdays_' + i).append("<div id=row_" + i + " class=row></div>");
               // $('#row_' + i).append("<div class=cell_weekdays>" + weekdays_chi[i] + "</div>");
               $('#weekdays_' + (i+1)).append("<div id=cource_block_" + (j+1) +  " class=row></div>");
+              
               for (var j = 0; j< count[i];j++){
                 // $('#weekdays_' + (i)).append("<div id=cource_block_" + (i) + (j) +  " class=row_container> </div>");
                 $('#row_' + i).append("<div id=cource_block_" + i + j +  " class=row_container> </div>");
                 // $('#cource_block_' + i + j).append("<div id=cell_" + num +  " class=cell>" + final_time[num] + "</div>");
                 $('#cource_block_' + i + j).append("<div id=cour_"  + num + " class=course> </div>");
                 $('#cource_block_' + i + j).append("<div id=btn-course-block class=cell_" + num + "> </div>");
+                $('.cell_' + num ).css("width","36.825vw");
                 // if (document.getElementById("cell_" + num).innerHTML == "NaN" ){
                 //    document.getElementById("cell_" + num).innerHTML = "預約";
                 // }
                 num++;
               }
-              $('#btn-course-block').css("width","36.825vw");
             }
             for (var i = 0; i < num; i++){
               $('#cour_' + i).append("<div class=course-title-chi>" + new_obj_arr[i].cos_cname +  "</div>");
@@ -155,7 +245,9 @@
             }
         });
 
-        $.callGoogleSheet("od6");  //call function to fetch googleSheet第一個工作表
+    $.callGoogleSheet("od6");  //call function to fetch googleSheet第一個工作表
+    // var jsonUrl = "<?php bloginfo('template_url'); ?>/srcs_1071.json";
+    // $.loadJSON("jsonUrl");
 
     //依照課表時間排版，讀取google spreadsheet
     // $(function(){
@@ -205,7 +297,6 @@
     //   });
     // });
 
-
     function removeDiv() {
       $('#107_first_sem').remove();
     }
@@ -231,8 +322,7 @@
           sheet_id = "oka1znq";
           $.callGoogleSheet(sheet_id);
         }
-        console.log(jsonUrl);
-
+        
         $.getJSON(jsonUrl, function(data){
             console.log(data);
             var obj = Object.keys(data).map(function(_) { return data[_]; }); //轉array
@@ -297,20 +387,25 @@
             var num = 0;
             var weekdays_chi = [];
             for(var i = 0; i <count.length; i++) {
+              // $('.main').append("<div id=weekdays_" + i +" class=table></div>");
               $('.main').append("<div id=107_first_sem></div>");
               $('#107_first_sem').append("<div id=weekdays_" + i +" class=table></div>");
               $('#weekdays_' + i).append("<div id=row_" + i + " class=row></div>");
+              // $('#row_' + i).append("<div class=cell_weekdays>" + weekdays_chi[i] + "</div>");
               $('#weekdays_' + (i+1)).append("<div id=cource_block_" + (j+1) +  " class=row></div>");
+              
               for (var j = 0; j< count[i];j++){
+                // $('#weekdays_' + (i)).append("<div id=cource_block_" + (i) + (j) +  " class=row_container> </div>");
                 $('#row_' + i).append("<div id=cource_block_" + i + j +  " class=row_container> </div>");
+                // $('#cource_block_' + i + j).append("<div id=cell_" + num +  " class=cell>" + final_time[num] + "</div>");
                 $('#cource_block_' + i + j).append("<div id=cour_"  + num + " class=course> </div>");
                 $('#cource_block_' + i + j).append("<div id=btn-course-block class=cell_" + num + "> </div>");
+                $('.cell_' + num ).css("width","36.825vw");
                 // if (document.getElementById("cell_" + num).innerHTML == "NaN" ){
                 //    document.getElementById("cell_" + num).innerHTML = "預約";
                 // }
                 num++;
               }
-              $('#btn-course-block').css("width","36.825vw");
             }
             for (var i = 0; i < num; i++){
               $('#cour_' + i).append("<div class=course-title-chi>" + new_obj_arr[i].cos_cname +  "</div>");
