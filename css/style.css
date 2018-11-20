@@ -570,7 +570,8 @@ img {
   .flexslider,
   .content,
   #right_post,
-  .footer{
+  .footer_left,
+  .footer_right{
     display: none;
   }
 

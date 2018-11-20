@@ -17,6 +17,51 @@
       $ (".sidebarmenu a:eq(0)").removeClass('a_show');
       $ (".sidebarmenu a:eq(0)").addClass('sidebarmenu_active');
 
+    $.callGoogleSheet = function(sheetID) {
+      var googleSpreadsheetID = "1WSb3LxV18-pW17a-aUFjPTlsT689vbINB1OlLP0fTyg";
+      var worksheet = sheetID;
+      var url = "https://spreadsheets.google.com/feeds/list/" + googleSpreadsheetID + "/" + worksheet + "/public/values?alt=json";
+
+      $.getJSON(url, function(data){
+        // Get all entries from the google sheet
+        var entries = data.feed.entry;
+        var mysheet = [];
+
+        console.log(data);
+
+        for (var i = 0; i<entries.length; i++){
+          mysheet[i] = {
+            "sheet_category": entries[i].gsx$attribute1.$t,
+            "attribute_first": entries[i].gsx$attribute2.$t,
+            "attribute_second": entries[i].gsx$attribute3.$t,
+            "attribute_third": entries[i].gsx$attribute4.$t,
+            "attribute_fourth": entries[i].gsx$attribute5.$t,
+          }
+          console.log(mysheet[i])
+          console.log(mysheet[i].sheet_category)
+          console.log(mysheet[i].attribute_first)
+          console.log(mysheet[i].attribute_second)
+          console.log(mysheet[i].attribute_third)
+          console.log(mysheet[i].attribute_fourth)
+
+          if(mysheet[i].sheet_category == "選修課程"){
+            $('.cell_' + i).append("<div id=btn_block_" + i + " class=btn_block></div>");
+            $('#btn_block_' + i).append("<div class=button_style_blue>" + mysheet[i].sheet_category + "</div>");
+          }
+          else if(mysheet[i].sheet_category == "核心課程"){
+            $('.cell_' + i).append("<div id=btn_block_" + i + " class=btn_block></div>");
+            $('#btn_block_' + i).append("<div class=button_style_red>" + mysheet[i].sheet_category + "</div>");
+          }
+          if(mysheet[i].attribute_first || mysheet[i].attribute_second || mysheet[i].attribute_third || mysheet[i].attribute_fourth){
+            $('.cell_' + i).append("<div class=button_style_gray>" + mysheet[i].attribute_first +"</div>");
+            $('.cell_' + i).append("<div class=button_style_gray>" + mysheet[i].attribute_second +"</div>");
+            $('.cell_' + i).append("<div class=button_style_gray>" + mysheet[i].attribute_third +"</div>");
+            $('.cell_' + i).append("<div class=button_style_gray>" + mysheet[i].attribute_fourth +"</div>");
+          }
+        }
+      });
+    };
+
 		// 讀取json檔進來
       $.getJSON("<?php bloginfo('template_url'); ?>/srcs_1071.json", function(data){
             console.log(data);
@@ -128,40 +173,9 @@
             }
         });
 
-        sheet_category = [];  //課程屬性
-        attribute_first = []; //attribute2
-        attribute_second = []; //attribute3
-        attribute_third = []; //attribute4
-        attribute_fourth = []; //attribute5
-        function successFunc(googlesheet) {
-          console.log(googlesheet);
-          for (var i in googlesheet){
-              sheet_category[i] = googlesheet[i].attribute1; //核心課程or選修課程
-              attribute_first[i] = googlesheet[i].attribute2;
-              attribute_second[i] = googlesheet[i].attribute3;
-              attribute_third[i] = googlesheet[i].attribute4;
-              attribute_fourth[i] = googlesheet[i].attribute5;
-              console.log(sheet_category[i]);
-              if(sheet_category[i] == "選修課程"){
-                $('.cell_' + i).append("<div id=btn_block_" + i + " class=btn_block></div>");
-                $('#btn_block_' + i).append("<div class=button_style_blue>" + sheet_category[i] + "</div>");
-                // $('.cell_' + i).append("<div class=button_style_blue>" + sheet_category[i] + "</div>");
-              }
-              else if(sheet_category[i] == "核心課程"){
-                $('.cell_' + i).append("<div id=btn_block_" + i + " class=btn_block></div>");
-                $('#btn_block_' + i).append("<div class=button_style_red>" + sheet_category[i] + "</div>");
-              }
-              if(attribute_first[i] || attribute_second[i] || attribute_third[i] || attribute_fourth[i]){
-                $('.cell_' + i).append("<div class=button_style_gray>" + attribute_first[i] +"</div>");
-                $('.cell_' + i).append("<div class=button_style_gray>" + attribute_second[i] +"</div>");
-                $('.cell_' + i).append("<div class=button_style_gray>" + attribute_third[i] +"</div>");
-                $('.cell_' + i).append("<div class=button_style_gray>" + attribute_fourth[i] +"</div>");
+      $.callGoogleSheet("od6");  //call function to fetch googleSheet第一個工作表
 
-              }
-          }
-        }
-        Sheetsu.read("https://sheetsu.com/apis/v1.0su/88e849b06cfc",{},successFunc);
-
+      
 });
 
   </script>
@@ -179,8 +193,8 @@
         <div id="buttons_course" style="width:48vw; float:right;">
 
             <a id="btn-whole" target="_blank" href="https://timetable.nctu.edu.tw/?flang=zh-tw" >全校課程搜尋</a>
-            <a id="btn-second" href="<?php echo site_url(); ?>/present-course-second-semester" >106下</a>
-            <a id="btn-first" href="<?php echo site_url(); ?>/present-course-first-semester" >106上</a>
+            <!-- <a id="btn-second" href="<?php echo site_url(); ?>/present-course-second-semester" >106下</a>
+            <a id="btn-first" href="<?php echo site_url(); ?>/present-course-first-semester" >106上</a> -->
 
         </div>
       </div>

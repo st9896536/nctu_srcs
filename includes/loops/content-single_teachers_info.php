@@ -81,7 +81,6 @@ The Single Posts Loop  (專任師資詳細內文)
           <img style="width:200px; height:auto;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
         <?php endif; ?>
-        <!-- <img style="width:200px; height:auto;" src="<?php bloginfo('template_url'); ?>/images/professor/prof_zuyuanhon_photo1.jpg" /> -->
 
       </div>
       

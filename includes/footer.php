@@ -45,20 +45,14 @@
 					<li>版權所有 任何形式之轉載，請先與國立交通大學社會與文化研究所網頁製作小組聯繫</li>
 				</ol>
 			</div>
-			<div class="footer_icons" style="display: inline-block; vertical-align: top;">
+			<!-- <div class="footer_icons" style="display: inline-block; vertical-align: top;">
 				<div class="icons_block" style="    width: 8vw;">
 					<a class="icons icons_facebook" href="https://www.facebook.com/%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E7%A4%BE%E6%9C%83%E8%88%87%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6%E6%89%80-SRCS-243289192460843/"></a>
-					<a  class="icons icons_instagram" href="<?php echo site_url(); ?>/aboutus"></a>
 				</div>
 				<div class="icons_block" style="    width: 8vw;">
-					<a  class="icons icons_twitter" href="<?php echo site_url(); ?>/aboutus"></a>
 					<a  class="icons icons_youtube" href="https://www.youtube.com/channel/UCZXqaFSxZB8727PlsIngEnA"></a>
 				</div>
-				<div class="icons_block" style="    width: 8vw;">
-					<a  class="icons icons_blogger" href="<?php echo site_url(); ?>/aboutus"></a>
-					<a  class="icons icons_gallery" href="<?php echo site_url(); ?>/aboutus"></a>
-				</div>
-			</div>
+			</div> -->
 		</div>
 
 	</div>

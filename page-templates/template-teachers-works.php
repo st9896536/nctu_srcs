@@ -39,7 +39,7 @@
       
       $(".b_1").addClass('click_Y_book');
       $(".block_1").css("display","inline-block");
-      $(".block_1").css("position","fixed");
+      $(".block_1").css("position","absolute");
       $(".block_1").css("width","80vw");
       $(".b1").addClass("book_block_animation");
       $(".bc_block1").addClass("book_content_block_animation");
@@ -49,7 +49,7 @@
       $(".b_1").click(function(){
         clean();
         $(".block_1").css("display","inline-block");
-        $(".block_1").css("position","fixed");
+        $(".block_1").css("position","absolute");
         $(".block_1").css("width","80vw");
         refresh();
         $(".b_1").removeClass('other_Y_block');
@@ -62,7 +62,7 @@
       $(".b_2").click(function(){
         clean();
         $(".block_2").css("display","inline-block");
-        $(".block_2").css("position","fixed");
+        $(".block_2").css("position","absolute");
         $(".block_2").css("width","80vw");
         refresh();
         $(".b_2").removeClass('other_Y_block');
@@ -75,6 +75,8 @@
       $(".b_3").click(function(){
         clean();
         $(".block_3").css("display","inline-block");
+        $(".block_3").css("position","absolute");
+        $(".block_3").css("width","80vw");
         refresh();
         $(".b_3").removeClass('other_Y_block');
         $(".b_3").addClass('click_Y_book');
@@ -86,6 +88,8 @@
       $(".b_4").click(function(){
         clean();
         $(".block_4").css("display","inline-block");
+        $(".block_4").css("position","absolute");
+        $(".block_4").css("width","80vw");
         refresh();
         $(".b_4").removeClass('other_Y_block');
         $(".b_4").addClass('click_Y_book');
@@ -97,6 +101,8 @@
       $(".b_5").click(function(){
         clean();
         $(".block_5").css("display","inline-block");
+        $(".block_5").css("position","absolute");
+        $(".block_5").css("width","80vw");
         refresh();
         $(".b_5").removeClass('other_Y_block');
         $(".b_5").addClass('click_Y_book');

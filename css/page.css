@@ -618,8 +618,8 @@ img {
 .btn_left{
   float: left;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-image: url(../images/btn/btn_list_left.svg);
   background-size: cover;
 }
@@ -627,8 +627,8 @@ img {
 .btn_right{
   display: inline-block;
   vertical-align: top;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-image: url(../images/btn/btn_list_right.svg);
   background-size: cover;
   margin-right: 0.75vw;
@@ -637,8 +637,9 @@ img {
 #jump_to{
   position: absolute;
   float: left;
-  height: 20px;
+  height: 30px;
   width: 6.5vw;
+  color:#000;
   vertical-align: top;
   display: inline-block;
   border: solid 1px #323232;
@@ -646,12 +647,16 @@ img {
   margin: 0.5;
 }
 .btn-go{
-  position: relative;
-  float: right;
-  width: 20px;
-  height: 20px;
+  /*position: relative;
+  float: right;*/
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
   background-image: url(../images/btn/btn_list_go.svg);
   background-size: cover;
+  z-index: 9999;
+  margin-left: 7vw;
 }
 
 .page-style{
@@ -1004,7 +1009,7 @@ img {
 .left_side p,
 .right_side p{
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 1.0em;
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
@@ -1272,7 +1277,7 @@ img {
 
 .button_style_gray{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   color: rgba(50, 50, 50, 1);
   text-align: justify;

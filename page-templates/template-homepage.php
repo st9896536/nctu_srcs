@@ -179,13 +179,13 @@
           <a target="_blank" href="<?php the_permalink(); ?>">
             <?php 
 
-            $image = get_field('poster_image');
+        $image = get_field('poster_image');
 
-            if( !empty($image) ): ?>
+        if( !empty($image) ): ?>
 
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-            <?php endif; ?>
+        <?php endif; ?>
           </a>
         </li>
 
@@ -392,10 +392,7 @@
 
             <div class="left_block">
             </div>
-
           </div>
-
-
     </div>
 
 </body>
