@@ -379,7 +379,7 @@ img {
 .elective p,
 .remarks p{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2.75vh;
   vertical-align:text-top;
   letter-spacing: 0.1em;
@@ -403,7 +403,7 @@ img {
 .rule-doctor-list li{
   text-indent: -.7em;
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.75vh;
   letter-spacing: 0.1em;
   color: rgba(50,50,50,1);
@@ -437,7 +437,7 @@ img {
 .thesis-title{
   width:48vw;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.6em;
   vertical-align:text-top;
   letter-spacing: 0.05em;
@@ -463,7 +463,7 @@ img {
 
 .name{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2.75vh;
   vertical-align:text-top;
   letter-spacing: 0.05em;
@@ -471,6 +471,7 @@ img {
   display: inline-block;
   margin-right: 1vw;
   float: left;
+  margin-bottom: 1vh;
 }
 
 .award{
@@ -481,6 +482,7 @@ img {
   letter-spacing: 0.05em;
   display: inline-block;
   white-space: pre-line;
+  margin-bottom: 1vh;
 }
 
 /* 實習／見習／交換紀錄樣式 */
@@ -495,7 +497,7 @@ img {
 
 .intership-detail{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2.75vh;
   vertical-align:text-top;
   letter-spacing: 0.05em;

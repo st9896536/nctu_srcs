@@ -22,6 +22,7 @@ font{
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.1em;
+  font-size: 1.2em;
 }
 
 img {
@@ -101,7 +102,7 @@ img {
 
 .main_long{
   width: 71.875vw;
-  /*margin-top: 2vh;*/
+  /*margin-top: 5vh;*/
   /*height: 3.75vh;*/
   padding: 5px 0.87125vw;
   background-color: rgba(60, 0, 110, 0.8);
@@ -120,7 +121,7 @@ img {
 }
 
 .main-text-p{
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.75em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -130,7 +131,7 @@ img {
 }
 .short-title{
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 1.1em;
   line-height: 1.7em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -181,7 +182,7 @@ img {
 #t2{
   /*width: 6.5vw;*/
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 1.75em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -196,7 +197,7 @@ img {
 #graduate{
   margin-bottom: 1.5vh;
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 0.95em;
   line-height: 1.25em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -232,7 +233,7 @@ img {
 
 .name_block span{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.25em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -304,7 +305,7 @@ img {
 
 .staff_data p, .job_content p{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2.5em;
   color: rgba(50, 50, 50, 1);
   margin-bottom: 2.25vh;
@@ -366,7 +367,7 @@ img {
 
 .category{
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -386,7 +387,7 @@ img {
 
 .names p{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   height: 1.2vh;
   line-height: 2.5em;
   letter-spacing: 0.1em;
@@ -484,7 +485,7 @@ img {
 /*研究方向樣式*/
 .direction p{
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 3vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -493,7 +494,7 @@ img {
 
 #content{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2em;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -855,7 +856,7 @@ img {
 
 .button_style_plan1{
   font-weight: 100;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 2vh;
   text-align: justify;
   color: rgba(255, 255, 255, 1);
@@ -872,7 +873,7 @@ img {
 
 .button_style_noClick{
   font-weight: 100;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 2vh;
   text-align: justify;
   color: rgba(100, 100, 100, 1);
@@ -895,7 +896,7 @@ img {
 #planname_style,
 #planname_style p{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 1.0em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
@@ -1243,7 +1244,7 @@ img {
 
 .button_style_blue{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   letter-spacing: 0.3em;
   text-align: justify;
@@ -1260,7 +1261,7 @@ img {
 
 .button_style_red{
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   letter-spacing: 0.3em;
   color: rgba(255, 255, 255, 1);

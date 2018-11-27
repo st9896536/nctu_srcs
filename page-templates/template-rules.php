@@ -36,7 +36,8 @@
         <?php
         $file = get_field('foreign_language_aptitude_determination');
         if( $file ): ?>
-          <a href="<?php echo $file['url']; ?>" download class="btn btn-rules" style="border: 1px solid #000;margin-right: 3vw;"><span>外語能力 認定辦法</span></a>
+          <a href="<?php echo $file['url']; ?>" download class="btn btn-rules" style="border: 1px solid #000;margin-right: 3vw;"><span>外語能力
+認定辦法</span></a>
         <?php endif; ?>
       </div>
       <HR size="1px" style="margin-top:1.5vh; margin-bottom:2vh; width:71.825vw;">

@@ -256,10 +256,6 @@
             <div class="right_top_block">
                 <!-- book1 -->
                 <div class="right_book_image">
-                  <?php $book_link_1 = get_field( "book_link_1" );
-                  if( $book_link_1 ){ ?>
-                    <a href="<?php echo $book_link_1?>">
-
                     <?php
                     $image = get_field('book_image_1');
 
@@ -267,7 +263,7 @@
 
                       <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-                    <?php endif;}?>
+                    <?php endif;?>
                     <p><?php $book_name_1 = get_field( "book_name_1" );
                       if( $book_name_1 ){
                         echo $book_name_1;
@@ -278,15 +274,11 @@
                         echo $book_date_1;
                       }
                     ?></p>
-                    </a>
+                    
                 </div>
 
                 <!-- book2 -->
                 <div class="right_book_image">
-                  <?php $book_link_2 = get_field( "book_link_2" );
-                  if( $book_link_2 ){ ?>
-                    <a href="<?php echo $book_link_2 ;?> ">
-
                   <?php
 
                   $image = get_field('book_image_2');
@@ -295,7 +287,7 @@
 
                     <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-                  <?php endif; }?>
+                  <?php endif; ?>
                   <p><?php $book_name_2 = get_field( "book_name_2" );
                     if( $book_name_2 ){
                       echo $book_name_2;
@@ -306,15 +298,10 @@
                       echo $book_date_2;
                     }
                   ?></p>
-                  </a>
                 </div>
 
                 <!-- book3 -->
                 <div class="right_book_image">
-                  <?php $book_link_3 = get_field( "book_link_3" );
-                  if( $book_link_3 ){ ?>
-                    <a href="<?php echo $book_link_3; ?>">
-
                   <?php
 
                   $image = get_field('book_image_3');
@@ -323,7 +310,7 @@
 
                     <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-                  <?php endif; }?>
+                  <?php endif; ?>
                   <p><?php $book_name_3 = get_field( "book_name_3" );
                     if( $book_name_3 ){
                       echo $book_name_3;
@@ -334,15 +321,12 @@
                       echo $book_date_3;
                     }
                   ?></p>
-                  </a>
+                  
                 </div>
 
                 <!-- book4 -->
                 <div class="right_book_image">
-                  <?php $book_link_4 = get_field( "book_link_4" );
-                  if( $book_link_4 ){ ?>
-                    <a href="<?php echo $book_link_4 ;?>">
-
+                  
                   <?php
 
                   $image = get_field('book_image_4');
@@ -351,7 +335,7 @@
 
                     <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-                  <?php endif; }?>
+                  <?php endif; ?>
                   <p><?php $book_name_4 = get_field( "book_name_4" );
                     if( $book_name_4 ){
                       echo $book_name_4;
@@ -362,7 +346,7 @@
                       echo $book_date_4;
                     }
                   ?></p>
-                  </a>
+                  
                 </div>               
             </div>
 
