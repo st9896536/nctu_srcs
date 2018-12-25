@@ -30,7 +30,9 @@
         console.log(data);
 
         for (var i = 0; i<entries.length; i++){
+          //console.log(entries[i].gsx$attribute_eng_name.$t);
           mysheet[i] = {
+            "teacher_eng_name": entries[i].gsx$attribute0.$t,
             "sheet_category": entries[i].gsx$attribute1.$t,
             "attribute_first": entries[i].gsx$attribute2.$t,
             "attribute_second": entries[i].gsx$attribute3.$t,
@@ -38,11 +40,14 @@
             "attribute_fourth": entries[i].gsx$attribute5.$t,
           }
           console.log(mysheet[i])
+          console.log(mysheet[i].teacher_eng_name)
           console.log(mysheet[i].sheet_category)
           console.log(mysheet[i].attribute_first)
           console.log(mysheet[i].attribute_second)
           console.log(mysheet[i].attribute_third)
           console.log(mysheet[i].attribute_fourth)
+
+          $('#cour_' + i).append("<div class=professor-name-eng>" + mysheet[i].teacher_eng_name + "</div>");
 
           if(mysheet[i].sheet_category == "選修課程"){
             $('.cell_' + i).append("<div id=btn_block_" + i + " class=btn_block></div>");
@@ -169,6 +174,7 @@
               $('#cour_' + i).append("<div class=course-title-eng>" + new_obj_arr[i].cos_ename +  "</div>");
               $('#cour_' + i).append("<HR size=1px style=margin-right:1vw; >");
               $('#cour_' + i).append("<div class=professor-name-chi>" + new_obj_arr[i].teacher +  "</div>");
+              
 
             }
         });

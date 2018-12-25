@@ -47,7 +47,7 @@
 
           </div>
       </div>
-      <div class="main_long" style="margin-top: 5vh;"><font>學術特色</font></div>
+      <div class="main_long" style="margin-top: 10vh;"><font>學術特色</font></div>
       <!-- <div class="main-text-long">
 
       </div> -->
@@ -134,7 +134,7 @@
         </div>
       </div>
 
-      <div class="main_long" style="margin-top: 15vh; width: 57.5vw;"><font>社文所的學生現狀</font></div>
+      <div class="main_long" style="margin-top: 20vh; width: 57.5vw;"><font>社文所的學生現狀</font></div>
       <div class="main-text">
         <div class="short-title" style="width: 73.5vw;">
           社文所歡迎不同人文社會學科背景而對於跨領域研究有興趣的學生，更歡迎對於理論思考有志向的學生。<br>

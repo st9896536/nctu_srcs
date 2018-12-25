@@ -61,7 +61,7 @@ if($the_query->have_posts()):
             <div class="a-image" style="width:21vw; height:21vw;">
               <img src="<?php echo $img_url; ?>" />
             </div>
-            <div class="a-text" style="height:10vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
+            <div class="a-text" style="height:11.5vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
               <div id="a1"><?php the_title();?></div>
               <div id="a2"><?php echo count($image) ; ?>張照片</div>
               <div id="a3"><?php the_time('Y/m/d') ?></div>

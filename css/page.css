@@ -1027,7 +1027,7 @@ img {
 
 #title_eng{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   color: rgba(50, 50, 50, 1);
   margin-bottom: 1.25vh;
@@ -1035,7 +1035,7 @@ img {
 
 .poster_year{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.5vh;
   text-align: justify;
   color: rgba(255, 255, 255, 1);
@@ -1050,7 +1050,7 @@ img {
 .poster_date{
   margin-left: 0.75vw;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50 ,50, 1);
@@ -1059,7 +1059,7 @@ img {
 
 #place_chi{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50 ,50, 1);
@@ -1067,14 +1067,14 @@ img {
 
 #place_eng{
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 2vh;
   color: rgba(50, 50 ,50, 1);
 }
 
 .lecturer p{
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
@@ -1083,7 +1083,7 @@ img {
 
 .lecturer_block{
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
@@ -1093,7 +1093,7 @@ img {
 .go_register,
 .go_website{
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2.5vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50 ,50, 1);
@@ -1102,7 +1102,7 @@ img {
 .content_guideline{
   width: 37.5vw;
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
@@ -1113,7 +1113,7 @@ img {
 .left_content p{
   width: 37.5vw;
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 1.6em;
   letter-spacing: 0.05em;
   color: rgba(50, 50 ,50, 1);
@@ -1207,7 +1207,7 @@ img {
 .course-title-chi{
   font-weight: 600;
   font-size: 1.25em;
-  line-height: 2.25vh;
+  line-height: 3.25vh;
   letter-spacing: 0.1em;
   color: rgba(50, 50, 50, 1);
 }
@@ -1217,6 +1217,7 @@ img {
   font-size: 1.25em;
   line-height: 1.5vh;
   color: rgba(50, 50, 50, 1);*/
+  padding-bottom: 5px;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 2.5vh;

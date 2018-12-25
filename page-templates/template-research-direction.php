@@ -42,7 +42,7 @@
                     <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   <?php endif; ?>
                 </div>
-                <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;">
+                <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
                   <p>
                     <?php $research_title1 = get_field( "research_title1" );
                       if( $research_title1 ){
@@ -70,7 +70,7 @@
                     <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   <?php endif; ?>
                 </div>
-                <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;">
+                <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
                   <p>
                     <?php $research_title2 = get_field( "research_title2" );
                       if( $research_title2 ){
@@ -98,7 +98,7 @@
                     <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   <?php endif; ?>
                 </div>
-                <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;">
+                <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
                   <p>
                     <?php $research_title3 = get_field( "research_title3" );
                       if( $research_title3 ){
@@ -126,7 +126,7 @@
                     <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   <?php endif; ?>
                 </div>
-                <div style="margin-top: 3.5vh; width: 23vh; padding: 1vh; text-align: -webkit-center;">
+                <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
                   <p>
                     <?php $research_title4 = get_field( "research_title4" );
                       if( $research_title4 ){

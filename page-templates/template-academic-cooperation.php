@@ -32,8 +32,8 @@
 
       <div class="co_block" style="width:72vw; padding:1vh 0.8vw; border-bottom: #000 solid 1px;">
         <div id="co-title" style="width:7vw;">締約年月</div>
-        <div id="co-title" style="width:14vw;">學校名稱</div>
-        <div id="co-title" style="width:25.5vw;">締約名稱及起迄效期</div>
+        <div id="co-title" style="width:14vw; margin-left: 2vw;">學校名稱</div>
+        <div id="co-title" style="width:24.5vw;">締約名稱及起迄效期</div>
         <div id="co-title" style="width:23.375vw;">約文內容</div>
       </div>
 
@@ -43,7 +43,7 @@
               <div class="co_content" style=" border-bottom: #000 solid 1px; padding-top: 1vh;">
                 <div class="co-detail" style="width:7vw;"><?php echo $academic_co['academic_cooperation_signdate']?></div>
                 <div id="school-name" style="width:14vw;"><?php echo $academic_co['academic_cooperation_schoolname']?></div>
-                <div class="co-detail" style="width:22.5vw;"><?php echo $academic_co['academic_cooperation_rules']?></div>
+                <div class="co-detail" style="width:22.5vw; text-align: center;"><?php echo $academic_co['academic_cooperation_rules']?></div>
                 <div class="co-detail" style="width:23.375vw;"><?php echo $academic_co['academic_cooperation_contract']?></div>
               </div>
               <?php

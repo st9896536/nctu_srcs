@@ -45,7 +45,7 @@
           <a href="javascript:history.back()" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:15vh;">
             <span>回列表</span>
           </a>
-          <div id="a1" style="padding-left: 1.25vw;margin-top:6.25vh; height:11.5vh;"><?php the_title(); ?></div>
+          <div id="a1" style="padding-left: 1.25vw;margin-top:6.25vh; height:9.5vh;"><?php the_title(); ?></div>
           <div id="a2" style="padding-left: 1.25vw;"><?php echo count($images) ; ?>張照片</div>
           <div id="a3" style="padding-left: 1.25vw;">2016.11.28-29</div>
         </div>
