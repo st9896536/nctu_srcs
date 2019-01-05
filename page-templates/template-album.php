@@ -62,9 +62,9 @@ if($the_query->have_posts()):
               <img src="<?php echo $img_url; ?>" />
             </div>
             <div class="a-text" style="height:11.5vh; background-color:rgba(230,230,230,1); padding:0 0.625vw">
-              <div id="a1"><?php the_title();?></div>
-              <div id="a2"><?php echo count($image) ; ?>張照片</div>
-              <div id="a3"><?php the_time('Y/m/d') ?></div>
+              <div style="width: 19.75vw;height: 5.5vh;padding-top: 1vh;font-weight: 500;font-size: 1em;letter-spacing: 0.05em;"><?php the_title();?></div>
+              <div style="font-weight: 300;font-size: 0.75em;line-height: 2vh;letter-spacing: 0.1em; padding-bottom: 4px;"><?php echo count($image) ; ?>張照片</div>
+              <div style="font-weight: 300;font-size: 1em;line-height: 1.5vh;letter-spacing: 0.05em;"><?php the_time('Y/m/d') ?></div>
             </div>
           </a>
         </div>
