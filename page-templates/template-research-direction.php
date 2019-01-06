@@ -24,9 +24,6 @@
 <?php get_template_part('includes/sidebar-research'); ?>
 
 <body>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
 
 
 <div class="container" style="margin-left: 24vw;">
@@ -36,115 +33,52 @@
             <div class="col-lg-3 col-md-6">
               <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3vw;  display: inline-block; ">
                 <div class="circle_block" style="width: 25vh; height: 25vh; ">
-                  <?php
-                  $image = get_field('reserch_direction_image_1');
-                  if( !empty($image) ): ?>
-                    <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                  <?php endif; ?>
+                  <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_01.jpg" />
                 </div>
                 <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
-                  <p>
-                    <?php $research_title1 = get_field( "research_title1" );
-                      if( $research_title1 ){
-                        echo $research_title1;
-                      }
-                    ?>
-                  </p>
+                  <p>社會文化批判理論</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content" >
-                  <?php $research_content_1 = get_field( "research_content_1" );
-                    if( $research_content_1 ){
-                      echo $research_content_1;
-                    }
-                  ?>
-                </div>
+                <div id="content" >當代爭議，生命政治，國家形成 與文化建構，帝國主義，殖民社 會與後殖民主義理論，跨國主義 與文化，宗教暴力，主體與認同， 民主與民粹，資本主義，種族主 義，新自由主義與新重商主義， 合作經濟，空間與地方，都市研 究，批判農學，視覺理論，人類世，多物種民族誌，理論家專題</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
-              <div class="direction" style="width: 25vh;margin-bottom: 5vh; margin-right: 3vw; vertical-align: top;display: inline-block;">
+              <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3vw;  display: inline-block; ">
                 <div class="circle_block" style="width: 25vh; height: 25vh; ">
-                  <?php
-                  $image = get_field('reserch_direction_image_2');
-                  if( !empty($image) ): ?>
-                    <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                  <?php endif; ?>
+                  <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_02.jpg" />
                 </div>
                 <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
-                  <p>
-                    <?php $research_title2 = get_field( "research_title2" );
-                      if( $research_title2 ){
-                        echo $research_title2;
-                      }
-                    ?>
-                  </p>
+                  <p>台灣社會與文化</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content" >
-                  <?php $research_content_2 = get_field( "research_content_2" );
-                    if( $research_content_2 ){
-                      echo $research_content_2;
-                    }
-                  ?>
-                </div>
+                <div id="content" >台灣思想史，台灣社會史，台灣政治經濟思想，台灣教育與文化形態，台灣冷戰與解殖，台灣文學與社會議題，台灣民主與社會運動，台灣藝術，台灣電影</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
-              <div  class="direction" style="/*width: 25vh;margin-bottom: 5vh; margin-right: 3vw; vertical-align: top;display: inline-block;">
+              <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3vw;  display: inline-block; ">
                 <div class="circle_block" style="width: 25vh; height: 25vh; ">
-                  <?php
-                  $image = get_field('reserch_direction_image_3');
-                  if( !empty($image) ): ?>
-                    <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                  <?php endif; ?>
+                  <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_03.jpg" />
                 </div>
                 <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
-                  <p>
-                    <?php $research_title3 = get_field( "research_title3" );
-                      if( $research_title3 ){
-                        echo $research_title3;
-                      }
-                    ?>
-                  </p>
+                  <p>東亞歷史與文化</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content">
-                  <?php $research_content_3 = get_field( "research_content_3" );
-                    if( $research_content_3 ){
-                      echo $research_content_3;
-                    }
-                  ?>
-                </div>
+                <div id="content" >亞的民主化運動，全球化的東南亞，近代中國思想史，近代中國文學，日本思想史，日文學術名著選讀</div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6" >
-              <div class="direction" style="width: 25vh;margin-bottom: 5vh;vertical-align: top;display: inline-block;">
+            <div class="col-lg-3 col-md-6">
+              <div class="direction" style="width: 25vh;margin-bottom: 5vh;  margin-right: 3vw;  display: inline-block; ">
                 <div class="circle_block" style="width: 25vh; height: 25vh; ">
-                  <?php
-                  $image = get_field('reserch_direction_image_4');
-                  if( !empty($image) ): ?>
-                    <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                  <?php endif; ?>
+                  <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_04.jpg" />
                 </div>
                 <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
-                  <p>
-                    <?php $research_title4 = get_field( "research_title4" );
-                      if( $research_title4 ){
-                        echo $research_title4;
-                      }
-                    ?>
-                  </p>
+                  <p>藝術社會行動</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content">
-                  <?php $research_content_4 = get_field( "research_content_4" );
-                    if( $research_content_4 ){
-                      echo $research_content_4;
-                    }
-                  ?>
-                </div>
+                <div id="content" >紀錄片分析與製作，民族誌電影研究與製作，裝置藝術與文化批判，介入式影像創作，參與式視覺人類學，數位民族誌，藝術策展</div>
               </div>
             </div>
+            
           </div>
       </div>
 

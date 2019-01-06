@@ -39,14 +39,15 @@
             'order'    => 'DESC'
         );
         $images = acf_photo_gallery('album_detail_gallery', $post->ID);
+        $images_nums = count($images);
         ?>
         <div class="album-text">
 
           <a href="javascript:history.back()" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:15vh;">
             <span>回列表</span>
           </a>
-          <div id="a1" style="padding-left: 1.25vw;margin-top:6.25vh; height:9.5vh;"><?php the_title(); ?></div>
-          <div id="a2" style="padding-left: 1.25vw;"><?php echo count($images) ; ?>張照片</div>
+          <div id="a1" style="margin-top:6.25vh; height:9.5vh;"><?php the_title(); ?></div>
+          <div id="a2" style="padding-left: 1.25vw;"><?php echo $images_nums ; ?>張照片</div>
           <div id="a3" style="padding-left: 1.25vw;">2016.11.28-29</div>
         </div>
 <?php
@@ -71,21 +72,6 @@ if( count($images) ):
               </a>
             </div>
 <?php  ++$i;  endforeach; endif; ?>
-        <!--  -->
-        <!-- <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
-
-        <div class="album-area"><img src="</?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0004.jpg" /></div>
-
-        <div class="album-area"><img src="</?php bloginfo('template_url'); ?>/images/0003.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0001.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
-
-        <div class="album-area"><img src="</?php bloginfo('template_url'); ?>/images/0004.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0002.jpg" /></div>
-        <div class='album-area'><img src="</?php bloginfo('template_url'); ?>/images/0003.jpg" /></div> -->
       </div>
 
     </div>
