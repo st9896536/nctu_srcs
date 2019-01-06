@@ -39,7 +39,7 @@
                   <p>社會文化批判理論</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content" >當代爭議，生命政治，國家形成 與文化建構，帝國主義，殖民社 會與後殖民主義理論，跨國主義 與文化，宗教暴力，主體與認同， 民主與民粹，資本主義，種族主 義，新自由主義與新重商主義， 合作經濟，空間與地方，都市研 究，批判農學，視覺理論，人類世，多物種民族誌，理論家專題</div>
+                <div id="content" >當代爭議，生命政治，國家形成與文化建構，帝國主義，殖民社會與後殖民主義理論，跨國主義與文化，宗教暴力，主體與認同，民主與民粹，資本主義，種族主義，新自由主義與新重商主義，合作經濟，空間與地方，都市研究，批判農學，視覺理論，人類世，多物種民族誌，理論家專題</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -60,10 +60,10 @@
                   <img id="circle" class="img-fluid" style="border-radius: 12.5vh; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);" src="<?php bloginfo('template_url'); ?>/images/research_area_03.jpg" />
                 </div>
                 <div style="margin-top: 3.5vh; padding: 1vh; text-align: -webkit-center;">
-                  <p>東亞歷史與文化</p>
+                  <p>亞際社會批判研究</p>
                 </div>
                 <div><HR size="1px" color="#4F4F4F" style="margin-top:1.5vh; margin-bottom:2vh;"></div>
-                <div id="content" >亞的民主化運動，全球化的東南亞，近代中國思想史，近代中國文學，日本思想史，日文學術名著選讀</div>
+                <div id="content" >亞洲思想資源，東亞視野中的台灣，東亞民族主義，東亞文學中的戰爭經驗，文學中的工業化與勞工問題，文學與認同，東亞冷戰經驗，東亞殖民與後殖民，東亞的民主化運動，全球化的東南亞，近代中國思想史，近代中國文學，日本思想史，日文學術名著選讀</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
