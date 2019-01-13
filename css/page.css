@@ -851,7 +851,7 @@ img {
 .plan_detail{
   width: 71vw;
   padding: 1vh 0.8vw;
-  border-bottom: #000 solid 1px;
+  /*border-bottom: #000 solid 1px;*/
 }
 
 .button_style_plan1{

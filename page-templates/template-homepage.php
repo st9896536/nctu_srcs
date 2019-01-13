@@ -256,13 +256,13 @@
             <div class="right_top_block">
                 <!-- book1 -->
                 <div class="right_book_image">
-                    <?php
-                    $image = get_field('book_image_1');
-
-                    if( !empty($image) ): ?>
-
-                      <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+                  <?php $book_link_1 = get_field( "book_link_1" );
+                    if( $book_link_1 ): ?>
+                      <a href=" <?php echo $book_link_1 ?>">
+                      <?php $image = get_field('book_image_1');
+                      if( !empty($image) ): ?>
+                        <img id="book" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+                      <?php endif;?>
                     <?php endif;?>
                     <p><?php $book_name_1 = get_field( "book_name_1" );
                       if( $book_name_1 ){
