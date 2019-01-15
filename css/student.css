@@ -336,7 +336,7 @@ img {
   margin-left: 1.25vw;
   font-weight: 500;
   font-size: 1.2em;
-  line-height: 2.4em;
+  /*line-height: 2.4em;*/
   letter-spacing: 0.1em;
 
 }
