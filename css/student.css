@@ -245,7 +245,6 @@ img {
   padding-top: 2.5vh;
   margin-top: 4vh;
   padding: 1vh 2.5vw;
-  /* border-bottom: #000 solid 1px; */
 }
 
 #foreign_style{
@@ -287,7 +286,6 @@ img {
   padding-bottom: 1.5vh;
   display: inline-block;
   vertical-align: top;
-  /* word-break: keep-all; */
   white-space: pre-line;
 }
 
