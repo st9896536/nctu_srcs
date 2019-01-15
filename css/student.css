@@ -322,23 +322,11 @@ img {
 }
 
 #a1{
-  /*
-  padding-top: 4px;
-  font-weight: 500;
-  font-size: 1.5em;
-  letter-spacing: 0.05em;
-  height:5.5vh;
-  word-break: keep-all;
-  */
-  
   width: 20.9vw;
-  height: 10.5vh;
   margin-left: 1.25vw;
   font-weight: 500;
   font-size: 1.2em;
-  /*line-height: 2.4em;*/
   letter-spacing: 0.1em;
-
 }
 
 #a2{

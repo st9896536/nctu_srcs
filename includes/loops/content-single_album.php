@@ -43,7 +43,7 @@
         ?>
         <div class="album-text">
 
-          <a href="javascript:history.back()" class="btn btn-content" style="width:4vw; height:4vw;margin-right:1vw; margin-top:12vh;">
+          <a href="javascript:history.back()" class="btn btn-content" style="position: fixed; width:4vw; height:4vw;margin-left: 18vw; margin-top:12vh;">
             <span>回列表</span>
           </a>
           <div id="a1" style="margin-top:3.25vh; height:9.5vh;"><?php the_title(); ?></div>
