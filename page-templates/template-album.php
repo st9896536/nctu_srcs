@@ -48,6 +48,7 @@ $args = array(
   'category_name' => 'gallery_srcs',
   'orderby' => 'title',
   'order'   => 'DESC',
+  'posts_per_page' => 100
 );
 $the_query = new WP_Query($args);
 if($the_query->have_posts()):
